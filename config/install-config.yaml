@@ -1,0 +1,78 @@
+# OpenShift install-config.yaml template
+apiVersion: v1
+baseDomain: openshift-local.com
+metadata:
+  name: openshift-lima
+platform:
+  baremetal:
+    apiVIP: "192.168.111.5"
+    ingressVIP: "192.168.111.7"
+    hosts:
+      - name: openshift-master-0
+        role: master
+        bootMACAddress: "52:54:00:1e:56:ac"  # MAC address for master node
+        bootMode: UEFI
+        rootDeviceHints:
+          deviceName: "/dev/sda"
+        networkConfig:                             # NMState configuration for networking
+          interfaces:
+            - name: eth0
+              type: ethernet
+              state: up
+              ipv4:
+                address:
+                  - ip: 192.168.111.5                  # Static IP for master node
+                    prefix-length: 24
+                enabled: true
+          dns-resolver:
+            config:
+              server:
+                - 8.8.8.8
+          routes:
+            config:
+              - destination: 0.0.0.0/0
+                next-hop-address: 192.168.111.1
+                next-hop-interface: eth0
+
+      - name: openshift-worker-0
+        role: worker
+        bootMACAddress: "52:54:00:1e:56:ad"        # MAC address for worker node
+        bootMode: UEFI
+        rootDeviceHints:
+          deviceName: "/dev/sda"
+        networkConfig:                             # NMState configuration for networking
+          interfaces:
+            - name: eth0
+              type: ethernet
+              state: up
+              ipv4:
+                address:
+                  - ip: 192.168.111.6                  # Static IP for worker node
+                    prefix-length: 24
+                enabled: true
+          dns-resolver:
+            config:
+              server:
+                - 8.8.8.8
+          routes:
+            config:
+              - destination: 0.0.0.0/0
+                next-hop-address: 192.168.111.1
+                next-hop-interface: eth0
+networking:
+  networkType: OVNKubernetes
+  machineNetwork:
+    - cidr: 192.168.111.0/24
+  serviceNetwork:
+    - 172.30.0.0/16
+  clusterNetwork:
+    - cidr: 10.128.0.0/14
+      hostPrefix: 23
+controlPlane:
+  replicas: 1  # Set the master/control plane replica count to 1
+compute:
+  - name: worker
+    replicas: 1  # Set the worker replica count to 3
+pullSecret: '{"auths":{"cloud.openshift.com":{"auth":"b3BlbnNoaWZ0LXJlbGVhc2UtZGV2K29jbV9hY2Nlc3NfY2ExZmQxNmEwZjc0NGJlZWE1M2VmZTAxODBhYzVmZmI6UjJIMjNZNEM1VVZJU0M4RlFDVjA3WExORVhMMkFYWVRLMjBPUFpUVDM2N1RIWk5VMkhHVFFYOUNITFdEOE5ZRQ==","email":"nathan.mollica@hashicorp.com"},"quay.io":{"auth":"b3BlbnNoaWZ0LXJlbGVhc2UtZGV2K29jbV9hY2Nlc3NfY2ExZmQxNmEwZjc0NGJlZWE1M2VmZTAxODBhYzVmZmI6UjJIMjNZNEM1VVZJU0M4RlFDVjA3WExORVhMMkFYWVRLMjBPUFpUVDM2N1RIWk5VMkhHVFFYOUNITFdEOE5ZRQ==","email":"nathan.mollica@hashicorp.com"},"registry.connect.redhat.com":{"auth":"fHVoYy1wb29sLTQ2MmQyNDcyLTBmYmMtNDA0NS05YzgzLTE0ZGJkMGEwNmMzZTpleUpoYkdjaU9pSlNVelV4TWlKOS5leUp6ZFdJaU9pSTFNek5rT0RGbVl6VXlNV1kwWlRSaU9UazJOekl5WVRJMlptRXdPREptTUNKOS5nWkNUTHp5di1GUjhLd2lqeEpvYm1XTnZpTWVSbTh3d1ZLQ3c2YWhod2hmeFNGWlpYdlQ2UnJmSHQ0ajE0SFo4Rm1sNXFvR2ltWU9tRFpjaDMwcVBwS2xBRTl0aUw5enN3ZE0zaXpQVnFFNUp0QWZ1dHVRNUdsczZwbmFFQzdaOGQzbk9WTXItdlVIZTI4ZGpscW1LU2dQbDhtaDJlOE9mZ1JtNEhGd3R1d0VlVHktR1lzTE54Q2V5YWNTRm1uc05UWVB3RXlPVzYxYUpIWkNjdVpHdl9jbVNoMTdDQngtNzNaRkpVRTUxemhqbnJKSVBveFFEUFhvZlpTQ1dPalRFTjRLc21UcFEzZFM3Zm1BNTRSLUJFQlEyQThJOUZsM3ZUQWppelNOc1V0RVEwbHk2YXotQ093Sl9PSlpsVWFEQmJpMHIyNm03bDlIRWlCWEJ3S0E5Y05MdmRlN2RDdExTcmtzMGx0MGo3d1Y1UWVQWHo0SkV5NnhsTHcyTTlwV0lNQmc3bDBMb3FRVFl3ZWRJSWRFaXpHakJjRjNqVTR6ZUIyWjRoTWlCSmN2T1NHVU1OdlVybm1xMDU5VWFvWFNkNU1sWVBwRE4yaUJ2TEFzdnFYNUt4V29XWU4tT1Yxa3ExbWIwWGhEUnh5Nmc2ek1fODRBbGIxUjVtNUlqX2c5bG9DMjB0M09FY21CR1VnTzdpMnUtUGt3QTVYNl95TTRFX24yblVnZXpRRk5sMVlpeF9uWXRHT3RkdU9Ga2s4S3hCb3F3emMwMGF1M25RYXZqbEZyeDQ1RHY3RnR3eFZMVXJENS13SFUxdDIxNXAwY1VXR1Q5M3VVX01UQVVyVWpPd18wU0RveDk0aW5kQzE2c2t5QnF3bHQxdko1NGY2X1cwVGR2NVQ3NXpSaw==","email":"nathan.mollica@hashicorp.com"},"registry.redhat.io":{"auth":"fHVoYy1wb29sLTQ2MmQyNDcyLTBmYmMtNDA0NS05YzgzLTE0ZGJkMGEwNmMzZTpleUpoYkdjaU9pSlNVelV4TWlKOS5leUp6ZFdJaU9pSTFNek5rT0RGbVl6VXlNV1kwWlRSaU9UazJOekl5WVRJMlptRXdPREptTUNKOS5nWkNUTHp5di1GUjhLd2lqeEpvYm1XTnZpTWVSbTh3d1ZLQ3c2YWhod2hmeFNGWlpYdlQ2UnJmSHQ0ajE0SFo4Rm1sNXFvR2ltWU9tRFpjaDMwcVBwS2xBRTl0aUw5enN3ZE0zaXpQVnFFNUp0QWZ1dHVRNUdsczZwbmFFQzdaOGQzbk9WTXItdlVIZTI4ZGpscW1LU2dQbDhtaDJlOE9mZ1JtNEhGd3R1d0VlVHktR1lzTE54Q2V5YWNTRm1uc05UWVB3RXlPVzYxYUpIWkNjdVpHdl9jbVNoMTdDQngtNzNaRkpVRTUxemhqbnJKSVBveFFEUFhvZlpTQ1dPalRFTjRLc21UcFEzZFM3Zm1BNTRSLUJFQlEyQThJOUZsM3ZUQWppelNOc1V0RVEwbHk2YXotQ093Sl9PSlpsVWFEQmJpMHIyNm03bDlIRWlCWEJ3S0E5Y05MdmRlN2RDdExTcmtzMGx0MGo3d1Y1UWVQWHo0SkV5NnhsTHcyTTlwV0lNQmc3bDBMb3FRVFl3ZWRJSWRFaXpHakJjRjNqVTR6ZUIyWjRoTWlCSmN2T1NHVU1OdlVybm1xMDU5VWFvWFNkNU1sWVBwRE4yaUJ2TEFzdnFYNUt4V29XWU4tT1Yxa3ExbWIwWGhEUnh5Nmc2ek1fODRBbGIxUjVtNUlqX2c5bG9DMjB0M09FY21CR1VnTzdpMnUtUGt3QTVYNl95TTRFX24yblVnZXpRRk5sMVlpeF9uWXRHT3RkdU9Ga2s4S3hCb3F3emMwMGF1M25RYXZqbEZyeDQ1RHY3RnR3eFZMVXJENS13SFUxdDIxNXAwY1VXR1Q5M3VVX01UQVVyVWpPd18wU0RveDk0aW5kQzE2c2t5QnF3bHQxdko1NGY2X1cwVGR2NVQ3NXpSaw==","email":"nathan.mollica@hashicorp.com"}}}'
+sshKey: |
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKHoSM3uib+G651+AHFTQaL0h+tdTO8oh25TwvEXdltq natemollica@natemollica-R47X02WHFD

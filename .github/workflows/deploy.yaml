@@ -1,0 +1,29 @@
+# GitHub Actions workflow for automation
+name: OpenShift IPI Automation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Validate install-config.yaml
+      run: |
+        yamllint config/install-config.yaml
+
+    - name: Run OpenShift installer dry-run
+      run: |
+        ./openshift-install create ignition-configs --dir=config --dry-run
+
+    - name: Validate DNS Configuration
+      run: bash scripts/validate_dns.sh

@@ -1,0 +1,23 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  creationTimestamp: null
+  labels:
+    machineconfiguration.openshift.io/role: worker
+  name: 99-worker-ssh
+spec:
+  baseOSExtensionsContainerImage: ""
+  config:
+    ignition:
+      version: 3.2.0
+    passwd:
+      users:
+      - name: core
+        sshAuthorizedKeys:
+        - |
+          ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKHoSM3uib+G651+AHFTQaL0h+tdTO8oh25TwvEXdltq natemollica@natemollica-R47X02WHFD
+  extensions: null
+  fips: false
+  kernelArguments: null
+  kernelType: ""
+  osImageURL: ""

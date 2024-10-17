@@ -1,0 +1,24 @@
+apiVersion: v1
+baseDomain: local
+compute:
+    name: worker
+    replicas: 0
+    hyperthreading: Disabled
+controlPlane:
+    name: master
+    replicas: {{.NMaster}}
+    hyperthreading: Disabled
+metadata:
+    name: {{.ClusterName}}
+networking:
+    clusterNetwork:
+        - cidr: 10.128.0.0/14
+          hostPrefix: 23
+    networkType: OVNKubernetes
+    serviceNetwork:
+        - 172.30.0.0/16
+platform:
+    ## None is the empty configuration used when installing on an unsupported platform.
+    none: {}
+pullSecret: '{{.PullSecret}}'
+sshKey: '{{.SSHPublicKey}}'

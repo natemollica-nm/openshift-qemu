@@ -1,0 +1,42 @@
+apiVersion: machine.openshift.io/v1beta1
+kind: MachineSet
+metadata:
+  creationTimestamp: null
+  labels:
+    machine.openshift.io/cluster-api-cluster: openshift-lima-cbxdp
+    machine.openshift.io/cluster-api-machine-role: worker
+    machine.openshift.io/cluster-api-machine-type: worker
+  name: openshift-lima-cbxdp-worker-0
+  namespace: openshift-machine-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      machine.openshift.io/cluster-api-cluster: openshift-lima-cbxdp
+      machine.openshift.io/cluster-api-machineset: openshift-lima-cbxdp-worker-0
+  template:
+    metadata:
+      labels:
+        machine.openshift.io/cluster-api-cluster: openshift-lima-cbxdp
+        machine.openshift.io/cluster-api-machine-role: worker
+        machine.openshift.io/cluster-api-machine-type: worker
+        machine.openshift.io/cluster-api-machineset: openshift-lima-cbxdp-worker-0
+    spec:
+      lifecycleHooks: {}
+      metadata: {}
+      providerSpec:
+        value:
+          apiVersion: baremetal.cluster.k8s.io/v1alpha1
+          customDeploy:
+            method: install_coreos
+          hostSelector: {}
+          image:
+            checksum: ""
+            url: ""
+          kind: BareMetalMachineProviderSpec
+          metadata:
+            creationTimestamp: null
+          userData:
+            name: worker-user-data-managed
+status:
+  replicas: 0

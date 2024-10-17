@@ -1,0 +1,54 @@
+apiVersion: metal3.io/v1alpha1
+kind: BareMetalHost
+metadata:
+  creationTimestamp: null
+  labels:
+    installer.openshift.io/role: control-plane
+  name: openshift-master-0
+  namespace: openshift-machine-api
+spec:
+  bmc:
+    address: ""
+    credentialsName: ""
+  bootMACAddress: 52:54:00:1e:56:ac
+  bootMode: UEFI
+  consumerRef:
+    apiVersion: machine.openshift.io/v1beta1
+    kind: Machine
+    name: openshift-lima-cbxdp-master-0
+    namespace: openshift-machine-api
+  customDeploy:
+    method: install_coreos
+  hardwareProfile: unknown
+  online: true
+  preprovisioningNetworkDataName: openshift-master-0-network-config-secret
+  rootDeviceHints:
+    deviceName: /dev/sda
+  userData:
+    name: master-user-data-managed
+status:
+  errorCount: 0
+  errorMessage: ""
+  goodCredentials: {}
+  hardwareProfile: ""
+  operationHistory:
+    deprovision:
+      end: null
+      start: null
+    inspect:
+      end: null
+      start: null
+    provision:
+      end: null
+      start: null
+    register:
+      end: null
+      start: null
+  operationalStatus: ""
+  poweredOn: false
+  provisioning:
+    ID: ""
+    image:
+      url: ""
+    state: ""
+  triedCredentials: {}

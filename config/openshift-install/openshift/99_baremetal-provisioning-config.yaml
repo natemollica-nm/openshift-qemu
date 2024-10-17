@@ -1,0 +1,12 @@
+apiVersion: metal3.io/v1alpha1
+kind: Provisioning
+metadata:
+  name: provisioning-configuration
+spec:
+  provisioningInterface: ""
+  provisioningIP: "172.22.0.3"
+  provisioningNetworkCIDR: "172.22.0.0/24"
+  provisioningNetwork: "Managed"
+  provisioningDHCPRange: "172.22.0.10,172.22.0.254"
+  provisioningOSDownloadURL: ""
+  watchAllNamespaces: false

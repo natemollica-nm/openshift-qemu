@@ -1,0 +1,40 @@
+# Add files and directories to ignore in the repository
+*.ign
+*.log
+terraform.tfstate
+
+# Binaries for programs
+/bin/
+/dist/
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.out
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.lock
+*.pid
+*.sock
+
+# MacOS specific files
+.DS_Store
+
+# Editor and IDE specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Go related
+go.sum
+go.mod
+vendor/
+
+# Libvirt specific
+*.qcow2
+*.img
+virt-install.log

@@ -1,0 +1,45 @@
+apiVersion: metal3.io/v1alpha1
+kind: BareMetalHost
+metadata:
+  annotations:
+    baremetalhost.metal3.io/paused: ""
+  creationTimestamp: null
+  name: openshift-worker-0
+  namespace: openshift-machine-api
+spec:
+  bmc:
+    address: ""
+    credentialsName: ""
+  bootMACAddress: 52:54:00:1e:56:ad
+  bootMode: UEFI
+  hardwareProfile: unknown
+  online: true
+  preprovisioningNetworkDataName: openshift-worker-0-network-config-secret
+  rootDeviceHints:
+    deviceName: /dev/sda
+status:
+  errorCount: 0
+  errorMessage: ""
+  goodCredentials: {}
+  hardwareProfile: ""
+  operationHistory:
+    deprovision:
+      end: null
+      start: null
+    inspect:
+      end: null
+      start: null
+    provision:
+      end: null
+      start: null
+    register:
+      end: null
+      start: null
+  operationalStatus: ""
+  poweredOn: false
+  provisioning:
+    ID: ""
+    image:
+      url: ""
+    state: ""
+  triedCredentials: {}

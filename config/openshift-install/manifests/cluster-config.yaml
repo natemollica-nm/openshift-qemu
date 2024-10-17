@@ -1,0 +1,125 @@
+apiVersion: v1
+data:
+  install-config: |
+    additionalTrustBundlePolicy: Proxyonly
+    apiVersion: v1
+    baseDomain: openshift-local.com
+    compute:
+    - architecture: amd64
+      hyperthreading: Enabled
+      name: worker
+      platform: {}
+      replicas: 1
+    controlPlane:
+      architecture: amd64
+      hyperthreading: Enabled
+      name: master
+      platform: {}
+      replicas: 1
+    metadata:
+      creationTimestamp: null
+      name: openshift-lima
+    networking:
+      clusterNetwork:
+      - cidr: 10.128.0.0/14
+        hostPrefix: 23
+      machineNetwork:
+      - cidr: 192.168.111.0/24
+      networkType: OVNKubernetes
+      serviceNetwork:
+      - 172.30.0.0/16
+    platform:
+      baremetal:
+        apiVIP: 192.168.111.5
+        apiVIPs:
+        - 192.168.111.5
+        bootstrapProvisioningIP: 172.22.0.2
+        clusterProvisioningIP: 172.22.0.3
+        externalBridge: baremetal
+        externalMACAddress: 52:54:00:c6:c3:e7
+        hosts:
+        - bmc:
+            address: ""
+            disableCertificateVerification: false
+            password: ""
+            username: ""
+          bootMACAddress: 52:54:00:1e:56:ac
+          bootMode: UEFI
+          hardwareProfile: unknown
+          name: openshift-master-0
+          networkConfig:
+            dns-resolver:
+              config:
+                server:
+                - 8.8.8.8
+            interfaces:
+            - ipv4:
+                address:
+                - ip: 192.168.111.5
+                  prefix-length: 24
+                enabled: true
+              name: eth0
+              state: up
+              type: ethernet
+            routes:
+              config:
+              - destination: 0.0.0.0/0
+                next-hop-address: 192.168.111.1
+                next-hop-interface: eth0
+          role: master
+          rootDeviceHints:
+            deviceName: /dev/sda
+        - bmc:
+            address: ""
+            disableCertificateVerification: false
+            password: ""
+            username: ""
+          bootMACAddress: 52:54:00:1e:56:ad
+          bootMode: UEFI
+          hardwareProfile: unknown
+          name: openshift-worker-0
+          networkConfig:
+            dns-resolver:
+              config:
+                server:
+                - 8.8.8.8
+            interfaces:
+            - ipv4:
+                address:
+                - ip: 192.168.111.6
+                  prefix-length: 24
+                enabled: true
+              name: eth0
+              state: up
+              type: ethernet
+            routes:
+              config:
+              - destination: 0.0.0.0/0
+                next-hop-address: 192.168.111.1
+                next-hop-interface: eth0
+          role: worker
+          rootDeviceHints:
+            deviceName: /dev/sda
+        ingressVIP: 192.168.111.7
+        ingressVIPs:
+        - 192.168.111.7
+        libvirtURI: qemu:///system
+        provisioningBridge: provisioning
+        provisioningDHCPRange: 172.22.0.10,172.22.0.254
+        provisioningMACAddress: 52:54:00:ea:3b:1d
+        provisioningNetwork: Managed
+        provisioningNetworkCIDR: 172.22.0.0/24
+        provisioningNetworkInterface: ""
+    publish: External
+    pullSecret: ""
+    sshKey: |
+      ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKHoSM3uib+G651+AHFTQaL0h+tdTO8oh25TwvEXdltq natemollica@natemollica-R47X02WHFD
+kind: ConfigMap
+metadata:
+  annotations:
+    kubernetes.io/description: The install-config content used to create the cluster.  The
+      cluster configuration may have evolved since installation, so check cluster
+      configuration resources directly if you are interested in the current cluster
+      state.
+  name: cluster-config-v1
+  namespace: kube-system

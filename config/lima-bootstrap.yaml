@@ -1,0 +1,16 @@
+arch: "aarch64"
+cpus: 4
+memory: "8192MB"
+disk: "40GB"
+images:
+  - location: "./rhcos-4.17.0-aarch64-qemu.aarch64.qcow2"
+networks:
+  - lima: bridged
+    interface: "eth0"
+    macaddress: "52:54:00:1e:56:ad"
+qemu:
+  args:
+    - "-fw_cfg"
+    - "name=opt/com.coreos/config,file=/Users/natemollica/openshift-qemu/ignition/bootstrap.ign"
+ssh:
+  localPort: 60024

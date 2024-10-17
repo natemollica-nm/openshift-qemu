@@ -1,0 +1,37 @@
+apiVersion: config.openshift.io/v1
+kind: Infrastructure
+metadata:
+  creationTimestamp: null
+  name: cluster
+spec:
+  cloudConfig:
+    name: ""
+  platformSpec:
+    baremetal:
+      apiServerInternalIPs:
+      - 192.168.111.5
+      ingressIPs:
+      - 192.168.111.7
+      machineNetworks:
+      - 192.168.111.0/24
+    type: BareMetal
+status:
+  apiServerInternalURI: https://api-int.openshift-lima.openshift-local.com:6443
+  apiServerURL: https://api.openshift-lima.openshift-local.com:6443
+  controlPlaneTopology: SingleReplica
+  cpuPartitioning: None
+  etcdDiscoveryDomain: ""
+  infrastructureName: openshift-lima-cbxdp
+  infrastructureTopology: SingleReplica
+  platform: BareMetal
+  platformStatus:
+    baremetal:
+      apiServerInternalIP: 192.168.111.5
+      apiServerInternalIPs:
+      - 192.168.111.5
+      ingressIP: 192.168.111.7
+      ingressIPs:
+      - 192.168.111.7
+      machineNetworks:
+      - 192.168.111.0/24
+    type: BareMetal

@@ -1,0 +1,69 @@
+global
+  log 127.0.0.1 local2
+  chroot /var/lib/haproxy
+  pidfile /var/run/haproxy.pid
+  maxconn 4000
+  user haproxy
+  group haproxy
+  daemon
+  stats socket /var/lib/haproxy/stats
+
+defaults
+  mode tcp
+  log global
+  option tcplog
+  option dontlognull
+  option redispatch
+  retries 3
+  timeout queue 1m
+  timeout connect 10s
+  timeout client 1m
+  timeout server 1m
+  timeout check 10s
+  maxconn 3000
+
+//  6443 points to control plane
+frontend {{.ClusterName}}-api
+  bind *:6443
+  default_backend master-api
+
+backend master-api
+  balance source
+  server bootstrap bootstrap.{{.ClusterName}}.{{.BaseDomain}}:6443 check
+{{- range .MasterNodes }}
+  server {{.}}:6443 check
+{{- end }}
+
+//  22623 points to control plane
+frontend {{.ClusterName}}-mapi
+  bind *:22623
+  default_backend master-mapi
+
+backend master-mapi
+  balance source
+  server bootstrap bootstrap.{{.ClusterName}}.{{.BaseDomain}}:22623 check
+{{- range .MasterNodes }}
+  server {{.}}:22623 check
+{{- end }}
+
+//  80 points to master nodes
+  frontend {{.ClusterName}}-http
+  bind *:80
+  default_backend ingress-http
+
+backend ingress-http
+  balance source
+  {{- range .MasterNodes }}
+  server {{.}}:80 check
+  {{- end }}
+
+//  443 points to master nodes
+  frontend {{.ClusterName}}-https
+  bind *:443
+  default_backend infra-https
+
+backend infra-https
+  balance source
+{{- range .MasterNodes }}
+  server {{.}}:443 check
+{{- end }}

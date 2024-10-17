@@ -1,0 +1,681 @@
+{
+    "*bootkube.CVOOverrides": {
+        "FileList": [
+            {
+                "Filename": "templates/cvo-overrides.yaml.template",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBDbHVzdGVyVmVyc2lvbgptZXRhZGF0YToKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jbHVzdGVyLXZlcnNpb24KICBuYW1lOiB2ZXJzaW9uCnNwZWM6Cnt7LSBpZiAuSXNGQ09TIH19CiAgdXBzdHJlYW06IGh0dHBzOi8vYW1kNjQub3JpZ2luLnJlbGVhc2VzLmNpLm9wZW5zaGlmdC5vcmcvZ3JhcGgKICBjaGFubmVsOiBzdGFibGUtNAp7ey0gZWxzZSBpZiAuSXNTQ09TIH19CiAgdXBzdHJlYW06IGh0dHBzOi8vYW1kNjQub3JpZ2luLnJlbGVhc2VzLmNpLm9wZW5zaGlmdC5vcmcvZ3JhcGgKICBjaGFubmVsOiBzdGFibGUtc2Nvcy00Cnt7LSBlbHNlIH19CiAgY2hhbm5lbDogc3RhYmxlLTQuMTcKe3stIGVuZCB9fQogIGNsdXN0ZXJJRDoge3suQ1ZPQ2x1c3RlcklEfX0Ke3stIGlmIC5DVk9DYXBhYmlsaXRpZXMgfX0KICBjYXBhYmlsaXRpZXM6CiAgICBiYXNlbGluZUNhcGFiaWxpdHlTZXQ6IHt7LkNWT0NhcGFiaWxpdGllcy5CYXNlbGluZUNhcGFiaWxpdHlTZXR9fQogICAge3stIGlmIC5DVk9DYXBhYmlsaXRpZXMuQWRkaXRpb25hbEVuYWJsZWRDYXBhYmlsaXRpZXN9fQogICAgYWRkaXRpb25hbEVuYWJsZWRDYXBhYmlsaXRpZXM6IHt7cmFuZ2UgLkNWT0NhcGFiaWxpdGllcy5BZGRpdGlvbmFsRW5hYmxlZENhcGFiaWxpdGllc319CiAgICAtIHt7Ln19CiAgICB7ey0gZW5kfX0KICAgIHt7LSBlbmR9fQp7ey0gZW5kIH19Cg=="
+            }
+        ]
+    },
+    "*bootkube.KubeCloudConfig": {
+        "FileList": [
+            {
+                "Filename": "templates/kube-cloud-config.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IGt1YmUtY2xvdWQtY2ZnCiAgbmFtZXNwYWNlOiBrdWJlLXN5c3RlbQp0eXBlOiBPcGFxdWUKZGF0YToKICBjb25maWc6ICIiCg=="
+            }
+        ]
+    },
+    "*bootkube.KubeSystemConfigmapRootCA": {
+        "FileList": [
+            {
+                "Filename": "templates/kube-system-configmap-root-ca.yaml.template",
+                "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogQ29uZmlnTWFwCm1ldGFkYXRhOgogIG5hbWU6IHJvb3QtY2EKICBuYW1lc3BhY2U6IGt1YmUtc3lzdGVtCmRhdGE6CiAgY2EuY3J0OiB8CiAgICB7ey5Sb290Q2FDZXJ0IHwgaW5kZW50IDR9fQo="
+            }
+        ]
+    },
+    "*bootkube.MachineConfigServerTLSSecret": {
+        "FileList": [
+            {
+                "Filename": "templates/machine-config-server-tls-secret.yaml.template",
+                "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG1hY2hpbmUtY29uZmlnLXNlcnZlci10bHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1tYWNoaW5lLWNvbmZpZy1vcGVyYXRvcgogIGFubm90YXRpb25zOgogICAgb3BlbnNoaWZ0LmlvL293bmluZy1jb21wb25lbnQ6ICJNYWNoaW5lIENvbmZpZyBPcGVyYXRvciIKdHlwZTogT3BhcXVlCmRhdGE6CiAgdGxzLmNydDoge3suTWNzVExTQ2VydH19CiAgdGxzLmtleToge3suTWNzVExTS2V5fX0K"
+            }
+        ]
+    },
+    "*bootkube.OpenshiftConfigSecretPullSecret": {
+        "FileList": [
+            {
+                "Filename": "templates/openshift-config-secret-pull-secret.yaml.template",
+                "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0CnR5cGU6IGt1YmVybmV0ZXMuaW8vZG9ja2VyY29uZmlnanNvbgptZXRhZGF0YToKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jb25maWcKICBuYW1lOiBwdWxsLXNlY3JldApkYXRhOgogIC5kb2NrZXJjb25maWdqc29uOiB7ey5QdWxsU2VjcmV0QmFzZTY0fX0K"
+            }
+        ]
+    },
+    "*clusterapi.Cluster": {
+        "FileList": null
+    },
+    "*installconfig.ClusterID": {
+        "UUID": "7d809b96-fbb1-4976-957c-5d33f96adee3",
+        "InfraID": "openshift-lima-cbxdp"
+    },
+    "*installconfig.InstallConfig": {
+        "config": {
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "openshift-lima",
+                "creationTimestamp": null
+            },
+            "additionalTrustBundlePolicy": "Proxyonly",
+            "sshKey": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKHoSM3uib+G651+AHFTQaL0h+tdTO8oh25TwvEXdltq natemollica@natemollica-R47X02WHFD\n",
+            "baseDomain": "openshift-local.com",
+            "networking": {
+                "networkType": "OVNKubernetes",
+                "machineNetwork": [
+                    {
+                        "cidr": "192.168.111.0/24"
+                    }
+                ],
+                "clusterNetwork": [
+                    {
+                        "cidr": "10.128.0.0/14",
+                        "hostPrefix": 23
+                    }
+                ],
+                "serviceNetwork": [
+                    "172.30.0.0/16"
+                ]
+            },
+            "controlPlane": {
+                "name": "master",
+                "replicas": 1,
+                "platform": {},
+                "hyperthreading": "Enabled",
+                "architecture": "amd64"
+            },
+            "compute": [
+                {
+                    "name": "worker",
+                    "replicas": 1,
+                    "platform": {},
+                    "hyperthreading": "Enabled",
+                    "architecture": "amd64"
+                }
+            ],
+            "platform": {
+                "baremetal": {
+                    "libvirtURI": "qemu:///system",
+                    "clusterProvisioningIP": "172.22.0.3",
+                    "bootstrapProvisioningIP": "172.22.0.2",
+                    "externalBridge": "baremetal",
+                    "externalMACAddress": "52:54:00:c6:c3:e7",
+                    "provisioningNetwork": "Managed",
+                    "provisioningBridge": "provisioning",
+                    "provisioningMACAddress": "52:54:00:ea:3b:1d",
+                    "provisioningNetworkInterface": "",
+                    "provisioningNetworkCIDR": "172.22.0.0/24",
+                    "provisioningDHCPRange": "172.22.0.10,172.22.0.254",
+                    "hosts": [
+                        {
+                            "name": "openshift-master-0",
+                            "bmc": {
+                                "username": "",
+                                "password": "",
+                                "address": "",
+                                "disableCertificateVerification": false
+                            },
+                            "role": "master",
+                            "bootMACAddress": "52:54:00:1e:56:ac",
+                            "hardwareProfile": "unknown",
+                            "rootDeviceHints": {
+                                "deviceName": "/dev/sda"
+                            },
+                            "bootMode": "UEFI",
+                            "networkConfig": {
+                                "dns-resolver": {
+                                    "config": {
+                                        "server": [
+                                            "8.8.8.8"
+                                        ]
+                                    }
+                                },
+                                "interfaces": [
+                                    {
+                                        "ipv4": {
+                                            "address": [
+                                                {
+                                                    "ip": "192.168.111.5",
+                                                    "prefix-length": 24
+                                                }
+                                            ],
+                                            "enabled": true
+                                        },
+                                        "name": "eth0",
+                                        "state": "up",
+                                        "type": "ethernet"
+                                    }
+                                ],
+                                "routes": {
+                                    "config": [
+                                        {
+                                            "destination": "0.0.0.0/0",
+                                            "next-hop-address": "192.168.111.1",
+                                            "next-hop-interface": "eth0"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "openshift-worker-0",
+                            "bmc": {
+                                "username": "",
+                                "password": "",
+                                "address": "",
+                                "disableCertificateVerification": false
+                            },
+                            "role": "worker",
+                            "bootMACAddress": "52:54:00:1e:56:ad",
+                            "hardwareProfile": "unknown",
+                            "rootDeviceHints": {
+                                "deviceName": "/dev/sda"
+                            },
+                            "bootMode": "UEFI",
+                            "networkConfig": {
+                                "dns-resolver": {
+                                    "config": {
+                                        "server": [
+                                            "8.8.8.8"
+                                        ]
+                                    }
+                                },
+                                "interfaces": [
+                                    {
+                                        "ipv4": {
+                                            "address": [
+                                                {
+                                                    "ip": "192.168.111.6",
+                                                    "prefix-length": 24
+                                                }
+                                            ],
+                                            "enabled": true
+                                        },
+                                        "name": "eth0",
+                                        "state": "up",
+                                        "type": "ethernet"
+                                    }
+                                ],
+                                "routes": {
+                                    "config": [
+                                        {
+                                            "destination": "0.0.0.0/0",
+                                            "next-hop-address": "192.168.111.1",
+                                            "next-hop-interface": "eth0"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "apiVIP": "192.168.111.5",
+                    "apiVIPs": [
+                        "192.168.111.5"
+                    ],
+                    "ingressVIP": "192.168.111.7",
+                    "ingressVIPs": [
+                        "192.168.111.7"
+                    ]
+                }
+            },
+            "pullSecret": "{\"auths\":{\"cloud.openshift.com\":{\"auth\":\"b3BlbnNoaWZ0LXJlbGVhc2UtZGV2K29jbV9hY2Nlc3NfY2ExZmQxNmEwZjc0NGJlZWE1M2VmZTAxODBhYzVmZmI6UjJIMjNZNEM1VVZJU0M4RlFDVjA3WExORVhMMkFYWVRLMjBPUFpUVDM2N1RIWk5VMkhHVFFYOUNITFdEOE5ZRQ==\",\"email\":\"nathan.mollica@hashicorp.com\"},\"quay.io\":{\"auth\":\"b3BlbnNoaWZ0LXJlbGVhc2UtZGV2K29jbV9hY2Nlc3NfY2ExZmQxNmEwZjc0NGJlZWE1M2VmZTAxODBhYzVmZmI6UjJIMjNZNEM1VVZJU0M4RlFDVjA3WExORVhMMkFYWVRLMjBPUFpUVDM2N1RIWk5VMkhHVFFYOUNITFdEOE5ZRQ==\",\"email\":\"nathan.mollica@hashicorp.com\"},\"registry.connect.redhat.com\":{\"auth\":\"fHVoYy1wb29sLTQ2MmQyNDcyLTBmYmMtNDA0NS05YzgzLTE0ZGJkMGEwNmMzZTpleUpoYkdjaU9pSlNVelV4TWlKOS5leUp6ZFdJaU9pSTFNek5rT0RGbVl6VXlNV1kwWlRSaU9UazJOekl5WVRJMlptRXdPREptTUNKOS5nWkNUTHp5di1GUjhLd2lqeEpvYm1XTnZpTWVSbTh3d1ZLQ3c2YWhod2hmeFNGWlpYdlQ2UnJmSHQ0ajE0SFo4Rm1sNXFvR2ltWU9tRFpjaDMwcVBwS2xBRTl0aUw5enN3ZE0zaXpQVnFFNUp0QWZ1dHVRNUdsczZwbmFFQzdaOGQzbk9WTXItdlVIZTI4ZGpscW1LU2dQbDhtaDJlOE9mZ1JtNEhGd3R1d0VlVHktR1lzTE54Q2V5YWNTRm1uc05UWVB3RXlPVzYxYUpIWkNjdVpHdl9jbVNoMTdDQngtNzNaRkpVRTUxemhqbnJKSVBveFFEUFhvZlpTQ1dPalRFTjRLc21UcFEzZFM3Zm1BNTRSLUJFQlEyQThJOUZsM3ZUQWppelNOc1V0RVEwbHk2YXotQ093Sl9PSlpsVWFEQmJpMHIyNm03bDlIRWlCWEJ3S0E5Y05MdmRlN2RDdExTcmtzMGx0MGo3d1Y1UWVQWHo0SkV5NnhsTHcyTTlwV0lNQmc3bDBMb3FRVFl3ZWRJSWRFaXpHakJjRjNqVTR6ZUIyWjRoTWlCSmN2T1NHVU1OdlVybm1xMDU5VWFvWFNkNU1sWVBwRE4yaUJ2TEFzdnFYNUt4V29XWU4tT1Yxa3ExbWIwWGhEUnh5Nmc2ek1fODRBbGIxUjVtNUlqX2c5bG9DMjB0M09FY21CR1VnTzdpMnUtUGt3QTVYNl95TTRFX24yblVnZXpRRk5sMVlpeF9uWXRHT3RkdU9Ga2s4S3hCb3F3emMwMGF1M25RYXZqbEZyeDQ1RHY3RnR3eFZMVXJENS13SFUxdDIxNXAwY1VXR1Q5M3VVX01UQVVyVWpPd18wU0RveDk0aW5kQzE2c2t5QnF3bHQxdko1NGY2X1cwVGR2NVQ3NXpSaw==\",\"email\":\"nathan.mollica@hashicorp.com\"},\"registry.redhat.io\":{\"auth\":\"fHVoYy1wb29sLTQ2MmQyNDcyLTBmYmMtNDA0NS05YzgzLTE0ZGJkMGEwNmMzZTpleUpoYkdjaU9pSlNVelV4TWlKOS5leUp6ZFdJaU9pSTFNek5rT0RGbVl6VXlNV1kwWlRSaU9UazJOekl5WVRJMlptRXdPREptTUNKOS5nWkNUTHp5di1GUjhLd2lqeEpvYm1XTnZpTWVSbTh3d1ZLQ3c2YWhod2hmeFNGWlpYdlQ2UnJmSHQ0ajE0SFo4Rm1sNXFvR2ltWU9tRFpjaDMwcVBwS2xBRTl0aUw5enN3ZE0zaXpQVnFFNUp0QWZ1dHVRNUdsczZwbmFFQzdaOGQzbk9WTXItdlVIZTI4ZGpscW1LU2dQbDhtaDJlOE9mZ1JtNEhGd3R1d0VlVHktR1lzTE54Q2V5YWNTRm1uc05UWVB3RXlPVzYxYUpIWkNjdVpHdl9jbVNoMTdDQngtNzNaRkpVRTUxemhqbnJKSVBveFFEUFhvZlpTQ1dPalRFTjRLc21UcFEzZFM3Zm1BNTRSLUJFQlEyQThJOUZsM3ZUQWppelNOc1V0RVEwbHk2YXotQ093Sl9PSlpsVWFEQmJpMHIyNm03bDlIRWlCWEJ3S0E5Y05MdmRlN2RDdExTcmtzMGx0MGo3d1Y1UWVQWHo0SkV5NnhsTHcyTTlwV0lNQmc3bDBMb3FRVFl3ZWRJSWRFaXpHakJjRjNqVTR6ZUIyWjRoTWlCSmN2T1NHVU1OdlVybm1xMDU5VWFvWFNkNU1sWVBwRE4yaUJ2TEFzdnFYNUt4V29XWU4tT1Yxa3ExbWIwWGhEUnh5Nmc2ek1fODRBbGIxUjVtNUlqX2c5bG9DMjB0M09FY21CR1VnTzdpMnUtUGt3QTVYNl95TTRFX24yblVnZXpRRk5sMVlpeF9uWXRHT3RkdU9Ga2s4S3hCb3F3emMwMGF1M25RYXZqbEZyeDQ1RHY3RnR3eFZMVXJENS13SFUxdDIxNXAwY1VXR1Q5M3VVX01UQVVyVWpPd18wU0RveDk0aW5kQzE2c2t5QnF3bHQxdko1NGY2X1cwVGR2NVQ3NXpSaw==\",\"email\":\"nathan.mollica@hashicorp.com\"}}}",
+            "publish": "External"
+        },
+        "file": {
+            "Filename": "install-config.yaml",
+            "Data": "YWRkaXRpb25hbFRydXN0QnVuZGxlUG9saWN5OiBQcm94eW9ubHkKYXBpVmVyc2lvbjogdjEKYmFzZURvbWFpbjogb3BlbnNoaWZ0LWxvY2FsLmNvbQpjb21wdXRlOgotIGFyY2hpdGVjdHVyZTogYW1kNjQKICBoeXBlcnRocmVhZGluZzogRW5hYmxlZAogIG5hbWU6IHdvcmtlcgogIHBsYXRmb3JtOiB7fQogIHJlcGxpY2FzOiAxCmNvbnRyb2xQbGFuZToKICBhcmNoaXRlY3R1cmU6IGFtZDY0CiAgaHlwZXJ0aHJlYWRpbmc6IEVuYWJsZWQKICBuYW1lOiBtYXN0ZXIKICBwbGF0Zm9ybToge30KICByZXBsaWNhczogMQptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6IG9wZW5zaGlmdC1saW1hCm5ldHdvcmtpbmc6CiAgY2x1c3Rlck5ldHdvcms6CiAgLSBjaWRyOiAxMC4xMjguMC4wLzE0CiAgICBob3N0UHJlZml4OiAyMwogIG1hY2hpbmVOZXR3b3JrOgogIC0gY2lkcjogMTkyLjE2OC4xMTEuMC8yNAogIG5ldHdvcmtUeXBlOiBPVk5LdWJlcm5ldGVzCiAgc2VydmljZU5ldHdvcms6CiAgLSAxNzIuMzAuMC4wLzE2CnBsYXRmb3JtOgogIGJhcmVtZXRhbDoKICAgIGFwaVZJUDogMTkyLjE2OC4xMTEuNQogICAgYXBpVklQczoKICAgIC0gMTkyLjE2OC4xMTEuNQogICAgYm9vdHN0cmFwUHJvdmlzaW9uaW5nSVA6IDE3Mi4yMi4wLjIKICAgIGNsdXN0ZXJQcm92aXNpb25pbmdJUDogMTcyLjIyLjAuMwogICAgZXh0ZXJuYWxCcmlkZ2U6IGJhcmVtZXRhbAogICAgZXh0ZXJuYWxNQUNBZGRyZXNzOiA1Mjo1NDowMDpjNjpjMzplNwogICAgaG9zdHM6CiAgICAtIGJtYzoKICAgICAgICBhZGRyZXNzOiAiIgogICAgICAgIGRpc2FibGVDZXJ0aWZpY2F0ZVZlcmlmaWNhdGlvbjogZmFsc2UKICAgICAgICBwYXNzd29yZDogIiIKICAgICAgICB1c2VybmFtZTogIiIKICAgICAgYm9vdE1BQ0FkZHJlc3M6IDUyOjU0OjAwOjFlOjU2OmFjCiAgICAgIGJvb3RNb2RlOiBVRUZJCiAgICAgIGhhcmR3YXJlUHJvZmlsZTogZGVmYXVsdAogICAgICBuYW1lOiBvcGVuc2hpZnQtbWFzdGVyLTAKICAgICAgbmV0d29ya0NvbmZpZzoKICAgICAgICBkbnMtcmVzb2x2ZXI6CiAgICAgICAgICBjb25maWc6CiAgICAgICAgICAgIHNlcnZlcjoKICAgICAgICAgICAgLSA4LjguOC44CiAgICAgICAgaW50ZXJmYWNlczoKICAgICAgICAtIGlwdjQ6CiAgICAgICAgICAgIGFkZHJlc3M6CiAgICAgICAgICAgIC0gaXA6IDE5Mi4xNjguMTExLjUKICAgICAgICAgICAgICBwcmVmaXgtbGVuZ3RoOiAyNAogICAgICAgICAgICBlbmFibGVkOiB0cnVlCiAgICAgICAgICBuYW1lOiBldGgwCiAgICAgICAgICBzdGF0ZTogdXAKICAgICAgICAgIHR5cGU6IGV0aGVybmV0CiAgICAgICAgcm91dGVzOgogICAgICAgICAgY29uZmlnOgogICAgICAgICAgLSBkZXN0aW5hdGlvbjogMC4wLjAuMC8wCiAgICAgICAgICAgIG5leHQtaG9wLWFkZHJlc3M6IDE5Mi4xNjguMTExLjEKICAgICAgICAgICAgbmV4dC1ob3AtaW50ZXJmYWNlOiBldGgwCiAgICAgIHJvbGU6IG1hc3RlcgogICAgICByb290RGV2aWNlSGludHM6CiAgICAgICAgZGV2aWNlTmFtZTogL2Rldi9zZGEKICAgIC0gYm1jOgogICAgICAgIGFkZHJlc3M6ICIiCiAgICAgICAgZGlzYWJsZUNlcnRpZmljYXRlVmVyaWZpY2F0aW9uOiBmYWxzZQogICAgICAgIHBhc3N3b3JkOiAiIgogICAgICAgIHVzZXJuYW1lOiAiIgogICAgICBib290TUFDQWRkcmVzczogNTI6NTQ6MDA6MWU6NTY6YWQKICAgICAgYm9vdE1vZGU6IFVFRkkKICAgICAgaGFyZHdhcmVQcm9maWxlOiBkZWZhdWx0CiAgICAgIG5hbWU6IG9wZW5zaGlmdC13b3JrZXItMAogICAgICBuZXR3b3JrQ29uZmlnOgogICAgICAgIGRucy1yZXNvbHZlcjoKICAgICAgICAgIGNvbmZpZzoKICAgICAgICAgICAgc2VydmVyOgogICAgICAgICAgICAtIDguOC44LjgKICAgICAgICBpbnRlcmZhY2VzOgogICAgICAgIC0gaXB2NDoKICAgICAgICAgICAgYWRkcmVzczoKICAgICAgICAgICAgLSBpcDogMTkyLjE2OC4xMTEuNgogICAgICAgICAgICAgIHByZWZpeC1sZW5ndGg6IDI0CiAgICAgICAgICAgIGVuYWJsZWQ6IHRydWUKICAgICAgICAgIG5hbWU6IGV0aDAKICAgICAgICAgIHN0YXRlOiB1cAogICAgICAgICAgdHlwZTogZXRoZXJuZXQKICAgICAgICByb3V0ZXM6CiAgICAgICAgICBjb25maWc6CiAgICAgICAgICAtIGRlc3RpbmF0aW9uOiAwLjAuMC4wLzAKICAgICAgICAgICAgbmV4dC1ob3AtYWRkcmVzczogMTkyLjE2OC4xMTEuMQogICAgICAgICAgICBuZXh0LWhvcC1pbnRlcmZhY2U6IGV0aDAKICAgICAgcm9sZTogd29ya2VyCiAgICAgIHJvb3REZXZpY2VIaW50czoKICAgICAgICBkZXZpY2VOYW1lOiAvZGV2L3NkYQogICAgaW5ncmVzc1ZJUDogMTkyLjE2OC4xMTEuNwogICAgaW5ncmVzc1ZJUHM6CiAgICAtIDE5Mi4xNjguMTExLjcKICAgIGxpYnZpcnRVUkk6IHFlbXU6Ly8vc3lzdGVtCiAgICBwcm92aXNpb25pbmdCcmlkZ2U6IHByb3Zpc2lvbmluZwogICAgcHJvdmlzaW9uaW5nREhDUFJhbmdlOiAxNzIuMjIuMC4xMCwxNzIuMjIuMC4yNTQKICAgIHByb3Zpc2lvbmluZ01BQ0FkZHJlc3M6IDUyOjU0OjAwOmVhOjNiOjFkCiAgICBwcm92aXNpb25pbmdOZXR3b3JrOiBNYW5hZ2VkCiAgICBwcm92aXNpb25pbmdOZXR3b3JrQ0lEUjogMTcyLjIyLjAuMC8yNAogICAgcHJvdmlzaW9uaW5nTmV0d29ya0ludGVyZmFjZTogIiIKcHVibGlzaDogRXh0ZXJuYWwKcHVsbFNlY3JldDogJ3siYXV0aHMiOnsiY2xvdWQub3BlbnNoaWZ0LmNvbSI6eyJhdXRoIjoiYjNCbGJuTm9hV1owTFhKbGJHVmhjMlV0WkdWMksyOWpiVjloWTJObGMzTmZZMkV4Wm1ReE5tRXdaamMwTkdKbFpXRTFNMlZtWlRBeE9EQmhZelZtWm1JNlVqSklNak5aTkVNMVZWWkpVME00UmxGRFZqQTNXRXhPUlZoTU1rRllXVlJMTWpCUFVGcFVWRE0yTjFSSVdrNVZNa2hIVkZGWU9VTklURmRFT0U1WlJRPT0iLCJlbWFpbCI6Im5hdGhhbi5tb2xsaWNhQGhhc2hpY29ycC5jb20ifSwicXVheS5pbyI6eyJhdXRoIjoiYjNCbGJuTm9hV1owTFhKbGJHVmhjMlV0WkdWMksyOWpiVjloWTJObGMzTmZZMkV4Wm1ReE5tRXdaamMwTkdKbFpXRTFNMlZtWlRBeE9EQmhZelZtWm1JNlVqSklNak5aTkVNMVZWWkpVME00UmxGRFZqQTNXRXhPUlZoTU1rRllXVlJMTWpCUFVGcFVWRE0yTjFSSVdrNVZNa2hIVkZGWU9VTklURmRFT0U1WlJRPT0iLCJlbWFpbCI6Im5hdGhhbi5tb2xsaWNhQGhhc2hpY29ycC5jb20ifSwicmVnaXN0cnkuY29ubmVjdC5yZWRoYXQuY29tIjp7ImF1dGgiOiJmSFZvWXkxd2IyOXNMVFEyTW1ReU5EY3lMVEJtWW1NdE5EQTBOUzA1WXpnekxURTBaR0prTUdFd05tTXpaVHBsZVVwb1lrZGphVTlwU2xOVmVsVjRUV2xLT1M1bGVVcDZaRmRKYVU5cFNURk5lazVyVDBSR2JWbDZWWGxOVjFrd1dsUlNhVTlVYXpKT2VrbDVXVlJKTWxwdFJYZFBSRXB0VFVOS09TNW5Xa05VVEhwNWRpMUdVamhMZDJscWVFcHZZbTFYVG5acFRXVlNiVGgzZDFaTFEzYzJZV2hvZDJobWVGTkdXbHBZZGxRMlVuSm1TSFEwYWpFMFNGbzRSbTFzTlhGdlIybHRXVTl0UkZwamFETXdjVkJ3UzJ4QlJUbDBhVXc1ZW5OM1pFMHphWHBRVm5GRk5VcDBRV1oxZEhWUk5VZHNjelp3Ym1GRlF6ZGFPR1F6Yms5V1RYSXRkbFZJWlRJNFpHcHNjVzFMVTJkUWJEaHRhREpsT0U5bVoxSnRORWhHZDNSMWQwVmxWSGt0UjFselRFNTRRMlY1WVdOVFJtMXVjMDVVV1ZCM1JYbFBWell4WVVwSVdrTmpkVnBIZGw5amJWTm9NVGREUW5ndE56TmFSa3BWUlRVeGVtaHFibkpLU1ZCdmVGRkVVRmh2WmxwVFExZFBhbFJGVGpSTGMyMVVjRkV6WkZNM1ptMUJOVFJTTFVKRlFsRXlRVGhKT1Vac00zWlVRV3BwZWxOT2MxVjBSVkV3YkhrMllYb3RRMDkzU2w5UFNscHNWV0ZFUW1KcE1ISXlObTAzYkRsSVJXbENXRUozUzBFNVkwNU1kbVJsTjJSRGRFeFRjbXR6TUd4ME1HbzNkMVkxVVdWUVdIbzBTa1Y1Tm5oc1RIY3lUVGx3VjBsTlFtYzNiREJNYjNGUlZGbDNaV1JKU1dSRmFYcEhha0pqUmpOcVZUUjZaVUl5V2pSb1RXbENTbU4yVDFOSFZVMU9kbFZ5Ym0xeE1EVTVWV0Z2V0ZOa05VMXNXVkJ3UkU0eWFVSjJURUZ6ZG5GWU5VdDRWMjlYV1U0dFQxWXhhM0V4YldJd1dHaEVVbmg1Tm1jMmVrMWZPRFJCYkdJeFVqVnROVWxxWDJjNWJHOURNakIwTTA5RlkyMUNSMVZuVHpkcE1uVXRVR3QzUVRWWU5sOTVUVFJGWDI0eWJsVm5aWHBSUms1c01WbHBlRjl1V1hSSFQzUmtkVTlHYTJzNFMzaENiM0YzZW1Nd01HRjFNMjVSWVhacWJFWnllRFExUkhZM1JuUjNlRlpNVlhKRU5TMTNTRlV4ZERJeE5YQXdZMVZYUjFRNU0zVlZYMDFVUVZWeVZXcFBkMTh3VTBSdmVEazBhVzVrUXpFMmMydDVRbkYzYkhReGRrbzFOR1kyWDFjd1ZHUjJOVlEzTlhwU2F3PT0iLCJlbWFpbCI6Im5hdGhhbi5tb2xsaWNhQGhhc2hpY29ycC5jb20ifSwicmVnaXN0cnkucmVkaGF0LmlvIjp7ImF1dGgiOiJmSFZvWXkxd2IyOXNMVFEyTW1ReU5EY3lMVEJtWW1NdE5EQTBOUzA1WXpnekxURTBaR0prTUdFd05tTXpaVHBsZVVwb1lrZGphVTlwU2xOVmVsVjRUV2xLT1M1bGVVcDZaRmRKYVU5cFNURk5lazVyVDBSR2JWbDZWWGxOVjFrd1dsUlNhVTlVYXpKT2VrbDVXVlJKTWxwdFJYZFBSRXB0VFVOS09TNW5Xa05VVEhwNWRpMUdVamhMZDJscWVFcHZZbTFYVG5acFRXVlNiVGgzZDFaTFEzYzJZV2hvZDJobWVGTkdXbHBZZGxRMlVuSm1TSFEwYWpFMFNGbzRSbTFzTlhGdlIybHRXVTl0UkZwamFETXdjVkJ3UzJ4QlJUbDBhVXc1ZW5OM1pFMHphWHBRVm5GRk5VcDBRV1oxZEhWUk5VZHNjelp3Ym1GRlF6ZGFPR1F6Yms5V1RYSXRkbFZJWlRJNFpHcHNjVzFMVTJkUWJEaHRhREpsT0U5bVoxSnRORWhHZDNSMWQwVmxWSGt0UjFselRFNTRRMlY1WVdOVFJtMXVjMDVVV1ZCM1JYbFBWell4WVVwSVdrTmpkVnBIZGw5amJWTm9NVGREUW5ndE56TmFSa3BWUlRVeGVtaHFibkpLU1ZCdmVGRkVVRmh2WmxwVFExZFBhbFJGVGpSTGMyMVVjRkV6WkZNM1ptMUJOVFJTTFVKRlFsRXlRVGhKT1Vac00zWlVRV3BwZWxOT2MxVjBSVkV3YkhrMllYb3RRMDkzU2w5UFNscHNWV0ZFUW1KcE1ISXlObTAzYkRsSVJXbENXRUozUzBFNVkwNU1kbVJsTjJSRGRFeFRjbXR6TUd4ME1HbzNkMVkxVVdWUVdIbzBTa1Y1Tm5oc1RIY3lUVGx3VjBsTlFtYzNiREJNYjNGUlZGbDNaV1JKU1dSRmFYcEhha0pqUmpOcVZUUjZaVUl5V2pSb1RXbENTbU4yVDFOSFZVMU9kbFZ5Ym0xeE1EVTVWV0Z2V0ZOa05VMXNXVkJ3UkU0eWFVSjJURUZ6ZG5GWU5VdDRWMjlYV1U0dFQxWXhhM0V4YldJd1dHaEVVbmg1Tm1jMmVrMWZPRFJCYkdJeFVqVnROVWxxWDJjNWJHOURNakIwTTA5RlkyMUNSMVZuVHpkcE1uVXRVR3QzUVRWWU5sOTVUVFJGWDI0eWJsVm5aWHBSUms1c01WbHBlRjl1V1hSSFQzUmtkVTlHYTJzNFMzaENiM0YzZW1Nd01HRjFNMjVSWVhacWJFWnllRFExUkhZM1JuUjNlRlpNVlhKRU5TMTNTRlV4ZERJeE5YQXdZMVZYUjFRNU0zVlZYMDFVUVZWeVZXcFBkMTh3VTBSdmVEazBhVzVrUXpFMmMydDVRbkYzYkhReGRrbzFOR1kyWDFjd1ZHUjJOVlEzTlhwU2F3PT0iLCJlbWFpbCI6Im5hdGhhbi5tb2xsaWNhQGhhc2hpY29ycC5jb20ifX19Jwpzc2hLZXk6IHwKICBzc2gtZWQyNTUxOSBBQUFBQzNOemFDMWxaREkxTlRFNUFBQUFJS0hvU00zdWliK0c2NTErQUhGVFFhTDBoK3RkVE84b2gyNVR3dkVYZGx0cSBuYXRlbW9sbGljYUBuYXRlbW9sbGljYS1SNDdYMDJXSEZECg=="
+        }
+    },
+    "*installconfig.PlatformCredsCheck": {},
+    "*machine.Master": {
+        "Config": {
+            "ignition": {
+                "config": {
+                    "merge": [
+                        {
+                            "source": "https://192.168.111.5:22623/config/master",
+                            "verification": {}
+                        }
+                    ],
+                    "replace": {
+                        "verification": {}
+                    }
+                },
+                "proxy": {},
+                "security": {
+                    "tls": {
+                        "certificateAuthorities": [
+                            {
+                                "source": "data:text/plain;charset=utf-8;base64,LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFRENDQWZpZ0F3SUJBZ0lJT2xwZ1BjRVRiZWN3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHliMjkwTFdOaE1CNFhEVEkwTVRBeE1qSXhNek14TmxvWApEVE0wTVRBeE1ESXhNek14Tmxvd0pqRVNNQkFHQTFVRUN4TUpiM0JsYm5Ob2FXWjBNUkF3RGdZRFZRUURFd2R5CmIyOTBMV05oTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE4QUZXWUU0N2xzcXEKNXp0VWhMMmM0Rm1JMURjamJTTXJZSWljNkdaeldReTVURFVlbHE2WituT2doelgrWFhST21zVkVYbGZqdzFWTwp1UktTaXRma2lVWEZHNVlrajFPVlhYNXdpWXFvWmVyYXFjV0hZUnphQ0RvTFRXVEszNUlTcWVxRERCWlRrVVRUCnFNbXVkTGx2c1N4TFE4bkk1VTR3TWpDclVkS1pKRTZYbzByRDJkMDFiV1Q5M0lKQU5DaXArNEhFNlE0K0VyeVEKK0pJelI1dHpRTWU4Qit3U0dYYTlSazZ6MjZreFhxNlFHYTcxU2hpTjdqZUR1aXdUVHRXalN5aUVtNUtNUFBIRQplUlA2WTV0bS9NSGVIVEUyanhpbGp3eERjL3hMWjYvNzRqb0tPWGNRZ2NSN3FPOTczZm5Yek5XdmorYWozNjk3CnA4ckhPcmt4cHdJREFRQUJvMEl3UURBT0JnTlZIUThCQWY4RUJBTUNBcVF3RHdZRFZSMFRBUUgvQkFVd0F3RUIKL3pBZEJnTlZIUTRFRmdRVVJzMm4yV2JPdGtrNXZIZU9UMjc5NDFFcDNhY3dEUVlKS29aSWh2Y05BUUVMQlFBRApnZ0VCQU9TcnpyMUxma2RFc3JHQlh3Q0M5WVMwTnlrRW83Mmx4ck1FT2FnSHBsRUJid3NFL3NDTWZmQXgxRVFGCnRxQ1JscWVqQjlrMVdIY3ZmWlpaYzNJOUJuZG5mVXJrM3RGdzVDZDk0cWt4cU44MExWaEUranZXNnFJRm04Q0IKSnUxZzM4RHdsMVRNSXlCOVpENzFOTWZVbXplK0YvMEliSkd1VEVMVnNKclNiUEpMUEpoOUJzajNyRnFTNVpLMQo5OWZZa0hHOFc3dGgyV3lyS0F2MDl4TC9Obi9JajlscjZmSjVVdkZZQzhlS1RkU0g0OHRsbFJKaXNpT0p3VkdnCmJSNUdsL0M3dTZabk04N2NCZldIRzhzVE1jT1FKNHlxdGxyd3ZVWHZuTjc2bEpWLy93c0VUWExSd00yM2llVlIKNHIrSjJFdi9mWm40M3pFT01WdGwvNUJHRnZZPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+                                "verification": {}
+                            }
+                        ]
+                    }
+                },
+                "timeouts": {},
+                "version": "3.2.0"
+            },
+            "passwd": {},
+            "storage": {},
+            "systemd": {}
+        },
+        "File": {
+            "Filename": "master.ign",
+            "Data": "eyJpZ25pdGlvbiI6eyJjb25maWciOnsibWVyZ2UiOlt7InNvdXJjZSI6Imh0dHBzOi8vMTkyLjE2OC4xMTEuNToyMjYyMy9jb25maWcvbWFzdGVyIn1dfSwic2VjdXJpdHkiOnsidGxzIjp7ImNlcnRpZmljYXRlQXV0aG9yaXRpZXMiOlt7InNvdXJjZSI6ImRhdGE6dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04O2Jhc2U2NCxMUzB0TFMxQ1JVZEpUaUJEUlZKVVNVWkpRMEZVUlMwdExTMHRDazFKU1VSRlJFTkRRV1pwWjBGM1NVSkJaMGxKVDJ4d1oxQmpSVlJpWldOM1JGRlpTa3R2V2tsb2RtTk9RVkZGVEVKUlFYZEtha1ZUVFVKQlIwRXhWVVVLUTNoTlNtSXpRbXhpYms1dllWZGFNRTFTUVhkRVoxbEVWbEZSUkVWM1pIbGlNamt3VEZkT2FFMUNORmhFVkVrd1RWUkJlRTFxU1hoTmVrMTRUbXh2V0FwRVZFMHdUVlJCZUUxRVNYaE5lazE0VG14dmQwcHFSVk5OUWtGSFFURlZSVU40VFVwaU0wSnNZbTVPYjJGWFdqQk5Va0YzUkdkWlJGWlJVVVJGZDJSNUNtSXlPVEJNVjA1b1RVbEpRa2xxUVU1Q1oydHhhR3RwUnpsM01FSkJVVVZHUVVGUFEwRlJPRUZOU1VsQ1EyZExRMEZSUlVFNFFVWlhXVVUwTjJ4emNYRUtOWHAwVldoTU1tTTBSbTFKTVVSamFtSlRUWEpaU1dsak5rZGFlbGRSZVRWVVJGVmxiSEUyV2l0dVQyZG9lbGdyV0ZoU1QyMXpWa1ZZYkdacWR6RldUd3AxVWt0VGFYUm1hMmxWV0VaSE5WbHJhakZQVmxoWU5YZHBXWEZ2V21WeVlYRmpWMGhaVW5waFEwUnZURlJYVkVzek5VbFRjV1Z4UkVSQ1dsUnJWVlJVQ25GTmJYVmtUR3gyYzFONFRGRTRia2sxVlRSM1RXcERjbFZrUzFwS1JUWlliekJ5UkRKa01ERmlWMVE1TTBsS1FVNURhWEFyTkVoRk5sRTBLMFZ5ZVZFS0swcEplbEkxZEhwUlRXVTRRaXQzVTBkWVlUbFNhelo2TWpacmVGaHhObEZIWVRjeFUyaHBUamRxWlVSMWFYZFVWSFJYYWxONWFVVnROVXROVUZCSVJRcGxVbEEyV1RWMGJTOU5TR1ZJVkVVeWFuaHBiR3AzZUVSakwzaE1Xall2TnpScWIwdFBXR05SWjJOU04zRlBPVGN6Wm01WWVrNVhkbW9yWVdvek5qazNDbkE0Y2toUGNtdDRjSGRKUkVGUlFVSnZNRWwzVVVSQlQwSm5UbFpJVVRoQ1FXWTRSVUpCVFVOQmNWRjNSSGRaUkZaU01GUkJVVWd2UWtGVmQwRjNSVUlLTDNwQlpFSm5UbFpJVVRSRlJtZFJWVkp6TW00eVYySlBkR3RyTlhaSVpVOVVNamM1TkRGRmNETmhZM2RFVVZsS1MyOWFTV2gyWTA1QlVVVk1RbEZCUkFwblowVkNRVTlUY25weU1VeG1hMlJGYzNKSFFsaDNRME01V1ZNd1RubHJSVzgzTW14NGNrMUZUMkZuU0hCc1JVSmlkM05GTDNORFRXWm1RWGd4UlZGR0NuUnhRMUpzY1dWcVFqbHJNVmRJWTNabVdscGFZek5KT1VKdVpHNW1WWEpyTTNSR2R6VkRaRGswY1d0NGNVNDRNRXhXYUVVcmFuWlhObkZKUm0wNFEwSUtTblV4WnpNNFJIZHNNVlJOU1hsQ09WcEVOekZPVFdaVmJYcGxLMFl2TUVsaVNrZDFWRVZNVm5OS2NsTmlVRXBNVUVwb09VSnphak55Um5GVE5WcExNUW81T1daWmEwaEhPRmMzZEdneVYzbHlTMEYyTURsNFRDOU9iaTlKYWpsc2NqWm1TalZWZGtaWlF6aGxTMVJrVTBnME9IUnNiRkpLYVhOcFQwcDNWa2RuQ21KU05VZHNMME0zZFRaYWJrMDROMk5DWmxkSVJ6aHpWRTFqVDFGS05IbHhkR3h5ZDNaVldIWnVUamMyYkVwV0x5OTNjMFZVV0V4U2QwMHlNMmxsVmxJS05ISXJTakpGZGk5bVdtNDBNM3BGVDAxV2RHd3ZOVUpIUm5aWlBRb3RMUzB0TFVWT1JDQkRSVkpVU1VaSlEwRlVSUzB0TFMwdENnPT0ifV19fSwidmVyc2lvbiI6IjMuMi4wIn19"
+        }
+    },
+    "*machine.Worker": {
+        "Config": {
+            "ignition": {
+                "config": {
+                    "merge": [
+                        {
+                            "source": "https://192.168.111.5:22623/config/worker",
+                            "verification": {}
+                        }
+                    ],
+                    "replace": {
+                        "verification": {}
+                    }
+                },
+                "proxy": {},
+                "security": {
+                    "tls": {
+                        "certificateAuthorities": [
+                            {
+                                "source": "data:text/plain;charset=utf-8;base64,LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFRENDQWZpZ0F3SUJBZ0lJT2xwZ1BjRVRiZWN3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHliMjkwTFdOaE1CNFhEVEkwTVRBeE1qSXhNek14TmxvWApEVE0wTVRBeE1ESXhNek14Tmxvd0pqRVNNQkFHQTFVRUN4TUpiM0JsYm5Ob2FXWjBNUkF3RGdZRFZRUURFd2R5CmIyOTBMV05oTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE4QUZXWUU0N2xzcXEKNXp0VWhMMmM0Rm1JMURjamJTTXJZSWljNkdaeldReTVURFVlbHE2WituT2doelgrWFhST21zVkVYbGZqdzFWTwp1UktTaXRma2lVWEZHNVlrajFPVlhYNXdpWXFvWmVyYXFjV0hZUnphQ0RvTFRXVEszNUlTcWVxRERCWlRrVVRUCnFNbXVkTGx2c1N4TFE4bkk1VTR3TWpDclVkS1pKRTZYbzByRDJkMDFiV1Q5M0lKQU5DaXArNEhFNlE0K0VyeVEKK0pJelI1dHpRTWU4Qit3U0dYYTlSazZ6MjZreFhxNlFHYTcxU2hpTjdqZUR1aXdUVHRXalN5aUVtNUtNUFBIRQplUlA2WTV0bS9NSGVIVEUyanhpbGp3eERjL3hMWjYvNzRqb0tPWGNRZ2NSN3FPOTczZm5Yek5XdmorYWozNjk3CnA4ckhPcmt4cHdJREFRQUJvMEl3UURBT0JnTlZIUThCQWY4RUJBTUNBcVF3RHdZRFZSMFRBUUgvQkFVd0F3RUIKL3pBZEJnTlZIUTRFRmdRVVJzMm4yV2JPdGtrNXZIZU9UMjc5NDFFcDNhY3dEUVlKS29aSWh2Y05BUUVMQlFBRApnZ0VCQU9TcnpyMUxma2RFc3JHQlh3Q0M5WVMwTnlrRW83Mmx4ck1FT2FnSHBsRUJid3NFL3NDTWZmQXgxRVFGCnRxQ1JscWVqQjlrMVdIY3ZmWlpaYzNJOUJuZG5mVXJrM3RGdzVDZDk0cWt4cU44MExWaEUranZXNnFJRm04Q0IKSnUxZzM4RHdsMVRNSXlCOVpENzFOTWZVbXplK0YvMEliSkd1VEVMVnNKclNiUEpMUEpoOUJzajNyRnFTNVpLMQo5OWZZa0hHOFc3dGgyV3lyS0F2MDl4TC9Obi9JajlscjZmSjVVdkZZQzhlS1RkU0g0OHRsbFJKaXNpT0p3VkdnCmJSNUdsL0M3dTZabk04N2NCZldIRzhzVE1jT1FKNHlxdGxyd3ZVWHZuTjc2bEpWLy93c0VUWExSd00yM2llVlIKNHIrSjJFdi9mWm40M3pFT01WdGwvNUJHRnZZPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+                                "verification": {}
+                            }
+                        ]
+                    }
+                },
+                "timeouts": {},
+                "version": "3.2.0"
+            },
+            "passwd": {},
+            "storage": {},
+            "systemd": {}
+        },
+        "File": {
+            "Filename": "worker.ign",
+            "Data": "eyJpZ25pdGlvbiI6eyJjb25maWciOnsibWVyZ2UiOlt7InNvdXJjZSI6Imh0dHBzOi8vMTkyLjE2OC4xMTEuNToyMjYyMy9jb25maWcvd29ya2VyIn1dfSwic2VjdXJpdHkiOnsidGxzIjp7ImNlcnRpZmljYXRlQXV0aG9yaXRpZXMiOlt7InNvdXJjZSI6ImRhdGE6dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04O2Jhc2U2NCxMUzB0TFMxQ1JVZEpUaUJEUlZKVVNVWkpRMEZVUlMwdExTMHRDazFKU1VSRlJFTkRRV1pwWjBGM1NVSkJaMGxKVDJ4d1oxQmpSVlJpWldOM1JGRlpTa3R2V2tsb2RtTk9RVkZGVEVKUlFYZEtha1ZUVFVKQlIwRXhWVVVLUTNoTlNtSXpRbXhpYms1dllWZGFNRTFTUVhkRVoxbEVWbEZSUkVWM1pIbGlNamt3VEZkT2FFMUNORmhFVkVrd1RWUkJlRTFxU1hoTmVrMTRUbXh2V0FwRVZFMHdUVlJCZUUxRVNYaE5lazE0VG14dmQwcHFSVk5OUWtGSFFURlZSVU40VFVwaU0wSnNZbTVPYjJGWFdqQk5Va0YzUkdkWlJGWlJVVVJGZDJSNUNtSXlPVEJNVjA1b1RVbEpRa2xxUVU1Q1oydHhhR3RwUnpsM01FSkJVVVZHUVVGUFEwRlJPRUZOU1VsQ1EyZExRMEZSUlVFNFFVWlhXVVUwTjJ4emNYRUtOWHAwVldoTU1tTTBSbTFKTVVSamFtSlRUWEpaU1dsak5rZGFlbGRSZVRWVVJGVmxiSEUyV2l0dVQyZG9lbGdyV0ZoU1QyMXpWa1ZZYkdacWR6RldUd3AxVWt0VGFYUm1hMmxWV0VaSE5WbHJhakZQVmxoWU5YZHBXWEZ2V21WeVlYRmpWMGhaVW5waFEwUnZURlJYVkVzek5VbFRjV1Z4UkVSQ1dsUnJWVlJVQ25GTmJYVmtUR3gyYzFONFRGRTRia2sxVlRSM1RXcERjbFZrUzFwS1JUWlliekJ5UkRKa01ERmlWMVE1TTBsS1FVNURhWEFyTkVoRk5sRTBLMFZ5ZVZFS0swcEplbEkxZEhwUlRXVTRRaXQzVTBkWVlUbFNhelo2TWpacmVGaHhObEZIWVRjeFUyaHBUamRxWlVSMWFYZFVWSFJYYWxONWFVVnROVXROVUZCSVJRcGxVbEEyV1RWMGJTOU5TR1ZJVkVVeWFuaHBiR3AzZUVSakwzaE1Xall2TnpScWIwdFBXR05SWjJOU04zRlBPVGN6Wm01WWVrNVhkbW9yWVdvek5qazNDbkE0Y2toUGNtdDRjSGRKUkVGUlFVSnZNRWwzVVVSQlQwSm5UbFpJVVRoQ1FXWTRSVUpCVFVOQmNWRjNSSGRaUkZaU01GUkJVVWd2UWtGVmQwRjNSVUlLTDNwQlpFSm5UbFpJVVRSRlJtZFJWVkp6TW00eVYySlBkR3RyTlhaSVpVOVVNamM1TkRGRmNETmhZM2RFVVZsS1MyOWFTV2gyWTA1QlVVVk1RbEZCUkFwblowVkNRVTlUY25weU1VeG1hMlJGYzNKSFFsaDNRME01V1ZNd1RubHJSVzgzTW14NGNrMUZUMkZuU0hCc1JVSmlkM05GTDNORFRXWm1RWGd4UlZGR0NuUnhRMUpzY1dWcVFqbHJNVmRJWTNabVdscGFZek5KT1VKdVpHNW1WWEpyTTNSR2R6VkRaRGswY1d0NGNVNDRNRXhXYUVVcmFuWlhObkZKUm0wNFEwSUtTblV4WnpNNFJIZHNNVlJOU1hsQ09WcEVOekZPVFdaVmJYcGxLMFl2TUVsaVNrZDFWRVZNVm5OS2NsTmlVRXBNVUVwb09VSnphak55Um5GVE5WcExNUW81T1daWmEwaEhPRmMzZEdneVYzbHlTMEYyTURsNFRDOU9iaTlKYWpsc2NqWm1TalZWZGtaWlF6aGxTMVJrVTBnME9IUnNiRkpLYVhOcFQwcDNWa2RuQ21KU05VZHNMME0zZFRaYWJrMDROMk5DWmxkSVJ6aHpWRTFqVDFGS05IbHhkR3h5ZDNaVldIWnVUamMyYkVwV0x5OTNjMFZVV0V4U2QwMHlNMmxsVmxJS05ISXJTakpGZGk5bVdtNDBNM3BGVDAxV2RHd3ZOVUpIUm5aWlBRb3RMUzB0TFVWT1JDQkRSVkpVU1VaSlEwRlVSUzB0TFMwdENnPT0ifV19fSwidmVyc2lvbiI6IjMuMi4wIn19"
+        }
+    },
+    "*machines.ClusterAPI": {
+        "FileList": null
+    },
+    "*machines.Master": {
+        "UserDataFile": {
+            "Filename": "openshift/99_openshift-cluster-api_master-user-data-secret.yaml",
+            "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG1hc3Rlci11c2VyLWRhdGEtbWFuYWdlZAogIG5hbWVzcGFjZTogb3BlbnNoaWZ0LW1hY2hpbmUtYXBpCnR5cGU6IE9wYXF1ZQpkYXRhOgogIGRpc2FibGVUZW1wbGF0aW5nOiAiZEhKMVpRbz0iCiAgdXNlckRhdGE6IGV5SnBaMjVwZEdsdmJpSTZleUpqYjI1bWFXY2lPbnNpYldWeVoyVWlPbHQ3SW5OdmRYSmpaU0k2SW1oMGRIQnpPaTh2TVRreUxqRTJPQzR4TVRFdU5Ub3lNall5TXk5amIyNW1hV2N2YldGemRHVnlJbjFkZlN3aWMyVmpkWEpwZEhraU9uc2lkR3h6SWpwN0ltTmxjblJwWm1sallYUmxRWFYwYUc5eWFYUnBaWE1pT2x0N0luTnZkWEpqWlNJNkltUmhkR0U2ZEdWNGRDOXdiR0ZwYmp0amFHRnljMlYwUFhWMFppMDRPMkpoYzJVMk5DeE1VekIwVEZNeFExSlZaRXBVYVVKRVVsWktWVk5WV2twUk1FWlZVbE13ZEV4VE1IUkRhekZLVTFWU1JsSkZUa1JSVjFwd1dqQkdNMU5WU2tKYU1HeEtWREo0ZDFveFFtcFNWbEpwV2xkT00xSkdSbHBUYTNSMlYydHNiMlJ0VGs5UlZrWkdWRVZLVWxGWVpFdGhhMVpVVkZWS1FsSXdSWGhXVlZWTFVUTm9UbE50U1hwUmJYaHBZbXMxZGxsV1pHRk5SVEZUVVZoa1JWb3hiRVZXYkVaU1VrVldNMXBJYkdsTmFtdDNWRVprVDJGRk1VTk9SbWhGVmtWcmQxUldVa0psUlRGeFUxaG9UbVZyTVRSVWJYaDJWMEZ3UlZaRk1IZFVWbEpDWlVVeFJWTllhRTVsYXpFMFZHMTRkbVF3Y0hGU1ZrNU9VV3RHU0ZGVVJsWlNWVTQwVkZWd2FVMHdTbk5aYlRWUFlqSkdXRmRxUWs1VmEwWXpVa2RrV2xKR1dsSlZWVkpHWkRKU05VTnRTWGxQVkVKTlZqQTFiMVJWYkVwUmEyeHhVVlUxUTFveWRIaGhSM1J3VW5wc00wMUZTa0pWVlZaSFVWVkdVRkV3UmxKUFJVWk9VMVZzUTFFeVpFeFJNRVpTVWxWRk5GRlZXbGhYVlZVd1RqSjRlbU5ZUlV0T1dIQXdWbGRvVFUxdFRUQlNiVEZLVFZWU2FtRnRTbFJVV0VwYVUxZHNhazVyWkdGbGJHUlNaVlJXVlZKR1ZteGlTRVV5VjJsMGRWUXlaRzlsYkdkeVYwWm9VMVF5TVhwV2ExWlpZa2RhY1dSNlJsZFVkM0F4Vld0MFZHRllVbTFoTW14V1YwVmFTRTVXYkhKaGFrWlFWbXhvV1U1WVpIQlhXRVoyVjIxV2VWbFlSbXBXTUdoYVZXNXdhRkV3VW5aVVJsSllWa1Z6ZWs1VmJGUmpWMVo0VWtWU1ExZHNVbkpXVmxKVlEyNUdUbUpZVm10VVIzZ3lZekZPTkZSR1JUUmlhMnN4VmxSU00xUlhjRVJqYkZaclV6RndTMUpVV2xsaWVrSjVVa1JLYTAxRVJtbFdNVkUxVFRCc1MxRlZOVVJoV0VGeVRrVm9SazVzUlRCTE1GWjVaVlpGUzBzd2NFcGxiRWt4WkVod1VsUlhWVFJSYVhRelZUQmtXVmxVYkZOaGVsbzJUV3BhY21WR2FIaE9iRVpJV1ZSamVGVXlhSEJVYW1SeFdsVlNNV0ZZWkZWV1NGSllZV3hPTldGVlZuUk9WWFJPVlVaQ1NWSlJjR3hWYkVFeVYxUldNR0pUT1U1VFIxWkpWa1ZWZVdGdWFIQmlSM0F6WlVWU2Frd3phRTFYYWxsMlRucFNjV0l3ZEZCWFIwNVNXakpPVTA0elJsQlBWR042V20wMVdXVnJOVmhrYlc5eVdWZHZlazVxYXpORGJrRTBZMnRvVUdOdGREUmpTR1JLVWtWR1VsRlZTblpOUld3elZWVlNRbFF3U201VWJGcEpWVlJvUTFGWFdUUlNWVXBDVkZWT1FtTldSak5TU0dSYVVrWmFVMDFHVWtKVlZXZDJVV3RHVm1Rd1JqTlNWVWxMVEROd1FscEZTbTVVYkZwSlZWUlNSbEp0WkZKV1ZrcDZUVzAwZVZZeVNsQmtSM1J5VGxoYVNWcFZPVlZOYW1NMVRrUkdSbU5FVG1oWk0yUkZWVlpzUzFNeU9XRlRWMmd5V1RBMVFsVlZWazFSYkVaQ1VrRndibG93VmtOUlZUbFVZMjV3ZVUxVmVHMWhNbEpHWXpOS1NGRnNhRE5STUUwMVYxWk5kMVJ1YkhKU1Z6Z3pUVzE0TkdOck1VWlVNa1p1VTBoQ2MxSlZTbWxrTTA1R1RETk9SRlJYV20xUldHZDRVbFpHUjBOdVVuaFJNVXB6WTFkV2NWRnFiSEpOVm1SSldUTmFiVmRzY0dGWmVrNUtUMVZLZFZwSE5XMVdXRXB5VFROU1IyUjZWa1JhUkdzd1kxZDBOR05WTkRSTlJYaFhZVVZWY21GdVdsaE9ia1pLVW0wd05GRXdTVXRUYmxWNFducE5ORkpJWkhOTlZsSk9VMWhzUTA5V2NFVk9la1pQVkZkYVZtSlljR3hMTUZsMlRVVnNhVk5yWkRGV1JWWk5WbTVPUzJOc1RtbFZSWEJOVlVWd2IwOVZTbnBoYWs1NVVtNUdWRTVXY0V4TlVXODFUMWRhV21Fd2FFaFBSbU16WkVkbmVWWXpiSGxUTUVZeVRVUnNORlJET1U5aWFUbEtZV3BzYzJOcVdtMVRhbFpXWkd0YVdsRjZhR3hUTVZKclZUQm5NRTlJVW5OaVJrcExZVmhPY0ZRd2NETldhMlJ1UTIxS1UwNVZaSE5NTUUwelpGUmFZV0pyTURST01rNURXbXhrU1ZKNmFIcFdSVEZxVkRGR1MwNUliSGhrUjNoNVpETmFWbGRJV25WVWFtTXlZa1Z3VjB4NU9UTmpNRlpWVjBWNFUyUXdNSGxOTW14c1ZteEpTMDVJU1hKVGFrcEdaR2s1YlZkdE5EQk5NM0JHVkRBeFYyUkhkM1pPVlVwSVVtNWFXbEJSYjNSTVV6QjBURlZXVDFKRFFrUlNWa3BWVTFWYVNsRXdSbFZTVXpCMFRGTXdkRU5uUFQwaWZWMTlmU3dpZG1WeWMybHZiaUk2SWpNdU1pNHdJbjE5Cg=="
+        },
+        "MachineConfigFiles": [
+            {
+                "Filename": "openshift/99_openshift-machineconfig_99-master-ssh.yaml",
+                "Data": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBsYWJlbHM6CiAgICBtYWNoaW5lY29uZmlndXJhdGlvbi5vcGVuc2hpZnQuaW8vcm9sZTogbWFzdGVyCiAgbmFtZTogOTktbWFzdGVyLXNzaApzcGVjOgogIGJhc2VPU0V4dGVuc2lvbnNDb250YWluZXJJbWFnZTogIiIKICBjb25maWc6CiAgICBpZ25pdGlvbjoKICAgICAgdmVyc2lvbjogMy4yLjAKICAgIHBhc3N3ZDoKICAgICAgdXNlcnM6CiAgICAgIC0gbmFtZTogY29yZQogICAgICAgIHNzaEF1dGhvcml6ZWRLZXlzOgogICAgICAgIC0gfAogICAgICAgICAgc3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUtIb1NNM3VpYitHNjUxK0FIRlRRYUwwaCt0ZFRPOG9oMjVUd3ZFWGRsdHEgbmF0ZW1vbGxpY2FAbmF0ZW1vbGxpY2EtUjQ3WDAyV0hGRAogIGV4dGVuc2lvbnM6IG51bGwKICBmaXBzOiBmYWxzZQogIGtlcm5lbEFyZ3VtZW50czogbnVsbAogIGtlcm5lbFR5cGU6ICIiCiAgb3NJbWFnZVVSTDogIiIK"
+            }
+        ],
+        "MachineFiles": [
+            {
+                "Filename": "openshift/99_openshift-cluster-api_master-machines-0.yaml",
+                "Data": "YXBpVmVyc2lvbjogbWFjaGluZS5vcGVuc2hpZnQuaW8vdjFiZXRhMQpraW5kOiBNYWNoaW5lCm1ldGFkYXRhOgogIGNyZWF0aW9uVGltZXN0YW1wOiBudWxsCiAgbGFiZWxzOgogICAgbWFjaGluZS5vcGVuc2hpZnQuaW8vY2x1c3Rlci1hcGktY2x1c3Rlcjogb3BlbnNoaWZ0LWxpbWEtY2J4ZHAKICAgIG1hY2hpbmUub3BlbnNoaWZ0LmlvL2NsdXN0ZXItYXBpLW1hY2hpbmUtcm9sZTogbWFzdGVyCiAgICBtYWNoaW5lLm9wZW5zaGlmdC5pby9jbHVzdGVyLWFwaS1tYWNoaW5lLXR5cGU6IG1hc3RlcgogIG5hbWU6IG9wZW5zaGlmdC1saW1hLWNieGRwLW1hc3Rlci0wCiAgbmFtZXNwYWNlOiBvcGVuc2hpZnQtbWFjaGluZS1hcGkKc3BlYzoKICBsaWZlY3ljbGVIb29rczoge30KICBtZXRhZGF0YToge30KICBwcm92aWRlclNwZWM6CiAgICB2YWx1ZToKICAgICAgYXBpVmVyc2lvbjogYmFyZW1ldGFsLmNsdXN0ZXIuazhzLmlvL3YxYWxwaGExCiAgICAgIGN1c3RvbURlcGxveToKICAgICAgICBtZXRob2Q6IGluc3RhbGxfY29yZW9zCiAgICAgIGhvc3RTZWxlY3Rvcjoge30KICAgICAgaW1hZ2U6CiAgICAgICAgY2hlY2tzdW06ICIiCiAgICAgICAgdXJsOiAiIgogICAgICBraW5kOiBCYXJlTWV0YWxNYWNoaW5lUHJvdmlkZXJTcGVjCiAgICAgIG1ldGFkYXRhOgogICAgICAgIGNyZWF0aW9uVGltZXN0YW1wOiBudWxsCiAgICAgIHVzZXJEYXRhOgogICAgICAgIG5hbWU6IG1hc3Rlci11c2VyLWRhdGEtbWFuYWdlZApzdGF0dXM6IHt9Cg=="
+            }
+        ],
+        "ControlPlaneMachineSet": null,
+        "IPClaimFiles": [],
+        "IPAddrFiles": [],
+        "SecretFiles": null,
+        "NetworkConfigSecretFiles": [
+            {
+                "Filename": "openshift/99_openshift-cluster-api_host-network-config-secrets-0.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKZGF0YToKICBubXN0YXRlOiBaRzV6TFhKbGMyOXNkbVZ5T2dvZ0lHTnZibVpwWnpvS0lDQWdJSE5sY25abGNqb0tJQ0FnSUMwZ09DNDRMamd1T0FwcGJuUmxjbVpoWTJWek9nb3RJR2x3ZGpRNkNpQWdJQ0JoWkdSeVpYTnpPZ29nSUNBZ0xTQnBjRG9nTVRreUxqRTJPQzR4TVRFdU5Rb2dJQ0FnSUNCd2NtVm1hWGd0YkdWdVozUm9PaUF5TkFvZ0lDQWdaVzVoWW14bFpEb2dkSEoxWlFvZ0lHNWhiV1U2SUdWMGFEQUtJQ0J6ZEdGMFpUb2dkWEFLSUNCMGVYQmxPaUJsZEdobGNtNWxkQXB5YjNWMFpYTTZDaUFnWTI5dVptbG5PZ29nSUMwZ1pHVnpkR2x1WVhScGIyNDZJREF1TUM0d0xqQXZNQW9nSUNBZ2JtVjRkQzFvYjNBdFlXUmtjbVZ6Y3pvZ01Ua3lMakUyT0M0eE1URXVNUW9nSUNBZ2JtVjRkQzFvYjNBdGFXNTBaWEptWVdObE9pQmxkR2d3Q2c9PQpraW5kOiBTZWNyZXQKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiBvcGVuc2hpZnQtbWFzdGVyLTAtbmV0d29yay1jb25maWctc2VjcmV0CiAgbmFtZXNwYWNlOiBvcGVuc2hpZnQtbWFjaGluZS1hcGkK"
+            },
+            {
+                "Filename": "openshift/99_openshift-cluster-api_host-network-config-secrets-1.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKZGF0YToKICBubXN0YXRlOiBaRzV6TFhKbGMyOXNkbVZ5T2dvZ0lHTnZibVpwWnpvS0lDQWdJSE5sY25abGNqb0tJQ0FnSUMwZ09DNDRMamd1T0FwcGJuUmxjbVpoWTJWek9nb3RJR2x3ZGpRNkNpQWdJQ0JoWkdSeVpYTnpPZ29nSUNBZ0xTQnBjRG9nTVRreUxqRTJPQzR4TVRFdU5nb2dJQ0FnSUNCd2NtVm1hWGd0YkdWdVozUm9PaUF5TkFvZ0lDQWdaVzVoWW14bFpEb2dkSEoxWlFvZ0lHNWhiV1U2SUdWMGFEQUtJQ0J6ZEdGMFpUb2dkWEFLSUNCMGVYQmxPaUJsZEdobGNtNWxkQXB5YjNWMFpYTTZDaUFnWTI5dVptbG5PZ29nSUMwZ1pHVnpkR2x1WVhScGIyNDZJREF1TUM0d0xqQXZNQW9nSUNBZ2JtVjRkQzFvYjNBdFlXUmtjbVZ6Y3pvZ01Ua3lMakUyT0M0eE1URXVNUW9nSUNBZ2JtVjRkQzFvYjNBdGFXNTBaWEptWVdObE9pQmxkR2d3Q2c9PQpraW5kOiBTZWNyZXQKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiBvcGVuc2hpZnQtd29ya2VyLTAtbmV0d29yay1jb25maWctc2VjcmV0CiAgbmFtZXNwYWNlOiBvcGVuc2hpZnQtbWFjaGluZS1hcGkK"
+            }
+        ],
+        "HostFiles": [
+            {
+                "Filename": "openshift/99_openshift-cluster-api_hosts-0.yaml",
+                "Data": "YXBpVmVyc2lvbjogbWV0YWwzLmlvL3YxYWxwaGExCmtpbmQ6IEJhcmVNZXRhbEhvc3QKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBsYWJlbHM6CiAgICBpbnN0YWxsZXIub3BlbnNoaWZ0LmlvL3JvbGU6IGNvbnRyb2wtcGxhbmUKICBuYW1lOiBvcGVuc2hpZnQtbWFzdGVyLTAKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1tYWNoaW5lLWFwaQpzcGVjOgogIGJtYzoKICAgIGFkZHJlc3M6ICIiCiAgICBjcmVkZW50aWFsc05hbWU6ICIiCiAgYm9vdE1BQ0FkZHJlc3M6IDUyOjU0OjAwOjFlOjU2OmFjCiAgYm9vdE1vZGU6IFVFRkkKICBjb25zdW1lclJlZjoKICAgIGFwaVZlcnNpb246IG1hY2hpbmUub3BlbnNoaWZ0LmlvL3YxYmV0YTEKICAgIGtpbmQ6IE1hY2hpbmUKICAgIG5hbWU6IG9wZW5zaGlmdC1saW1hLWNieGRwLW1hc3Rlci0wCiAgICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1tYWNoaW5lLWFwaQogIGN1c3RvbURlcGxveToKICAgIG1ldGhvZDogaW5zdGFsbF9jb3Jlb3MKICBoYXJkd2FyZVByb2ZpbGU6IHVua25vd24KICBvbmxpbmU6IHRydWUKICBwcmVwcm92aXNpb25pbmdOZXR3b3JrRGF0YU5hbWU6IG9wZW5zaGlmdC1tYXN0ZXItMC1uZXR3b3JrLWNvbmZpZy1zZWNyZXQKICByb290RGV2aWNlSGludHM6CiAgICBkZXZpY2VOYW1lOiAvZGV2L3NkYQogIHVzZXJEYXRhOgogICAgbmFtZTogbWFzdGVyLXVzZXItZGF0YS1tYW5hZ2VkCnN0YXR1czoKICBlcnJvckNvdW50OiAwCiAgZXJyb3JNZXNzYWdlOiAiIgogIGdvb2RDcmVkZW50aWFsczoge30KICBoYXJkd2FyZVByb2ZpbGU6ICIiCiAgb3BlcmF0aW9uSGlzdG9yeToKICAgIGRlcHJvdmlzaW9uOgogICAgICBlbmQ6IG51bGwKICAgICAgc3RhcnQ6IG51bGwKICAgIGluc3BlY3Q6CiAgICAgIGVuZDogbnVsbAogICAgICBzdGFydDogbnVsbAogICAgcHJvdmlzaW9uOgogICAgICBlbmQ6IG51bGwKICAgICAgc3RhcnQ6IG51bGwKICAgIHJlZ2lzdGVyOgogICAgICBlbmQ6IG51bGwKICAgICAgc3RhcnQ6IG51bGwKICBvcGVyYXRpb25hbFN0YXR1czogIiIKICBwb3dlcmVkT246IGZhbHNlCiAgcHJvdmlzaW9uaW5nOgogICAgSUQ6ICIiCiAgICBpbWFnZToKICAgICAgdXJsOiAiIgogICAgc3RhdGU6ICIiCiAgdHJpZWRDcmVkZW50aWFsczoge30K"
+            },
+            {
+                "Filename": "openshift/99_openshift-cluster-api_hosts-1.yaml",
+                "Data": "YXBpVmVyc2lvbjogbWV0YWwzLmlvL3YxYWxwaGExCmtpbmQ6IEJhcmVNZXRhbEhvc3QKbWV0YWRhdGE6CiAgYW5ub3RhdGlvbnM6CiAgICBiYXJlbWV0YWxob3N0Lm1ldGFsMy5pby9wYXVzZWQ6ICIiCiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiBvcGVuc2hpZnQtd29ya2VyLTAKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1tYWNoaW5lLWFwaQpzcGVjOgogIGJtYzoKICAgIGFkZHJlc3M6ICIiCiAgICBjcmVkZW50aWFsc05hbWU6ICIiCiAgYm9vdE1BQ0FkZHJlc3M6IDUyOjU0OjAwOjFlOjU2OmFkCiAgYm9vdE1vZGU6IFVFRkkKICBoYXJkd2FyZVByb2ZpbGU6IHVua25vd24KICBvbmxpbmU6IHRydWUKICBwcmVwcm92aXNpb25pbmdOZXR3b3JrRGF0YU5hbWU6IG9wZW5zaGlmdC13b3JrZXItMC1uZXR3b3JrLWNvbmZpZy1zZWNyZXQKICByb290RGV2aWNlSGludHM6CiAgICBkZXZpY2VOYW1lOiAvZGV2L3NkYQpzdGF0dXM6CiAgZXJyb3JDb3VudDogMAogIGVycm9yTWVzc2FnZTogIiIKICBnb29kQ3JlZGVudGlhbHM6IHt9CiAgaGFyZHdhcmVQcm9maWxlOiAiIgogIG9wZXJhdGlvbkhpc3Rvcnk6CiAgICBkZXByb3Zpc2lvbjoKICAgICAgZW5kOiBudWxsCiAgICAgIHN0YXJ0OiBudWxsCiAgICBpbnNwZWN0OgogICAgICBlbmQ6IG51bGwKICAgICAgc3RhcnQ6IG51bGwKICAgIHByb3Zpc2lvbjoKICAgICAgZW5kOiBudWxsCiAgICAgIHN0YXJ0OiBudWxsCiAgICByZWdpc3RlcjoKICAgICAgZW5kOiBudWxsCiAgICAgIHN0YXJ0OiBudWxsCiAgb3BlcmF0aW9uYWxTdGF0dXM6ICIiCiAgcG93ZXJlZE9uOiBmYWxzZQogIHByb3Zpc2lvbmluZzoKICAgIElEOiAiIgogICAgaW1hZ2U6CiAgICAgIHVybDogIiIKICAgIHN0YXRlOiAiIgogIHRyaWVkQ3JlZGVudGlhbHM6IHt9Cg=="
+            }
+        ]
+    },
+    "*machines.Worker": {
+        "UserDataFile": {
+            "Filename": "openshift/99_openshift-cluster-api_worker-user-data-secret.yaml",
+            "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IHdvcmtlci11c2VyLWRhdGEtbWFuYWdlZAogIG5hbWVzcGFjZTogb3BlbnNoaWZ0LW1hY2hpbmUtYXBpCnR5cGU6IE9wYXF1ZQpkYXRhOgogIGRpc2FibGVUZW1wbGF0aW5nOiAiZEhKMVpRbz0iCiAgdXNlckRhdGE6IGV5SnBaMjVwZEdsdmJpSTZleUpqYjI1bWFXY2lPbnNpYldWeVoyVWlPbHQ3SW5OdmRYSmpaU0k2SW1oMGRIQnpPaTh2TVRreUxqRTJPQzR4TVRFdU5Ub3lNall5TXk5amIyNW1hV2N2ZDI5eWEyVnlJbjFkZlN3aWMyVmpkWEpwZEhraU9uc2lkR3h6SWpwN0ltTmxjblJwWm1sallYUmxRWFYwYUc5eWFYUnBaWE1pT2x0N0luTnZkWEpqWlNJNkltUmhkR0U2ZEdWNGRDOXdiR0ZwYmp0amFHRnljMlYwUFhWMFppMDRPMkpoYzJVMk5DeE1VekIwVEZNeFExSlZaRXBVYVVKRVVsWktWVk5WV2twUk1FWlZVbE13ZEV4VE1IUkRhekZLVTFWU1JsSkZUa1JSVjFwd1dqQkdNMU5WU2tKYU1HeEtWREo0ZDFveFFtcFNWbEpwV2xkT00xSkdSbHBUYTNSMlYydHNiMlJ0VGs5UlZrWkdWRVZLVWxGWVpFdGhhMVpVVkZWS1FsSXdSWGhXVlZWTFVUTm9UbE50U1hwUmJYaHBZbXMxZGxsV1pHRk5SVEZUVVZoa1JWb3hiRVZXYkVaU1VrVldNMXBJYkdsTmFtdDNWRVprVDJGRk1VTk9SbWhGVmtWcmQxUldVa0psUlRGeFUxaG9UbVZyTVRSVWJYaDJWMEZ3UlZaRk1IZFVWbEpDWlVVeFJWTllhRTVsYXpFMFZHMTRkbVF3Y0hGU1ZrNU9VV3RHU0ZGVVJsWlNWVTQwVkZWd2FVMHdTbk5aYlRWUFlqSkdXRmRxUWs1VmEwWXpVa2RrV2xKR1dsSlZWVkpHWkRKU05VTnRTWGxQVkVKTlZqQTFiMVJWYkVwUmEyeHhVVlUxUTFveWRIaGhSM1J3VW5wc00wMUZTa0pWVlZaSFVWVkdVRkV3UmxKUFJVWk9VMVZzUTFFeVpFeFJNRVpTVWxWRk5GRlZXbGhYVlZVd1RqSjRlbU5ZUlV0T1dIQXdWbGRvVFUxdFRUQlNiVEZLVFZWU2FtRnRTbFJVV0VwYVUxZHNhazVyWkdGbGJHUlNaVlJXVlZKR1ZteGlTRVV5VjJsMGRWUXlaRzlsYkdkeVYwWm9VMVF5TVhwV2ExWlpZa2RhY1dSNlJsZFVkM0F4Vld0MFZHRllVbTFoTW14V1YwVmFTRTVXYkhKaGFrWlFWbXhvV1U1WVpIQlhXRVoyVjIxV2VWbFlSbXBXTUdoYVZXNXdhRkV3VW5aVVJsSllWa1Z6ZWs1VmJGUmpWMVo0VWtWU1ExZHNVbkpXVmxKVlEyNUdUbUpZVm10VVIzZ3lZekZPTkZSR1JUUmlhMnN4VmxSU00xUlhjRVJqYkZaclV6RndTMUpVV2xsaWVrSjVVa1JLYTAxRVJtbFdNVkUxVFRCc1MxRlZOVVJoV0VGeVRrVm9SazVzUlRCTE1GWjVaVlpGUzBzd2NFcGxiRWt4WkVod1VsUlhWVFJSYVhRelZUQmtXVmxVYkZOaGVsbzJUV3BhY21WR2FIaE9iRVpJV1ZSamVGVXlhSEJVYW1SeFdsVlNNV0ZZWkZWV1NGSllZV3hPTldGVlZuUk9WWFJPVlVaQ1NWSlJjR3hWYkVFeVYxUldNR0pUT1U1VFIxWkpWa1ZWZVdGdWFIQmlSM0F6WlVWU2Frd3phRTFYYWxsMlRucFNjV0l3ZEZCWFIwNVNXakpPVTA0elJsQlBWR042V20wMVdXVnJOVmhrYlc5eVdWZHZlazVxYXpORGJrRTBZMnRvVUdOdGREUmpTR1JLVWtWR1VsRlZTblpOUld3elZWVlNRbFF3U201VWJGcEpWVlJvUTFGWFdUUlNWVXBDVkZWT1FtTldSak5TU0dSYVVrWmFVMDFHVWtKVlZXZDJVV3RHVm1Rd1JqTlNWVWxMVEROd1FscEZTbTVVYkZwSlZWUlNSbEp0WkZKV1ZrcDZUVzAwZVZZeVNsQmtSM1J5VGxoYVNWcFZPVlZOYW1NMVRrUkdSbU5FVG1oWk0yUkZWVlpzUzFNeU9XRlRWMmd5V1RBMVFsVlZWazFSYkVaQ1VrRndibG93VmtOUlZUbFVZMjV3ZVUxVmVHMWhNbEpHWXpOS1NGRnNhRE5STUUwMVYxWk5kMVJ1YkhKU1Z6Z3pUVzE0TkdOck1VWlVNa1p1VTBoQ2MxSlZTbWxrTTA1R1RETk9SRlJYV20xUldHZDRVbFpHUjBOdVVuaFJNVXB6WTFkV2NWRnFiSEpOVm1SSldUTmFiVmRzY0dGWmVrNUtUMVZLZFZwSE5XMVdXRXB5VFROU1IyUjZWa1JhUkdzd1kxZDBOR05WTkRSTlJYaFhZVVZWY21GdVdsaE9ia1pLVW0wd05GRXdTVXRUYmxWNFducE5ORkpJWkhOTlZsSk9VMWhzUTA5V2NFVk9la1pQVkZkYVZtSlljR3hMTUZsMlRVVnNhVk5yWkRGV1JWWk5WbTVPUzJOc1RtbFZSWEJOVlVWd2IwOVZTbnBoYWs1NVVtNUdWRTVXY0V4TlVXODFUMWRhV21Fd2FFaFBSbU16WkVkbmVWWXpiSGxUTUVZeVRVUnNORlJET1U5aWFUbEtZV3BzYzJOcVdtMVRhbFpXWkd0YVdsRjZhR3hUTVZKclZUQm5NRTlJVW5OaVJrcExZVmhPY0ZRd2NETldhMlJ1UTIxS1UwNVZaSE5NTUUwelpGUmFZV0pyTURST01rNURXbXhrU1ZKNmFIcFdSVEZxVkRGR1MwNUliSGhrUjNoNVpETmFWbGRJV25WVWFtTXlZa1Z3VjB4NU9UTmpNRlpWVjBWNFUyUXdNSGxOTW14c1ZteEpTMDVJU1hKVGFrcEdaR2s1YlZkdE5EQk5NM0JHVkRBeFYyUkhkM1pPVlVwSVVtNWFXbEJSYjNSTVV6QjBURlZXVDFKRFFrUlNWa3BWVTFWYVNsRXdSbFZTVXpCMFRGTXdkRU5uUFQwaWZWMTlmU3dpZG1WeWMybHZiaUk2SWpNdU1pNHdJbjE5Cg=="
+        },
+        "MachineConfigFiles": [
+            {
+                "Filename": "openshift/99_openshift-machineconfig_99-worker-ssh.yaml",
+                "Data": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBsYWJlbHM6CiAgICBtYWNoaW5lY29uZmlndXJhdGlvbi5vcGVuc2hpZnQuaW8vcm9sZTogd29ya2VyCiAgbmFtZTogOTktd29ya2VyLXNzaApzcGVjOgogIGJhc2VPU0V4dGVuc2lvbnNDb250YWluZXJJbWFnZTogIiIKICBjb25maWc6CiAgICBpZ25pdGlvbjoKICAgICAgdmVyc2lvbjogMy4yLjAKICAgIHBhc3N3ZDoKICAgICAgdXNlcnM6CiAgICAgIC0gbmFtZTogY29yZQogICAgICAgIHNzaEF1dGhvcml6ZWRLZXlzOgogICAgICAgIC0gfAogICAgICAgICAgc3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUtIb1NNM3VpYitHNjUxK0FIRlRRYUwwaCt0ZFRPOG9oMjVUd3ZFWGRsdHEgbmF0ZW1vbGxpY2FAbmF0ZW1vbGxpY2EtUjQ3WDAyV0hGRAogIGV4dGVuc2lvbnM6IG51bGwKICBmaXBzOiBmYWxzZQogIGtlcm5lbEFyZ3VtZW50czogbnVsbAogIGtlcm5lbFR5cGU6ICIiCiAgb3NJbWFnZVVSTDogIiIK"
+            }
+        ],
+        "MachineSetFiles": [
+            {
+                "Filename": "openshift/99_openshift-cluster-api_worker-machineset-0.yaml",
+                "Data": "YXBpVmVyc2lvbjogbWFjaGluZS5vcGVuc2hpZnQuaW8vdjFiZXRhMQpraW5kOiBNYWNoaW5lU2V0Cm1ldGFkYXRhOgogIGNyZWF0aW9uVGltZXN0YW1wOiBudWxsCiAgbGFiZWxzOgogICAgbWFjaGluZS5vcGVuc2hpZnQuaW8vY2x1c3Rlci1hcGktY2x1c3Rlcjogb3BlbnNoaWZ0LWxpbWEtY2J4ZHAKICAgIG1hY2hpbmUub3BlbnNoaWZ0LmlvL2NsdXN0ZXItYXBpLW1hY2hpbmUtcm9sZTogd29ya2VyCiAgICBtYWNoaW5lLm9wZW5zaGlmdC5pby9jbHVzdGVyLWFwaS1tYWNoaW5lLXR5cGU6IHdvcmtlcgogIG5hbWU6IG9wZW5zaGlmdC1saW1hLWNieGRwLXdvcmtlci0wCiAgbmFtZXNwYWNlOiBvcGVuc2hpZnQtbWFjaGluZS1hcGkKc3BlYzoKICByZXBsaWNhczogMQogIHNlbGVjdG9yOgogICAgbWF0Y2hMYWJlbHM6CiAgICAgIG1hY2hpbmUub3BlbnNoaWZ0LmlvL2NsdXN0ZXItYXBpLWNsdXN0ZXI6IG9wZW5zaGlmdC1saW1hLWNieGRwCiAgICAgIG1hY2hpbmUub3BlbnNoaWZ0LmlvL2NsdXN0ZXItYXBpLW1hY2hpbmVzZXQ6IG9wZW5zaGlmdC1saW1hLWNieGRwLXdvcmtlci0wCiAgdGVtcGxhdGU6CiAgICBtZXRhZGF0YToKICAgICAgbGFiZWxzOgogICAgICAgIG1hY2hpbmUub3BlbnNoaWZ0LmlvL2NsdXN0ZXItYXBpLWNsdXN0ZXI6IG9wZW5zaGlmdC1saW1hLWNieGRwCiAgICAgICAgbWFjaGluZS5vcGVuc2hpZnQuaW8vY2x1c3Rlci1hcGktbWFjaGluZS1yb2xlOiB3b3JrZXIKICAgICAgICBtYWNoaW5lLm9wZW5zaGlmdC5pby9jbHVzdGVyLWFwaS1tYWNoaW5lLXR5cGU6IHdvcmtlcgogICAgICAgIG1hY2hpbmUub3BlbnNoaWZ0LmlvL2NsdXN0ZXItYXBpLW1hY2hpbmVzZXQ6IG9wZW5zaGlmdC1saW1hLWNieGRwLXdvcmtlci0wCiAgICBzcGVjOgogICAgICBsaWZlY3ljbGVIb29rczoge30KICAgICAgbWV0YWRhdGE6IHt9CiAgICAgIHByb3ZpZGVyU3BlYzoKICAgICAgICB2YWx1ZToKICAgICAgICAgIGFwaVZlcnNpb246IGJhcmVtZXRhbC5jbHVzdGVyLms4cy5pby92MWFscGhhMQogICAgICAgICAgY3VzdG9tRGVwbG95OgogICAgICAgICAgICBtZXRob2Q6IGluc3RhbGxfY29yZW9zCiAgICAgICAgICBob3N0U2VsZWN0b3I6IHt9CiAgICAgICAgICBpbWFnZToKICAgICAgICAgICAgY2hlY2tzdW06ICIiCiAgICAgICAgICAgIHVybDogIiIKICAgICAgICAgIGtpbmQ6IEJhcmVNZXRhbE1hY2hpbmVQcm92aWRlclNwZWMKICAgICAgICAgIG1ldGFkYXRhOgogICAgICAgICAgICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogICAgICAgICAgdXNlckRhdGE6CiAgICAgICAgICAgIG5hbWU6IHdvcmtlci11c2VyLWRhdGEtbWFuYWdlZApzdGF0dXM6CiAgcmVwbGljYXM6IDAK"
+            }
+        ],
+        "MachineFiles": [],
+        "IPClaimFiles": [],
+        "IPAddrFiles": []
+    },
+    "*manifests.AdditionalTrustBundleConfig": {
+        "ConfigMap": null,
+        "File": null
+    },
+    "*manifests.CloudProviderConfig": {
+        "ConfigMap": null,
+        "File": null
+    },
+    "*manifests.ClusterCSIDriverConfig": {
+        "File": null
+    },
+    "*manifests.DNS": {
+        "FileList": [
+            {
+                "Filename": "manifests/cluster-dns-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBETlMKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiBjbHVzdGVyCnNwZWM6CiAgYmFzZURvbWFpbjogb3BlbnNoaWZ0LWxpbWEub3BlbnNoaWZ0LWxvY2FsLmNvbQogIHBsYXRmb3JtOgogICAgYXdzOiBudWxsCiAgICB0eXBlOiAiIgpzdGF0dXM6IHt9Cg=="
+            }
+        ]
+    },
+    "*manifests.FeatureGate": {
+        "FileList": [
+            {
+                "Filename": "openshift/99_feature-gate.yaml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBGZWF0dXJlR2F0ZQptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6IGNsdXN0ZXIKc3BlYzoge30Kc3RhdHVzOgogIGZlYXR1cmVHYXRlczogbnVsbAo="
+            }
+        ],
+        "Config": {
+            "kind": "FeatureGate",
+            "apiVersion": "config.openshift.io/v1",
+            "metadata": {
+                "name": "cluster",
+                "creationTimestamp": null
+            },
+            "spec": {},
+            "status": {
+                "featureGates": null
+            }
+        }
+    },
+    "*manifests.ImageContentSourcePolicy": {
+        "File": null
+    },
+    "*manifests.ImageDigestMirrorSet": {
+        "File": null
+    },
+    "*manifests.Infrastructure": {
+        "FileList": [
+            {
+                "Filename": "manifests/cluster-infrastructure-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBJbmZyYXN0cnVjdHVyZQptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6IGNsdXN0ZXIKc3BlYzoKICBjbG91ZENvbmZpZzoKICAgIG5hbWU6ICIiCiAgcGxhdGZvcm1TcGVjOgogICAgYmFyZW1ldGFsOgogICAgICBhcGlTZXJ2ZXJJbnRlcm5hbElQczoKICAgICAgLSAxOTIuMTY4LjExMS41CiAgICAgIGluZ3Jlc3NJUHM6CiAgICAgIC0gMTkyLjE2OC4xMTEuNwogICAgICBtYWNoaW5lTmV0d29ya3M6CiAgICAgIC0gMTkyLjE2OC4xMTEuMC8yNAogICAgdHlwZTogQmFyZU1ldGFsCnN0YXR1czoKICBhcGlTZXJ2ZXJJbnRlcm5hbFVSSTogaHR0cHM6Ly9hcGktaW50Lm9wZW5zaGlmdC1saW1hLm9wZW5zaGlmdC1sb2NhbC5jb206NjQ0MwogIGFwaVNlcnZlclVSTDogaHR0cHM6Ly9hcGkub3BlbnNoaWZ0LWxpbWEub3BlbnNoaWZ0LWxvY2FsLmNvbTo2NDQzCiAgY29udHJvbFBsYW5lVG9wb2xvZ3k6IFNpbmdsZVJlcGxpY2EKICBjcHVQYXJ0aXRpb25pbmc6IE5vbmUKICBldGNkRGlzY292ZXJ5RG9tYWluOiAiIgogIGluZnJhc3RydWN0dXJlTmFtZTogb3BlbnNoaWZ0LWxpbWEtY2J4ZHAKICBpbmZyYXN0cnVjdHVyZVRvcG9sb2d5OiBTaW5nbGVSZXBsaWNhCiAgcGxhdGZvcm06IEJhcmVNZXRhbAogIHBsYXRmb3JtU3RhdHVzOgogICAgYmFyZW1ldGFsOgogICAgICBhcGlTZXJ2ZXJJbnRlcm5hbElQOiAxOTIuMTY4LjExMS41CiAgICAgIGFwaVNlcnZlckludGVybmFsSVBzOgogICAgICAtIDE5Mi4xNjguMTExLjUKICAgICAgaW5ncmVzc0lQOiAxOTIuMTY4LjExMS43CiAgICAgIGluZ3Jlc3NJUHM6CiAgICAgIC0gMTkyLjE2OC4xMTEuNwogICAgICBtYWNoaW5lTmV0d29ya3M6CiAgICAgIC0gMTkyLjE2OC4xMTEuMC8yNAogICAgdHlwZTogQmFyZU1ldGFsCg=="
+            }
+        ]
+    },
+    "*manifests.Ingress": {
+        "FileList": [
+            {
+                "Filename": "manifests/cluster-ingress-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBJbmdyZXNzCm1ldGFkYXRhOgogIGNyZWF0aW9uVGltZXN0YW1wOiBudWxsCiAgbmFtZTogY2x1c3RlcgpzcGVjOgogIGRvbWFpbjogYXBwcy5vcGVuc2hpZnQtbGltYS5vcGVuc2hpZnQtbG9jYWwuY29tCiAgbG9hZEJhbGFuY2VyOgogICAgcGxhdGZvcm06CiAgICAgIHR5cGU6ICIiCnN0YXR1czoKICBkZWZhdWx0UGxhY2VtZW50OiBXb3JrZXJzCg=="
+            }
+        ]
+    },
+    "*manifests.Manifests": {
+        "KubeSysConfig": {
+            "kind": "ConfigMap",
+            "apiVersion": "v1",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/description": "The install-config content used to create the cluster.  The cluster configuration may have evolved since installation, so check cluster configuration resources directly if you are interested in the current cluster state."
+                },
+                "name": "cluster-config-v1",
+                "namespace": "kube-system"
+            },
+            "data": {
+                "install-config": "additionalTrustBundlePolicy: Proxyonly\napiVersion: v1\nbaseDomain: openshift-local.com\ncompute:\n- architecture: amd64\n  hyperthreading: Enabled\n  name: worker\n  platform: {}\n  replicas: 1\ncontrolPlane:\n  architecture: amd64\n  hyperthreading: Enabled\n  name: master\n  platform: {}\n  replicas: 1\nmetadata:\n  creationTimestamp: null\n  name: openshift-lima\nnetworking:\n  clusterNetwork:\n  - cidr: 10.128.0.0/14\n    hostPrefix: 23\n  machineNetwork:\n  - cidr: 192.168.111.0/24\n  networkType: OVNKubernetes\n  serviceNetwork:\n  - 172.30.0.0/16\nplatform:\n  baremetal:\n    apiVIP: 192.168.111.5\n    apiVIPs:\n    - 192.168.111.5\n    bootstrapProvisioningIP: 172.22.0.2\n    clusterProvisioningIP: 172.22.0.3\n    externalBridge: baremetal\n    externalMACAddress: 52:54:00:c6:c3:e7\n    hosts:\n    - bmc:\n        address: \"\"\n        disableCertificateVerification: false\n        password: \"\"\n        username: \"\"\n      bootMACAddress: 52:54:00:1e:56:ac\n      bootMode: UEFI\n      hardwareProfile: unknown\n      name: openshift-master-0\n      networkConfig:\n        dns-resolver:\n          config:\n            server:\n            - 8.8.8.8\n        interfaces:\n        - ipv4:\n            address:\n            - ip: 192.168.111.5\n              prefix-length: 24\n            enabled: true\n          name: eth0\n          state: up\n          type: ethernet\n        routes:\n          config:\n          - destination: 0.0.0.0/0\n            next-hop-address: 192.168.111.1\n            next-hop-interface: eth0\n      role: master\n      rootDeviceHints:\n        deviceName: /dev/sda\n    - bmc:\n        address: \"\"\n        disableCertificateVerification: false\n        password: \"\"\n        username: \"\"\n      bootMACAddress: 52:54:00:1e:56:ad\n      bootMode: UEFI\n      hardwareProfile: unknown\n      name: openshift-worker-0\n      networkConfig:\n        dns-resolver:\n          config:\n            server:\n            - 8.8.8.8\n        interfaces:\n        - ipv4:\n            address:\n            - ip: 192.168.111.6\n              prefix-length: 24\n            enabled: true\n          name: eth0\n          state: up\n          type: ethernet\n        routes:\n          config:\n          - destination: 0.0.0.0/0\n            next-hop-address: 192.168.111.1\n            next-hop-interface: eth0\n      role: worker\n      rootDeviceHints:\n        deviceName: /dev/sda\n    ingressVIP: 192.168.111.7\n    ingressVIPs:\n    - 192.168.111.7\n    libvirtURI: qemu:///system\n    provisioningBridge: provisioning\n    provisioningDHCPRange: 172.22.0.10,172.22.0.254\n    provisioningMACAddress: 52:54:00:ea:3b:1d\n    provisioningNetwork: Managed\n    provisioningNetworkCIDR: 172.22.0.0/24\n    provisioningNetworkInterface: \"\"\npublish: External\npullSecret: \"\"\nsshKey: |\n  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKHoSM3uib+G651+AHFTQaL0h+tdTO8oh25TwvEXdltq natemollica@natemollica-R47X02WHFD\n"
+            }
+        },
+        "FileList": [
+            {
+                "Filename": "manifests/cluster-config.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKZGF0YToKICBpbnN0YWxsLWNvbmZpZzogfAogICAgYWRkaXRpb25hbFRydXN0QnVuZGxlUG9saWN5OiBQcm94eW9ubHkKICAgIGFwaVZlcnNpb246IHYxCiAgICBiYXNlRG9tYWluOiBvcGVuc2hpZnQtbG9jYWwuY29tCiAgICBjb21wdXRlOgogICAgLSBhcmNoaXRlY3R1cmU6IGFtZDY0CiAgICAgIGh5cGVydGhyZWFkaW5nOiBFbmFibGVkCiAgICAgIG5hbWU6IHdvcmtlcgogICAgICBwbGF0Zm9ybToge30KICAgICAgcmVwbGljYXM6IDEKICAgIGNvbnRyb2xQbGFuZToKICAgICAgYXJjaGl0ZWN0dXJlOiBhbWQ2NAogICAgICBoeXBlcnRocmVhZGluZzogRW5hYmxlZAogICAgICBuYW1lOiBtYXN0ZXIKICAgICAgcGxhdGZvcm06IHt9CiAgICAgIHJlcGxpY2FzOiAxCiAgICBtZXRhZGF0YToKICAgICAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICAgICAgbmFtZTogb3BlbnNoaWZ0LWxpbWEKICAgIG5ldHdvcmtpbmc6CiAgICAgIGNsdXN0ZXJOZXR3b3JrOgogICAgICAtIGNpZHI6IDEwLjEyOC4wLjAvMTQKICAgICAgICBob3N0UHJlZml4OiAyMwogICAgICBtYWNoaW5lTmV0d29yazoKICAgICAgLSBjaWRyOiAxOTIuMTY4LjExMS4wLzI0CiAgICAgIG5ldHdvcmtUeXBlOiBPVk5LdWJlcm5ldGVzCiAgICAgIHNlcnZpY2VOZXR3b3JrOgogICAgICAtIDE3Mi4zMC4wLjAvMTYKICAgIHBsYXRmb3JtOgogICAgICBiYXJlbWV0YWw6CiAgICAgICAgYXBpVklQOiAxOTIuMTY4LjExMS41CiAgICAgICAgYXBpVklQczoKICAgICAgICAtIDE5Mi4xNjguMTExLjUKICAgICAgICBib290c3RyYXBQcm92aXNpb25pbmdJUDogMTcyLjIyLjAuMgogICAgICAgIGNsdXN0ZXJQcm92aXNpb25pbmdJUDogMTcyLjIyLjAuMwogICAgICAgIGV4dGVybmFsQnJpZGdlOiBiYXJlbWV0YWwKICAgICAgICBleHRlcm5hbE1BQ0FkZHJlc3M6IDUyOjU0OjAwOmM2OmMzOmU3CiAgICAgICAgaG9zdHM6CiAgICAgICAgLSBibWM6CiAgICAgICAgICAgIGFkZHJlc3M6ICIiCiAgICAgICAgICAgIGRpc2FibGVDZXJ0aWZpY2F0ZVZlcmlmaWNhdGlvbjogZmFsc2UKICAgICAgICAgICAgcGFzc3dvcmQ6ICIiCiAgICAgICAgICAgIHVzZXJuYW1lOiAiIgogICAgICAgICAgYm9vdE1BQ0FkZHJlc3M6IDUyOjU0OjAwOjFlOjU2OmFjCiAgICAgICAgICBib290TW9kZTogVUVGSQogICAgICAgICAgaGFyZHdhcmVQcm9maWxlOiB1bmtub3duCiAgICAgICAgICBuYW1lOiBvcGVuc2hpZnQtbWFzdGVyLTAKICAgICAgICAgIG5ldHdvcmtDb25maWc6CiAgICAgICAgICAgIGRucy1yZXNvbHZlcjoKICAgICAgICAgICAgICBjb25maWc6CiAgICAgICAgICAgICAgICBzZXJ2ZXI6CiAgICAgICAgICAgICAgICAtIDguOC44LjgKICAgICAgICAgICAgaW50ZXJmYWNlczoKICAgICAgICAgICAgLSBpcHY0OgogICAgICAgICAgICAgICAgYWRkcmVzczoKICAgICAgICAgICAgICAgIC0gaXA6IDE5Mi4xNjguMTExLjUKICAgICAgICAgICAgICAgICAgcHJlZml4LWxlbmd0aDogMjQKICAgICAgICAgICAgICAgIGVuYWJsZWQ6IHRydWUKICAgICAgICAgICAgICBuYW1lOiBldGgwCiAgICAgICAgICAgICAgc3RhdGU6IHVwCiAgICAgICAgICAgICAgdHlwZTogZXRoZXJuZXQKICAgICAgICAgICAgcm91dGVzOgogICAgICAgICAgICAgIGNvbmZpZzoKICAgICAgICAgICAgICAtIGRlc3RpbmF0aW9uOiAwLjAuMC4wLzAKICAgICAgICAgICAgICAgIG5leHQtaG9wLWFkZHJlc3M6IDE5Mi4xNjguMTExLjEKICAgICAgICAgICAgICAgIG5leHQtaG9wLWludGVyZmFjZTogZXRoMAogICAgICAgICAgcm9sZTogbWFzdGVyCiAgICAgICAgICByb290RGV2aWNlSGludHM6CiAgICAgICAgICAgIGRldmljZU5hbWU6IC9kZXYvc2RhCiAgICAgICAgLSBibWM6CiAgICAgICAgICAgIGFkZHJlc3M6ICIiCiAgICAgICAgICAgIGRpc2FibGVDZXJ0aWZpY2F0ZVZlcmlmaWNhdGlvbjogZmFsc2UKICAgICAgICAgICAgcGFzc3dvcmQ6ICIiCiAgICAgICAgICAgIHVzZXJuYW1lOiAiIgogICAgICAgICAgYm9vdE1BQ0FkZHJlc3M6IDUyOjU0OjAwOjFlOjU2OmFkCiAgICAgICAgICBib290TW9kZTogVUVGSQogICAgICAgICAgaGFyZHdhcmVQcm9maWxlOiB1bmtub3duCiAgICAgICAgICBuYW1lOiBvcGVuc2hpZnQtd29ya2VyLTAKICAgICAgICAgIG5ldHdvcmtDb25maWc6CiAgICAgICAgICAgIGRucy1yZXNvbHZlcjoKICAgICAgICAgICAgICBjb25maWc6CiAgICAgICAgICAgICAgICBzZXJ2ZXI6CiAgICAgICAgICAgICAgICAtIDguOC44LjgKICAgICAgICAgICAgaW50ZXJmYWNlczoKICAgICAgICAgICAgLSBpcHY0OgogICAgICAgICAgICAgICAgYWRkcmVzczoKICAgICAgICAgICAgICAgIC0gaXA6IDE5Mi4xNjguMTExLjYKICAgICAgICAgICAgICAgICAgcHJlZml4LWxlbmd0aDogMjQKICAgICAgICAgICAgICAgIGVuYWJsZWQ6IHRydWUKICAgICAgICAgICAgICBuYW1lOiBldGgwCiAgICAgICAgICAgICAgc3RhdGU6IHVwCiAgICAgICAgICAgICAgdHlwZTogZXRoZXJuZXQKICAgICAgICAgICAgcm91dGVzOgogICAgICAgICAgICAgIGNvbmZpZzoKICAgICAgICAgICAgICAtIGRlc3RpbmF0aW9uOiAwLjAuMC4wLzAKICAgICAgICAgICAgICAgIG5leHQtaG9wLWFkZHJlc3M6IDE5Mi4xNjguMTExLjEKICAgICAgICAgICAgICAgIG5leHQtaG9wLWludGVyZmFjZTogZXRoMAogICAgICAgICAgcm9sZTogd29ya2VyCiAgICAgICAgICByb290RGV2aWNlSGludHM6CiAgICAgICAgICAgIGRldmljZU5hbWU6IC9kZXYvc2RhCiAgICAgICAgaW5ncmVzc1ZJUDogMTkyLjE2OC4xMTEuNwogICAgICAgIGluZ3Jlc3NWSVBzOgogICAgICAgIC0gMTkyLjE2OC4xMTEuNwogICAgICAgIGxpYnZpcnRVUkk6IHFlbXU6Ly8vc3lzdGVtCiAgICAgICAgcHJvdmlzaW9uaW5nQnJpZGdlOiBwcm92aXNpb25pbmcKICAgICAgICBwcm92aXNpb25pbmdESENQUmFuZ2U6IDE3Mi4yMi4wLjEwLDE3Mi4yMi4wLjI1NAogICAgICAgIHByb3Zpc2lvbmluZ01BQ0FkZHJlc3M6IDUyOjU0OjAwOmVhOjNiOjFkCiAgICAgICAgcHJvdmlzaW9uaW5nTmV0d29yazogTWFuYWdlZAogICAgICAgIHByb3Zpc2lvbmluZ05ldHdvcmtDSURSOiAxNzIuMjIuMC4wLzI0CiAgICAgICAgcHJvdmlzaW9uaW5nTmV0d29ya0ludGVyZmFjZTogIiIKICAgIHB1Ymxpc2g6IEV4dGVybmFsCiAgICBwdWxsU2VjcmV0OiAiIgogICAgc3NoS2V5OiB8CiAgICAgIHNzaC1lZDI1NTE5IEFBQUFDM056YUMxbFpESTFOVEU1QUFBQUlLSG9TTTN1aWIrRzY1MStBSEZUUWFMMGgrdGRUTzhvaDI1VHd2RVhkbHRxIG5hdGVtb2xsaWNhQG5hdGVtb2xsaWNhLVI0N1gwMldIRkQKa2luZDogQ29uZmlnTWFwCm1ldGFkYXRhOgogIGFubm90YXRpb25zOgogICAga3ViZXJuZXRlcy5pby9kZXNjcmlwdGlvbjogVGhlIGluc3RhbGwtY29uZmlnIGNvbnRlbnQgdXNlZCB0byBjcmVhdGUgdGhlIGNsdXN0ZXIuICBUaGUKICAgICAgY2x1c3RlciBjb25maWd1cmF0aW9uIG1heSBoYXZlIGV2b2x2ZWQgc2luY2UgaW5zdGFsbGF0aW9uLCBzbyBjaGVjayBjbHVzdGVyCiAgICAgIGNvbmZpZ3VyYXRpb24gcmVzb3VyY2VzIGRpcmVjdGx5IGlmIHlvdSBhcmUgaW50ZXJlc3RlZCBpbiB0aGUgY3VycmVudCBjbHVzdGVyCiAgICAgIHN0YXRlLgogIG5hbWU6IGNsdXN0ZXItY29uZmlnLXYxCiAgbmFtZXNwYWNlOiBrdWJlLXN5c3RlbQo="
+            },
+            {
+                "Filename": "manifests/cluster-dns-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBETlMKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiBjbHVzdGVyCnNwZWM6CiAgYmFzZURvbWFpbjogb3BlbnNoaWZ0LWxpbWEub3BlbnNoaWZ0LWxvY2FsLmNvbQogIHBsYXRmb3JtOgogICAgYXdzOiBudWxsCiAgICB0eXBlOiAiIgpzdGF0dXM6IHt9Cg=="
+            },
+            {
+                "Filename": "manifests/cluster-infrastructure-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBJbmZyYXN0cnVjdHVyZQptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6IGNsdXN0ZXIKc3BlYzoKICBjbG91ZENvbmZpZzoKICAgIG5hbWU6ICIiCiAgcGxhdGZvcm1TcGVjOgogICAgYmFyZW1ldGFsOgogICAgICBhcGlTZXJ2ZXJJbnRlcm5hbElQczoKICAgICAgLSAxOTIuMTY4LjExMS41CiAgICAgIGluZ3Jlc3NJUHM6CiAgICAgIC0gMTkyLjE2OC4xMTEuNwogICAgICBtYWNoaW5lTmV0d29ya3M6CiAgICAgIC0gMTkyLjE2OC4xMTEuMC8yNAogICAgdHlwZTogQmFyZU1ldGFsCnN0YXR1czoKICBhcGlTZXJ2ZXJJbnRlcm5hbFVSSTogaHR0cHM6Ly9hcGktaW50Lm9wZW5zaGlmdC1saW1hLm9wZW5zaGlmdC1sb2NhbC5jb206NjQ0MwogIGFwaVNlcnZlclVSTDogaHR0cHM6Ly9hcGkub3BlbnNoaWZ0LWxpbWEub3BlbnNoaWZ0LWxvY2FsLmNvbTo2NDQzCiAgY29udHJvbFBsYW5lVG9wb2xvZ3k6IFNpbmdsZVJlcGxpY2EKICBjcHVQYXJ0aXRpb25pbmc6IE5vbmUKICBldGNkRGlzY292ZXJ5RG9tYWluOiAiIgogIGluZnJhc3RydWN0dXJlTmFtZTogb3BlbnNoaWZ0LWxpbWEtY2J4ZHAKICBpbmZyYXN0cnVjdHVyZVRvcG9sb2d5OiBTaW5nbGVSZXBsaWNhCiAgcGxhdGZvcm06IEJhcmVNZXRhbAogIHBsYXRmb3JtU3RhdHVzOgogICAgYmFyZW1ldGFsOgogICAgICBhcGlTZXJ2ZXJJbnRlcm5hbElQOiAxOTIuMTY4LjExMS41CiAgICAgIGFwaVNlcnZlckludGVybmFsSVBzOgogICAgICAtIDE5Mi4xNjguMTExLjUKICAgICAgaW5ncmVzc0lQOiAxOTIuMTY4LjExMS43CiAgICAgIGluZ3Jlc3NJUHM6CiAgICAgIC0gMTkyLjE2OC4xMTEuNwogICAgICBtYWNoaW5lTmV0d29ya3M6CiAgICAgIC0gMTkyLjE2OC4xMTEuMC8yNAogICAgdHlwZTogQmFyZU1ldGFsCg=="
+            },
+            {
+                "Filename": "manifests/cluster-ingress-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBJbmdyZXNzCm1ldGFkYXRhOgogIGNyZWF0aW9uVGltZXN0YW1wOiBudWxsCiAgbmFtZTogY2x1c3RlcgpzcGVjOgogIGRvbWFpbjogYXBwcy5vcGVuc2hpZnQtbGltYS5vcGVuc2hpZnQtbG9jYWwuY29tCiAgbG9hZEJhbGFuY2VyOgogICAgcGxhdGZvcm06CiAgICAgIHR5cGU6ICIiCnN0YXR1czoKICBkZWZhdWx0UGxhY2VtZW50OiBXb3JrZXJzCg=="
+            },
+            {
+                "Filename": "manifests/cluster-network-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBOZXR3b3JrCm1ldGFkYXRhOgogIGNyZWF0aW9uVGltZXN0YW1wOiBudWxsCiAgbmFtZTogY2x1c3RlcgpzcGVjOgogIGNsdXN0ZXJOZXR3b3JrOgogIC0gY2lkcjogMTAuMTI4LjAuMC8xNAogICAgaG9zdFByZWZpeDogMjMKICBleHRlcm5hbElQOgogICAgcG9saWN5OiB7fQogIG5ldHdvcmtEaWFnbm9zdGljczoKICAgIG1vZGU6ICIiCiAgICBzb3VyY2VQbGFjZW1lbnQ6CiAgICAgIG5vZGVTZWxlY3RvcjogbnVsbAogICAgICB0b2xlcmF0aW9uczogbnVsbAogICAgdGFyZ2V0UGxhY2VtZW50OgogICAgICBub2RlU2VsZWN0b3I6IG51bGwKICAgICAgdG9sZXJhdGlvbnM6IG51bGwKICBuZXR3b3JrVHlwZTogT1ZOS3ViZXJuZXRlcwogIHNlcnZpY2VOZXR3b3JrOgogIC0gMTcyLjMwLjAuMC8xNgpzdGF0dXM6IHt9Cg=="
+            },
+            {
+                "Filename": "manifests/cluster-proxy-01-config.yaml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBQcm94eQptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6IGNsdXN0ZXIKc3BlYzoKICB0cnVzdGVkQ0E6CiAgICBuYW1lOiAiIgpzdGF0dXM6IHt9Cg=="
+            },
+            {
+                "Filename": "manifests/cluster-scheduler-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBTY2hlZHVsZXIKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiBjbHVzdGVyCnNwZWM6CiAgbWFzdGVyc1NjaGVkdWxhYmxlOiBmYWxzZQogIHBvbGljeToKICAgIG5hbWU6ICIiCiAgcHJvZmlsZUN1c3RvbWl6YXRpb25zOgogICAgZHluYW1pY1Jlc291cmNlQWxsb2NhdGlvbjogIiIKc3RhdHVzOiB7fQo="
+            },
+            {
+                "Filename": "manifests/cvo-overrides.yaml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBDbHVzdGVyVmVyc2lvbgptZXRhZGF0YToKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jbHVzdGVyLXZlcnNpb24KICBuYW1lOiB2ZXJzaW9uCnNwZWM6CiAgY2hhbm5lbDogc3RhYmxlLTQuMTcKICBjbHVzdGVySUQ6IDdkODA5Yjk2LWZiYjEtNDk3Ni05NTdjLTVkMzNmOTZhZGVlMwo="
+            },
+            {
+                "Filename": "manifests/kube-cloud-config.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IGt1YmUtY2xvdWQtY2ZnCiAgbmFtZXNwYWNlOiBrdWJlLXN5c3RlbQp0eXBlOiBPcGFxdWUKZGF0YToKICBjb25maWc6ICIiCg=="
+            },
+            {
+                "Filename": "manifests/kube-system-configmap-root-ca.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogQ29uZmlnTWFwCm1ldGFkYXRhOgogIG5hbWU6IHJvb3QtY2EKICBuYW1lc3BhY2U6IGt1YmUtc3lzdGVtCmRhdGE6CiAgY2EuY3J0OiB8CiAgICAtLS0tLUJFR0lOIENFUlRJRklDQVRFLS0tLS0KICAgIE1JSURFRENDQWZpZ0F3SUJBZ0lJT2xwZ1BjRVRiZWN3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKICAgIEN4TUpiM0JsYm5Ob2FXWjBNUkF3RGdZRFZRUURFd2R5YjI5MExXTmhNQjRYRFRJME1UQXhNakl4TXpNeE5sb1gKICAgIERUTTBNVEF4TURJeE16TXhObG93SmpFU01CQUdBMVVFQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHkKICAgIGIyOTBMV05oTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE4QUZXWUU0N2xzcXEKICAgIDV6dFVoTDJjNEZtSTFEY2piU01yWUlpYzZHWnpXUXk1VERVZWxxNlorbk9naHpYK1hYUk9tc1ZFWGxmancxVk8KICAgIHVSS1NpdGZraVVYRkc1WWtqMU9WWFg1d2lZcW9aZXJhcWNXSFlSemFDRG9MVFdUSzM1SVNxZXFEREJaVGtVVFQKICAgIHFNbXVkTGx2c1N4TFE4bkk1VTR3TWpDclVkS1pKRTZYbzByRDJkMDFiV1Q5M0lKQU5DaXArNEhFNlE0K0VyeVEKICAgICtKSXpSNXR6UU1lOEIrd1NHWGE5Ums2ejI2a3hYcTZRR2E3MVNoaU43amVEdWl3VFR0V2pTeWlFbTVLTVBQSEUKICAgIGVSUDZZNXRtL01IZUhURTJqeGlsand4RGMveExaNi83NGpvS09YY1FnY1I3cU85NzNmblh6Tld2aithajM2OTcKICAgIHA4ckhPcmt4cHdJREFRQUJvMEl3UURBT0JnTlZIUThCQWY4RUJBTUNBcVF3RHdZRFZSMFRBUUgvQkFVd0F3RUIKICAgIC96QWRCZ05WSFE0RUZnUVVSczJuMldiT3RrazV2SGVPVDI3OTQxRXAzYWN3RFFZSktvWklodmNOQVFFTEJRQUQKICAgIGdnRUJBT1NyenIxTGZrZEVzckdCWHdDQzlZUzBOeWtFbzcybHhyTUVPYWdIcGxFQmJ3c0Uvc0NNZmZBeDFFUUYKICAgIHRxQ1JscWVqQjlrMVdIY3ZmWlpaYzNJOUJuZG5mVXJrM3RGdzVDZDk0cWt4cU44MExWaEUranZXNnFJRm04Q0IKICAgIEp1MWczOER3bDFUTUl5QjlaRDcxTk1mVW16ZStGLzBJYkpHdVRFTFZzSnJTYlBKTFBKaDlCc2ozckZxUzVaSzEKICAgIDk5ZllrSEc4Vzd0aDJXeXJLQXYwOXhML05uL0lqOWxyNmZKNVV2RllDOGVLVGRTSDQ4dGxsUkppc2lPSndWR2cKICAgIGJSNUdsL0M3dTZabk04N2NCZldIRzhzVE1jT1FKNHlxdGxyd3ZVWHZuTjc2bEpWLy93c0VUWExSd00yM2llVlIKICAgIDRyK0oyRXYvZlpuNDN6RU9NVnRsLzVCR0Z2WT0KICAgIC0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0KICAgIAo="
+            },
+            {
+                "Filename": "manifests/machine-config-server-tls-secret.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG1hY2hpbmUtY29uZmlnLXNlcnZlci10bHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1tYWNoaW5lLWNvbmZpZy1vcGVyYXRvcgogIGFubm90YXRpb25zOgogICAgb3BlbnNoaWZ0LmlvL293bmluZy1jb21wb25lbnQ6ICJNYWNoaW5lIENvbmZpZyBPcGVyYXRvciIKdHlwZTogT3BhcXVlCmRhdGE6CiAgdGxzLmNydDogTFMwdExTMUNSVWRKVGlCRFJWSlVTVVpKUTBGVVJTMHRMUzB0Q2sxSlNVUm5ha05EUVcxeFowRjNTVUpCWjBsSllrWXZORVZ0Y0RrMWNFVjNSRkZaU2t0dldrbG9kbU5PUVZGRlRFSlJRWGRLYWtWVFRVSkJSMEV4VlVVS1EzaE5TbUl6UW14aWJrNXZZVmRhTUUxU1FYZEVaMWxFVmxGUlJFVjNaSGxpTWprd1RGZE9hRTFDTkZoRVZFa3dUVlJCZUUxcVNYaE5lazE0VG14dldBcEVWRTB3VFZSQmVFMUVTWGhOZWsxNFRteHZkMHA2Uld4TlEwMUhRVEZWUlVGNFRXTmpNMng2WkVkV2RFOXRNV2haTW1od1ltMVZkRmt5T1hWYWJXeHVDa3hZVG14amJscHNZMnBEUTBGVFNYZEVVVmxLUzI5YVNXaDJZMDVCVVVWQ1FsRkJSR2RuUlZCQlJFTkRRVkZ2UTJkblJVSkJUVmRCZW5SS2QwMVlUalFLYTFwV05XWkJhak5LUmtOeFIxbFhRMmRXYUdSTlJqZFZVSGRIYTIwM01VOWFRVm92U21zd1NXUkNla0o2ZVRGTGVsRkVjbkZCYkRod2RHOUJXWEZuT1Fwd2FHVmxWM1JQV1UxSk4wbEdSa1ZqVjFSTFNERm5hVkZWTDNZeWR6UTRVRnBuZEhCQ1QxTnZOV2syU21ZMlJHbDFkMnRhVFhCRlZqRXZkbXBRZUhWUUNrdFBWMWhPTm5oVFNHZDJUMDU2TnpCQ2RURmlRV3BIVGtGVlVFMWlaVWN6TTNKTGRtMUdObU5aZEhONlUzcDNSMmM0VWxWU01tSnFTbXRRTWpJd2JTc0tOa28wWlVVMGRsSmtZbXAzYmxCM1RteHBha3M0WVhsVFRIWkphbFJMTUhkT2FVcE5WRXhsWVdkSU5ucHFSMk54Y0Vsb1pEVkJUbW8wYmtKbE5HUmhOQXBTYjBOb04zVkxPRkZLTVRsMVVXNTJORFZwU1ZscmRtbE1ObmRVZWxwT1VrVlNSVko2Y1ZOdFJVVkZjVFl6ZVUxbWRYSndja0pMT1RSWE9IaFlSQzlHQ25oalJYRXlReXN6ZDBaelEwRjNSVUZCWVU5Q2MycERRbko2UVZSQ1owNVdTRk5WUlVSRVFVdENaMmR5UW1kRlJrSlJZMFJCVkVGTlFtZE9Wa2hTVFVJS1FXWTRSVUZxUVVGTlFqQkhRVEZWWkVSblVWZENRbE5SV1dKaWMwOUhWbGQyVGxwc1RrRk9UbUUyYzFCaFYyeEpkbXBCWmtKblRsWklVMDFGUjBSQlZ3cG5RbEpIZW1GbVdscHpOakpUVkcwNFpEUTFVR0oyTTJwVlUyNWtjSHBDUzBKblRsWklVa1ZGVVhwQ1FtZHBjR2hqUjJ0MFlWYzFNRXh0T1hkYVZ6VjZDbUZIYkcxa1F6RnpZVmN4YUV4dE9YZGFWelY2WVVkc2JXUkRNWE5pTWs1b1lrTTFhbUl5TWtORVZFVTFUV2swZUU1cVozVk5WRVY0VEdwWFNFSk5RMjhLWW5kVmQwUlJXVXBMYjFwSmFIWmpUa0ZSUlV4Q1VVRkVaMmRGUWtGS1ZsaFhjSEZIZWxwbVR6RklObGxKU1V3eU4wNVBTbGt6YWtWeFZGRjVTRzFOUlFvNGMyeHdaMGRGUWxCUFNtRnJTMUEzYmprMVdFTlBUMjVQYjJzNFdIRm9laTl4WVdsMlpVeG9SV2s0V1VKcUx6Wm9TaXROZGtWaVQwTlNTVmhSVEZKTENrTktTVWh2T1RNdmNXOXZNSGcxT1ZReFZtSlpPVWR6WlZOcFpWWkRXa2RVU21sNFN6QmplVGxTWWxaUk5FUXJVRTF0ZG5sNFVqVllLMDVUY2xsWEt6QUtWR1kyT1Rsc09VOURRVlV5YW1ObE4zZDRkamR3T1ZKTFJDOTFSWGMxUjFGUFJqZE5RemxUUWpWWlMwZE1ZMWh0WXpJeE5qRkdZbU0zTVZFMk1FdGpOd3B3TWpGNmEwMHZVM1JPVVZVMldqaDFWa2x0V1RWc2NVcHRVM3BUTlV3MU1Dc3hRblJ4ZG1nMU1ITjBWRWsyZUU0clUwcE5ORzlEVFVGUE1HVjBVamc1Q2xWQ1lteE5ZaTlJTkdVeFRrdE1hMUZEWkd0blMweHBZMWRYTUhOa01qWnlWSEpWVUdoVEwzQkpiMDVUWjBsTlFqWlZSVDBLTFMwdExTMUZUa1FnUTBWU1ZFbEdTVU5CVkVVdExTMHRMUW89CiAgdGxzLmtleTogTFMwdExTMUNSVWRKVGlCU1UwRWdVRkpKVmtGVVJTQkxSVmt0TFMwdExRcE5TVWxGY0VGSlFrRkJTME5CVVVWQmVGbEVUekJ1UVhoak0ybFNiRmhzT0VOUVkydFZTMjlhYUZsTFFsZEdNSGRZZEZFdlFXRlRZblpWTld0Q2JqaHRDbFJSYURCSVRVaFFURlZ5VGtGUGRXOURXSGx0TW1kQ2FYRkVNbTFHTlRWaE1EVm5kMnB6WjFWVlVuaGFUVzltVjBOS1FsUXJMMkpFYW5jNWJVTXlhMFVLTlV0cWJVeHZiQzl2VDBzM1ExSnJlV3RTV0ZnckswMHZSelE0YnpWYVl6TnlSa2xsUXpnME0xQjJVVWMzVm5ORFRWa3dRbEU0ZUhRMFltWmxjM0VyV1FwWWNIaHBNbnBPVEZCQllVUjRSbEpJV25WTmJWRXZZbUpUWWpkdmJtZzBWR2s1UmpGMVVFTmpMMEV5VjB0TmNuaHlTa2wxT0dsT1RYSlVRVEpKYTNoTkNuUTFjVUZtY2s5TldubHhhMmxHTTJ0Qk1sQnBZMFkzYURGeWFFZG5TMGgxTkhKNFFXNVlNalZEWlM5cWJVbG9hVk1yU1haeVFsQk9hekZGVWtWU1NFOEtjRXRaVVZGVGNuSm1TWGdyTm5WdGMwVnlNMmhpZWtaalVEaFlSbmRUY2xsTU4yWkJWM2RKUkVGUlFVSkJiMGxDUVVnNFFtUm1ObVJhZVRrMlQxTlRSd3BIZERCd1JVcEdUekJXY1hCelkxQkNTMWh1VW5kNlMzSlNMM1JWYW1JMFpuaGxSMFJ5YVdSUUsyOXhSbkkwT0VncksyTmtOR0UwVHpCWFMyWlJheXQwQ2pWWWNITlJPREpPYmtsTlRWWTRMMGQ1YW5nemF6UndWVUpUTTJGSFUxUTVVVGhvU0ZaTU5WbGlWbkJ2WTNnMVIzUmtNMWQ2YVRKTk1VOW9SVUl5YVdNS09WcEJOblpzWlZwS1N6SXlMM294YW1GUFZ6QmFlblpUUjJ4amNsbDRjR2hzVmk5eFQxaElRbnBDWlN0RGRTOURZMFpuUzFkT1JqQnlVREkzYjIxU1JRcE1Sa2xxTDBVeVpGUk9UVGwyVG05b1F6SkhWMjV6V21oU2JWUnBWalJLZVRsVlMzSlBiRkJNZFZCSGFUZDJSMnh4WmpadGRFbFpXamRXWkRGa05YZFpDblkxSzAxVmJGaDNjR1pzZG10Q1ZGcEpWa0ZoZG5kVVVqTmhkREpxZUZwalN6QXdSMVpSVTBaSlNYRTRSRXB3Um1WalJra3lURWRYYm5oTmFtNWtlazhLZWk5c1JGUm5SVU5uV1VWQmVEQkVjalpRVldoTlVYQldOWHBSWVhGRWNqSm5ZV1phV0dsM2FuRm9lVUY0U3pZdlNHeEZSWGg0Y3psT01VbEZOU3RtU0FweGQxUnNVV1ZGY0hBeWVWVjVjVWh1YTBsa1YzUnBRMlJXUW1kcmR6TlFSWGd3UTNkNGVIVklMMVJaS3pWMWFERnpaV0ZDUmpoV01FYzNOVTAxYTBaMUNraExTM0Z5TTB3d2NVZHhabTEyTUhaM05FRldPV2cyVEhONU1ubG9jRTFOT1ZsTkwycDJSVlJVV0dwb05VWnJObFpCWTNBeGNFMURaMWxGUVM5alFrVUtSVEZEWVZabU4wVm9aVkkzWmxNeVNtZG1SRlpCU0RBeGQweGFjMXAyT1VaTmRXaEpZV3RuUldaUFQzcGpZV2ROVEhnMWRVazBUR2d5Ym0xNmRsVTJVZ3BtYWpWNmIwZE5ZVzVSVDJkNlEyZGhMMFZZVDA1RFNtOU1RVEo2UVRGdVprZEZkRVpxUTJsM1FqUXJTMFJSTjNWYWRHZFhTek50TDJad1kzTldPVFl2Q205TlMzVnROR0l4VkU1RWNIaEpRMU5wUlVjMWNGTk9lRmRLVldOMWVIY3ZhbFEzUzJoQ2EwTm5XVUZZWW1ORVVHZGFUa2hwZFcxVE5rRlBRMkZJZURNS2RtdzNSM1ptV0hKdFRFcHFZbWhETWpWa2RtbzVXVmczVEZRck5tSlFlVVJXVnpSSWEzZDNjM3BaTW5CVVpWSkhhMFZPV0RSMmJtTXlORWh1U1ZsUGRnb3dhVVl6U2k5MVZHZElPV2M0TVVKNlprdEZUbEpKUW10cGNtNU5SVlZHTjFOSU1EbGhRWHAzYVV0cUwzUnRiVnBYVlZFM2VteGxjVEVyU3pSQ1F6VjJDalVyUkdaVksxWnlTa295WWtabmNsQjFieTl0TVZGTFFtZFJSRkJ6WmtkSGFHSkVkSFJ0ZDFFd05sVnZTRzRyZDNSbWEwTlFNMjlvTVVzNFFqRjFkRU1LT0dSR2FpOU1TaTl5Y21sUWVrOWhPRWx2U1hZeWN6aFhWR2R6UzFwcFlUaFhSVEl6T1RaWmRUUnRkRmszTTBzelJHdFFjbVJGV1dveVRYRjJZMWcwYWdwdGJXcEJaMmRWYWtONVFVbzVSRU0yVTFOQ1RWVlphVzFEZDB0dGIxcElhaXRpVjBaWk15dG5ZMnhqUmtka0wxZFhNRmRwYmpGSlJrZFlaVGg0ZWtKV0NsbG9TRTA0VVV0Q1oxRkRhazFUUlRKVFZXRllUbFpaTUc5T2MwZzRORXBUWWpOb0x5OVZTVzlNTWs0NE5tVjFVMFJ4UVhGaGRuVnRNSG94WTFsSVMzRUtkRk5HWXpWTWEzQjBVRkZSWWpGNmNIVTRielo0ZVdkSGEwUjJlVzlhVkhwYVRDczViMDFaY0dSbGRrMTJOVzhyVDNaNFVHVklSMEZMTm00eVFrNHZOUW8yWlRrNWRuTjNPSEprY1hobmFYWkNZV2h2TVZwQk9HUjVWbVpUTVZrNVFXRjFLM0JaU25NM0wwNXlNRnBpUnpodlVYSmhabEU5UFFvdExTMHRMVVZPUkNCU1UwRWdVRkpKVmtGVVJTQkxSVmt0TFMwdExRbz0K"
+            },
+            {
+                "Filename": "manifests/openshift-config-secret-pull-secret.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0CnR5cGU6IGt1YmVybmV0ZXMuaW8vZG9ja2VyY29uZmlnanNvbgptZXRhZGF0YToKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jb25maWcKICBuYW1lOiBwdWxsLXNlY3JldApkYXRhOgogIC5kb2NrZXJjb25maWdqc29uOiBleUpoZFhSb2N5STZleUpqYkc5MVpDNXZjR1Z1YzJocFpuUXVZMjl0SWpwN0ltRjFkR2dpT2lKaU0wSnNZbTVPYjJGWFdqQk1XRXBzWWtkV2FHTXlWWFJhUjFZeVN6STVhbUpXT1doWk1rNXNZek5PWmxreVJYaGFiVkY0VG0xRmQxcHFZekJPUjBwc1dsZEZNVTB5Vm0xYVZFRjRUMFJDYUZsNlZtMWFiVWsyVldwS1NVMXFUbHBPUlUweFZsWmFTbFV3VFRSU2JFWkVWbXBCTTFkRmVFOVNWbWhOVFd0R1dWZFdVa3hOYWtKUVZVWndWVlpFVFRKT01WSkpWMnMxVmsxcmFFaFdSa1paVDFWT1NWUkdaRVZQUlRWYVVsRTlQU0lzSW1WdFlXbHNJam9pYm1GMGFHRnVMbTF2Ykd4cFkyRkFhR0Z6YUdsamIzSndMbU52YlNKOUxDSnhkV0Y1TG1sdklqcDdJbUYxZEdnaU9pSmlNMEpzWW01T2IyRlhXakJNV0Vwc1lrZFdhR015VlhSYVIxWXlTekk1YW1KV09XaFpNazVzWXpOT1psa3lSWGhhYlZGNFRtMUZkMXBxWXpCT1IwcHNXbGRGTVUweVZtMWFWRUY0VDBSQ2FGbDZWbTFhYlVrMlZXcEtTVTFxVGxwT1JVMHhWbFphU2xVd1RUUlNiRVpFVm1wQk0xZEZlRTlTVm1oTlRXdEdXVmRXVWt4TmFrSlFWVVp3VlZaRVRUSk9NVkpKVjJzMVZrMXJhRWhXUmtaWlQxVk9TVlJHWkVWUFJUVmFVbEU5UFNJc0ltVnRZV2xzSWpvaWJtRjBhR0Z1TG0xdmJHeHBZMkZBYUdGemFHbGpiM0p3TG1OdmJTSjlMQ0p5WldkcGMzUnllUzVqYjI1dVpXTjBMbkpsWkdoaGRDNWpiMjBpT25zaVlYVjBhQ0k2SW1aSVZtOVplVEYzWWpJNWMweFVVVEpOYlZGNVRrUmplVXhVUW0xWmJVMTBUa1JCTUU1VE1EVlplbWQ2VEZSRk1GcEhTbXROUjBWM1RtMU5lbHBVY0d4bFZYQnZXV3RrYW1GVk9YQlRiRTVXWld4V05GUlhiRXRQVXpWc1pWVndObHBHWkVwaFZUbHdVMVJHVG1Wck5YSlVNRkpIWWxac05sWlliRTVXTVd0M1YyeFNVMkZWT1ZWaGVrcFBaV3RzTlZkV1VrcE5iSEIwVWxoa1VGSkZjSFJVVlU1TFQxTTFibGRyVGxWVVNIQTFaR2t4UjFWcWFFeGtNbXh4WlVWd2RsbHRNVmhVYmxwd1ZGZFdVMkpVYUROa01WcE1VVE5qTWxsWGFHOWtNbWh0WlVaT1IxZHNjRmxrYkZFeVZXNUtiVk5JVVRCaGFrVXdVMFp2TkZKdE1YTk9XRVoyVWpKc2RGZFZPWFJTUm5CcVlVUk5kMk5XUW5kVE1uaENVbFJzTUdGVmR6VmxiazR6V2tVd2VtRlljRkZXYmtaR1RsVndNRkZYV2pGa1NGWlNUbFZrYzJONlduZGliVVpHVVhwa1lVOUhVWHBpYXpsWFZGaEpkR1JzVmtsYVZFazBXa2R3YzJOWE1VeFZNbVJSWWtSb2RHRkVTbXhQUlRsdFdqRktkRTVGYUVka00xSXhaREJXYkZaSWEzUlNNV3g2VkVVMU5GRXlWalZaVjA1VVVtMHhkV013TlZWWFZrSXpVbGhzVUZaNldYaFpWWEJKVjJ0T2FtUldjRWhrYkRscVlsWk9iMDFVWkVSUmJtZDBUbnBPWVZKcmNGWlNWRlY0Wlcxb2NXSnVTa3RUVmtKMlpVWkdSVlZHYUhaYWJIQlVVVEZrVUdGc1VrWlVhbEpNWXpJeFZXTkdSWHBhUmsweldtMHhRazVVVWxOTVZVcEdVV3hGZVZGVWFFcFBWVnB6VFROYVZWRlhjSEJsYkU1UFl6RldNRkpXUlhkaVNHc3lXVmh2ZEZFd09UTlRiRGxRVTJ4d2MxWlhSa1ZSYlVwd1RVaEplVTV0TUROaVJHeEpVbGRzUTFkRlNqTlRNRVUxV1RBMVRXUnRVbXhPTWxKRVpFVjRWR050ZEhwTlIzZ3dUVWR2TTJReFdURlZWMVpSVjBodk1GTnJWalZPYm1oelZFaGplVlJVYkhkV01HeE9VVzFqTTJKRVFrMWlNMFpTVmtac00xcFhVa3BUVjFKR1lWaHdTR0ZyU21wU2FrNXhWbFJTTmxwVlNYbFhhbEp2VkZkc1ExTnRUakpVTVU1SVZsVXhUMlJzVm5saWJURjRUVVJWTlZaWFJuWlhSazVyVGxVeGMxZFdRbmRTUlRSNVlWVktNbFJGUm5wa2JrWlpUbFYwTkZZeU9WaFhWVFIwVkRGWmVHRXpSWGhpVjBsM1YwZG9SVlZ1YURWT2JXTXlaV3N4Wms5RVVrSmlSMGw0VldwV2RFNVZiSEZZTW1NMVlrYzVSRTFxUWpCTk1EbEdXVEl4UTFJeFZtNVVlbVJ3VFc1VmRGVkhkRE5SVkZaWlRtdzVOVlJVVWtaWU1qUjVZbXhXYmxwWWNGSlNhelZ6VFZac2NHVkdPWFZYV0ZKSVZETlNhMlJWT1VkaE1uTTBVek5vUTJJelJqTmxiVTEzVFVkR01VMHlOVkpaV0ZweFlrVmFlV1ZFVVRGU1NGa3pVbTVTTTJWR1drMVdXRXBGVGxNeE0xTkdWWGhrUkVsNFRsaEJkMWt4VmxoU01WRTFUVE5XVmxnd01WVlJWbFo1Vmxkd1VHUXhPSGRWTUZKMlpVUnJNR0ZYTld0UmVrVXlZekowTlZGdVJqTmlTRkY0Wkd0dk1VNUhXVEpZTVdOM1ZrZFNNazVXVVROT1dIQlRZWGM5UFNJc0ltVnRZV2xzSWpvaWJtRjBhR0Z1TG0xdmJHeHBZMkZBYUdGemFHbGpiM0p3TG1OdmJTSjlMQ0p5WldkcGMzUnllUzV5WldSb1lYUXVhVzhpT25zaVlYVjBhQ0k2SW1aSVZtOVplVEYzWWpJNWMweFVVVEpOYlZGNVRrUmplVXhVUW0xWmJVMTBUa1JCTUU1VE1EVlplbWQ2VEZSRk1GcEhTbXROUjBWM1RtMU5lbHBVY0d4bFZYQnZXV3RrYW1GVk9YQlRiRTVXWld4V05GUlhiRXRQVXpWc1pWVndObHBHWkVwaFZUbHdVMVJHVG1Wck5YSlVNRkpIWWxac05sWlliRTVXTVd0M1YyeFNVMkZWT1ZWaGVrcFBaV3RzTlZkV1VrcE5iSEIwVWxoa1VGSkZjSFJVVlU1TFQxTTFibGRyVGxWVVNIQTFaR2t4UjFWcWFFeGtNbXh4WlVWd2RsbHRNVmhVYmxwd1ZGZFdVMkpVYUROa01WcE1VVE5qTWxsWGFHOWtNbWh0WlVaT1IxZHNjRmxrYkZFeVZXNUtiVk5JVVRCaGFrVXdVMFp2TkZKdE1YTk9XRVoyVWpKc2RGZFZPWFJTUm5CcVlVUk5kMk5XUW5kVE1uaENVbFJzTUdGVmR6VmxiazR6V2tVd2VtRlljRkZXYmtaR1RsVndNRkZYV2pGa1NGWlNUbFZrYzJONlduZGliVVpHVVhwa1lVOUhVWHBpYXpsWFZGaEpkR1JzVmtsYVZFazBXa2R3YzJOWE1VeFZNbVJSWWtSb2RHRkVTbXhQUlRsdFdqRktkRTVGYUVka00xSXhaREJXYkZaSWEzUlNNV3g2VkVVMU5GRXlWalZaVjA1VVVtMHhkV013TlZWWFZrSXpVbGhzVUZaNldYaFpWWEJKVjJ0T2FtUldjRWhrYkRscVlsWk9iMDFVWkVSUmJtZDBUbnBPWVZKcmNGWlNWRlY0Wlcxb2NXSnVTa3RUVmtKMlpVWkdSVlZHYUhaYWJIQlVVVEZrVUdGc1VrWlVhbEpNWXpJeFZXTkdSWHBhUmsweldtMHhRazVVVWxOTVZVcEdVV3hGZVZGVWFFcFBWVnB6VFROYVZWRlhjSEJsYkU1UFl6RldNRkpXUlhkaVNHc3lXVmh2ZEZFd09UTlRiRGxRVTJ4d2MxWlhSa1ZSYlVwd1RVaEplVTV0TUROaVJHeEpVbGRzUTFkRlNqTlRNRVUxV1RBMVRXUnRVbXhPTWxKRVpFVjRWR050ZEhwTlIzZ3dUVWR2TTJReFdURlZWMVpSVjBodk1GTnJWalZPYm1oelZFaGplVlJVYkhkV01HeE9VVzFqTTJKRVFrMWlNMFpTVmtac00xcFhVa3BUVjFKR1lWaHdTR0ZyU21wU2FrNXhWbFJTTmxwVlNYbFhhbEp2VkZkc1ExTnRUakpVTVU1SVZsVXhUMlJzVm5saWJURjRUVVJWTlZaWFJuWlhSazVyVGxVeGMxZFdRbmRTUlRSNVlWVktNbFJGUm5wa2JrWlpUbFYwTkZZeU9WaFhWVFIwVkRGWmVHRXpSWGhpVjBsM1YwZG9SVlZ1YURWT2JXTXlaV3N4Wms5RVVrSmlSMGw0VldwV2RFNVZiSEZZTW1NMVlrYzVSRTFxUWpCTk1EbEdXVEl4UTFJeFZtNVVlbVJ3VFc1VmRGVkhkRE5SVkZaWlRtdzVOVlJVVWtaWU1qUjVZbXhXYmxwWWNGSlNhelZ6VFZac2NHVkdPWFZYV0ZKSVZETlNhMlJWT1VkaE1uTTBVek5vUTJJelJqTmxiVTEzVFVkR01VMHlOVkpaV0ZweFlrVmFlV1ZFVVRGU1NGa3pVbTVTTTJWR1drMVdXRXBGVGxNeE0xTkdWWGhrUkVsNFRsaEJkMWt4VmxoU01WRTFUVE5XVmxnd01WVlJWbFo1Vmxkd1VHUXhPSGRWTUZKMlpVUnJNR0ZYTld0UmVrVXlZekowTlZGdVJqTmlTRkY0Wkd0dk1VNUhXVEpZTVdOM1ZrZFNNazVXVVROT1dIQlRZWGM5UFNJc0ltVnRZV2xzSWpvaWJtRjBhR0Z1TG0xdmJHeHBZMkZBYUdGemFHbGpiM0p3TG1OdmJTSjlmWDA9Cg=="
+            }
+        ]
+    },
+    "*manifests.Networking": {
+        "Config": {
+            "kind": "Network",
+            "apiVersion": "config.openshift.io/v1",
+            "metadata": {
+                "name": "cluster",
+                "creationTimestamp": null
+            },
+            "spec": {
+                "clusterNetwork": [
+                    {
+                        "cidr": "10.128.0.0/14",
+                        "hostPrefix": 23
+                    }
+                ],
+                "serviceNetwork": [
+                    "172.30.0.0/16"
+                ],
+                "networkType": "OVNKubernetes",
+                "externalIP": {
+                    "policy": {}
+                },
+                "networkDiagnostics": {
+                    "mode": "",
+                    "sourcePlacement": {
+                        "nodeSelector": null,
+                        "tolerations": null
+                    },
+                    "targetPlacement": {
+                        "nodeSelector": null,
+                        "tolerations": null
+                    }
+                }
+            },
+            "status": {}
+        },
+        "FileList": [
+            {
+                "Filename": "manifests/cluster-network-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBOZXR3b3JrCm1ldGFkYXRhOgogIGNyZWF0aW9uVGltZXN0YW1wOiBudWxsCiAgbmFtZTogY2x1c3RlcgpzcGVjOgogIGNsdXN0ZXJOZXR3b3JrOgogIC0gY2lkcjogMTAuMTI4LjAuMC8xNAogICAgaG9zdFByZWZpeDogMjMKICBleHRlcm5hbElQOgogICAgcG9saWN5OiB7fQogIG5ldHdvcmtEaWFnbm9zdGljczoKICAgIG1vZGU6ICIiCiAgICBzb3VyY2VQbGFjZW1lbnQ6CiAgICAgIG5vZGVTZWxlY3RvcjogbnVsbAogICAgICB0b2xlcmF0aW9uczogbnVsbAogICAgdGFyZ2V0UGxhY2VtZW50OgogICAgICBub2RlU2VsZWN0b3I6IG51bGwKICAgICAgdG9sZXJhdGlvbnM6IG51bGwKICBuZXR3b3JrVHlwZTogT1ZOS3ViZXJuZXRlcwogIHNlcnZpY2VOZXR3b3JrOgogIC0gMTcyLjMwLjAuMC8xNgpzdGF0dXM6IHt9Cg=="
+            }
+        ]
+    },
+    "*manifests.Openshift": {
+        "FileList": [
+            {
+                "Filename": "openshift/99_baremetal-provisioning-config.yaml",
+                "Data": "YXBpVmVyc2lvbjogbWV0YWwzLmlvL3YxYWxwaGExCmtpbmQ6IFByb3Zpc2lvbmluZwptZXRhZGF0YToKICBuYW1lOiBwcm92aXNpb25pbmctY29uZmlndXJhdGlvbgpzcGVjOgogIHByb3Zpc2lvbmluZ0ludGVyZmFjZTogIiIKICBwcm92aXNpb25pbmdJUDogIjE3Mi4yMi4wLjMiCiAgcHJvdmlzaW9uaW5nTmV0d29ya0NJRFI6ICIxNzIuMjIuMC4wLzI0IgogIHByb3Zpc2lvbmluZ05ldHdvcms6ICJNYW5hZ2VkIgogIHByb3Zpc2lvbmluZ0RIQ1BSYW5nZTogIjE3Mi4yMi4wLjEwLDE3Mi4yMi4wLjI1NCIKICBwcm92aXNpb25pbmdPU0Rvd25sb2FkVVJMOiAiIgogIHdhdGNoQWxsTmFtZXNwYWNlczogZmFsc2UK"
+            },
+            {
+                "Filename": "openshift/99_feature-gate.yaml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBGZWF0dXJlR2F0ZQptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6IGNsdXN0ZXIKc3BlYzoge30Kc3RhdHVzOgogIGZlYXR1cmVHYXRlczogbnVsbAo="
+            },
+            {
+                "Filename": "openshift/99_kubeadmin-password-secret.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKZGF0YToKICBrdWJlYWRtaW46IEpESmhKREV3SkRRMFFWVnZPV2hVTlV4dFNWQmFPVVJTYzI5WVNDNWphbUV1V0VsckxrOUdPSGR4Tm1SRlNIQlphRTR3VDNKc1FWYzFWWEJYCmtpbmQ6IFNlY3JldAptZXRhZGF0YToKICBuYW1lc3BhY2U6IGt1YmUtc3lzdGVtCiAgbmFtZToga3ViZWFkbWluCg=="
+            },
+            {
+                "Filename": "openshift/openshift-install-manifests.yaml",
+                "Data": "YXBpVmVyc2lvbjogdjEKZGF0YToKICBpbnZva2VyOiB1c2VyCiAgdmVyc2lvbjogdjQuMTcuMApraW5kOiBDb25maWdNYXAKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiBvcGVuc2hpZnQtaW5zdGFsbC1tYW5pZmVzdHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jb25maWcK"
+            }
+        ]
+    },
+    "*manifests.Proxy": {
+        "FileList": [
+            {
+                "Filename": "manifests/cluster-proxy-01-config.yaml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBQcm94eQptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6IGNsdXN0ZXIKc3BlYzoKICB0cnVzdGVkQ0E6CiAgICBuYW1lOiAiIgpzdGF0dXM6IHt9Cg=="
+            }
+        ],
+        "Config": {
+            "kind": "Proxy",
+            "apiVersion": "config.openshift.io/v1",
+            "metadata": {
+                "name": "cluster",
+                "creationTimestamp": null
+            },
+            "spec": {
+                "trustedCA": {
+                    "name": ""
+                }
+            },
+            "status": {}
+        }
+    },
+    "*manifests.Scheduler": {
+        "FileList": [
+            {
+                "Filename": "manifests/cluster-scheduler-02-config.yml",
+                "Data": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBTY2hlZHVsZXIKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiBjbHVzdGVyCnNwZWM6CiAgbWFzdGVyc1NjaGVkdWxhYmxlOiBmYWxzZQogIHBvbGljeToKICAgIG5hbWU6ICIiCiAgcHJvZmlsZUN1c3RvbWl6YXRpb25zOgogICAgZHluYW1pY1Jlc291cmNlQWxsb2NhdGlvbjogIiIKc3RhdHVzOiB7fQo="
+            }
+        ]
+    },
+    "*openshift.AzureCloudProviderSecret": {
+        "FileList": [
+            {
+                "Filename": "templates/99_azure-cloud-provider-secret.yaml.template",
+                "Data": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IGF6dXJlLWNsb3VkLXByb3ZpZGVyCiAgbmFtZXNwYWNlOiBrdWJlLXN5c3RlbQpzdHJpbmdEYXRhOgogIGNsb3VkLWNvbmZpZzogfAogICAge3suQ2xvdWRDb25maWcgfCBpbmRlbnQgNH19Cg=="
+            },
+            {
+                "Filename": "templates/99_azure-cloud-provider-secret-getter-rolebinding.yaml",
+                "Data": "YXBpVmVyc2lvbjogcmJhYy5hdXRob3JpemF0aW9uLms4cy5pby92MQpraW5kOiBSb2xlQmluZGluZwptZXRhZGF0YToKICBuYW1lOiBzeXN0ZW06YXp1cmUtY2xvdWQtcHJvdmlkZXItc2VjcmV0LWdldHRlcgogIG5hbWVzcGFjZToga3ViZS1zeXN0ZW0Kcm9sZVJlZjoKICBhcGlHcm91cDogcmJhYy5hdXRob3JpemF0aW9uLms4cy5pbwogIGtpbmQ6IFJvbGUKICBuYW1lOiBzeXN0ZW06YXp1cmUtY2xvdWQtcHJvdmlkZXItc2VjcmV0LWdldHRlcgpzdWJqZWN0czoKLSBraW5kOiBTZXJ2aWNlQWNjb3VudAogIG5hbWU6IGF6dXJlLWNsb3VkLXByb3ZpZGVyCiAgbmFtZXNwYWNlOiBrdWJlLXN5c3RlbQo="
+            },
+            {
+                "Filename": "templates/99_azure-cloud-provider-secret-getter-role.yaml",
+                "Data": "YXBpVmVyc2lvbjogcmJhYy5hdXRob3JpemF0aW9uLms4cy5pby92MQpraW5kOiBSb2xlCm1ldGFkYXRhOgogIG5hbWU6IHN5c3RlbTphenVyZS1jbG91ZC1wcm92aWRlci1zZWNyZXQtZ2V0dGVyCiAgbmFtZXNwYWNlOiBrdWJlLXN5c3RlbQpydWxlczoKLSBhcGlHcm91cHM6CiAgLSAiIgogIHJlc291cmNlTmFtZXM6CiAgLSBhenVyZS1jbG91ZC1wcm92aWRlcgogIHJlc291cmNlczoKICAtIHNlY3JldHMKICB2ZXJiczoKICAtIGdldAo="
+            }
+        ]
+    },
+    "*openshift.BaremetalConfig": {
+        "FileList": [
+            {
+                "Filename": "templates/baremetal-provisioning-config.yaml.template",
+                "Data": "YXBpVmVyc2lvbjogbWV0YWwzLmlvL3YxYWxwaGExCmtpbmQ6IFByb3Zpc2lvbmluZwptZXRhZGF0YToKICBuYW1lOiBwcm92aXNpb25pbmctY29uZmlndXJhdGlvbgpzcGVjOgogIHByb3Zpc2lvbmluZ0ludGVyZmFjZTogInt7LkJhcmVtZXRhbC5Qcm92aXNpb25pbmdOZXR3b3JrSW50ZXJmYWNlfX0iCiAgcHJvdmlzaW9uaW5nSVA6ICJ7ey5CYXJlbWV0YWwuQ2x1c3RlclByb3Zpc2lvbmluZ0lQfX0iCiAgcHJvdmlzaW9uaW5nTmV0d29ya0NJRFI6ICJ7ey5CYXJlbWV0YWwuUHJvdmlzaW9uaW5nTmV0d29ya0NJRFJ9fSIKICBwcm92aXNpb25pbmdOZXR3b3JrOiAie3suQmFyZW1ldGFsLlByb3Zpc2lvbmluZ05ldHdvcmt9fSIKICBwcm92aXNpb25pbmdESENQUmFuZ2U6ICJ7ey5CYXJlbWV0YWwuUHJvdmlzaW9uaW5nREhDUFJhbmdlfX0iCiAgcHJvdmlzaW9uaW5nT1NEb3dubG9hZFVSTDogInt7LlByb3Zpc2lvbmluZ09TRG93bmxvYWRVUkx9fSIKICB3YXRjaEFsbE5hbWVzcGFjZXM6IGZhbHNlCg=="
+            }
+        ]
+    },
+    "*openshift.CloudCredsSecret": {
+        "FileList": [
+            {
+                "Filename": "templates/cloud-creds-secret.yaml.template",
+                "Data": "YXBpVmVyc2lvbjogdjEKZGF0YToKe3stIGlmIC5DbG91ZENyZWRzLkFXU319CiAgYXdzX2FjY2Vzc19rZXlfaWQ6IHt7LkNsb3VkQ3JlZHMuQVdTLkJhc2U2NGVuY29kZUFjY2Vzc0tleUlEfX0KICBhd3Nfc2VjcmV0X2FjY2Vzc19rZXk6IHt7LkNsb3VkQ3JlZHMuQVdTLkJhc2U2NGVuY29kZVNlY3JldEFjY2Vzc0tleX19Cnt7LSBlbHNlIGlmIC5DbG91ZENyZWRzLkF6dXJlfX0KICBhenVyZV9zdWJzY3JpcHRpb25faWQ6IHt7LkNsb3VkQ3JlZHMuQXp1cmUuQmFzZTY0ZW5jb2RlU3Vic2NyaXB0aW9uSUR9fQogIGF6dXJlX2NsaWVudF9pZDoge3suQ2xvdWRDcmVkcy5BenVyZS5CYXNlNjRlbmNvZGVDbGllbnRJRH19CiAgYXp1cmVfY2xpZW50X3NlY3JldDoge3suQ2xvdWRDcmVkcy5BenVyZS5CYXNlNjRlbmNvZGVDbGllbnRTZWNyZXR9fQogIGF6dXJlX3RlbmFudF9pZDoge3suQ2xvdWRDcmVkcy5BenVyZS5CYXNlNjRlbmNvZGVUZW5hbnRJRH19CiAgYXp1cmVfcmVzb3VyY2VfcHJlZml4OiB7ey5DbG91ZENyZWRzLkF6dXJlLkJhc2U2NGVuY29kZVJlc291cmNlUHJlZml4fX0KICBhenVyZV9yZXNvdXJjZWdyb3VwOiB7ey5DbG91ZENyZWRzLkF6dXJlLkJhc2U2NGVuY29kZVJlc291cmNlR3JvdXB9fQogIGF6dXJlX3JlZ2lvbjoge3suQ2xvdWRDcmVkcy5BenVyZS5CYXNlNjRlbmNvZGVSZWdpb259fQp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5HQ1B9fQogIHNlcnZpY2VfYWNjb3VudC5qc29uOiB7ey5DbG91ZENyZWRzLkdDUC5CYXNlNjRlbmNvZGVTZXJ2aWNlQWNjb3VudH19Cnt7LSBlbHNlIGlmIC5DbG91ZENyZWRzLklCTUNsb3VkfX0KICBpYm1jbG91ZF9hcGlfa2V5OiB7ey5DbG91ZENyZWRzLklCTUNsb3VkLkJhc2U2NGVuY29kZUFQSUtleX19Cnt7LSBlbHNlIGlmIC5DbG91ZENyZWRzLk9wZW5TdGFja319CiAgY2xvdWRzLnlhbWw6IHt7LkNsb3VkQ3JlZHMuT3BlblN0YWNrLkJhc2U2NGVuY29kZUNsb3VkQ3JlZHN9fQogIGNsb3Vkcy5jb25mOiB7ey5DbG91ZENyZWRzLk9wZW5TdGFjay5CYXNlNjRlbmNvZGVDbG91ZENyZWRzSU5JfX0Ke3stIGVsc2UgaWYgLkNsb3VkQ3JlZHMuVlNwaGVyZX19Cnt7LSByYW5nZSAuQ2xvdWRDcmVkcy5WU3BoZXJlfX0KICB7ey5WQ2VudGVyfX0udXNlcm5hbWU6IHt7LkJhc2U2NGVuY29kZVVzZXJuYW1lfX0KICB7ey5WQ2VudGVyfX0ucGFzc3dvcmQ6IHt7LkJhc2U2NGVuY29kZVBhc3N3b3JkfX0Ke3stIGVuZH19Cnt7LSBlbHNlIGlmIC5DbG91ZENyZWRzLk92aXJ0fX0KICBvdmlydF91cmw6IHt7LkNsb3VkQ3JlZHMuT3ZpcnQuQmFzZTY0ZW5jb2RlVVJMfX0KICBvdmlydF91c2VybmFtZToge3suQ2xvdWRDcmVkcy5PdmlydC5CYXNlNjRlbmNvZGVVc2VybmFtZX19CiAgb3ZpcnRfcGFzc3dvcmQ6IHt7LkNsb3VkQ3JlZHMuT3ZpcnQuQmFzZTY0ZW5jb2RlUGFzc3dvcmR9fQogIG92aXJ0X2luc2VjdXJlOiB7ey5DbG91ZENyZWRzLk92aXJ0LkJhc2U2NGVuY29kZUluc2VjdXJlfX0KICBvdmlydF9jYV9idW5kbGU6IHt7LkNsb3VkQ3JlZHMuT3ZpcnQuQmFzZTY0ZW5jb2RlQ0FCdW5kbGV9fQp7ey0gZW5kfX0Ka2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWVzcGFjZToga3ViZS1zeXN0ZW0Ke3stIGlmIC5DbG91ZENyZWRzLkFXU319CiAgbmFtZTogYXdzLWNyZWRzCnt7LSBlbHNlIGlmIC5DbG91ZENyZWRzLkF6dXJlfX0KICBuYW1lOiBhenVyZS1jcmVkZW50aWFscwp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5HQ1B9fQogIG5hbWU6IGdjcC1jcmVkZW50aWFscwp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5JQk1DbG91ZH19CiAgbmFtZTogaWJtY2xvdWQtY3JlZGVudGlhbHMKe3stIGVsc2UgaWYgLkNsb3VkQ3JlZHMuT3BlblN0YWNrfX0KICBuYW1lOiBvcGVuc3RhY2stY3JlZGVudGlhbHMKe3stIGVsc2UgaWYgLkNsb3VkQ3JlZHMuVlNwaGVyZX19CiAgbmFtZTogdnNwaGVyZS1jcmVkcwp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5PdmlydH19CiAgbmFtZTogb3ZpcnQtY3JlZGVudGlhbHMKe3stIGVuZH19Cg=="
+            }
+        ]
+    },
+    "*openshift.KubeadminPasswordSecret": {
+        "FileList": [
+            {
+                "Filename": "templates/kubeadmin-password-secret.yaml.template",
+                "Data": "YXBpVmVyc2lvbjogdjEKZGF0YToKICBrdWJlYWRtaW46IHt7LkJhc2U2NEVuY29kZWRLdWJlYWRtaW5Qd0hhc2h9fQpraW5kOiBTZWNyZXQKbWV0YWRhdGE6CiAgbmFtZXNwYWNlOiBrdWJlLXN5c3RlbQogIG5hbWU6IGt1YmVhZG1pbgo="
+            }
+        ]
+    },
+    "*openshift.RoleCloudCredsSecretReader": {
+        "FileList": [
+            {
+                "Filename": "templates/role-cloud-creds-secret-reader.yaml.template",
+                "Data": "YXBpVmVyc2lvbjogcmJhYy5hdXRob3JpemF0aW9uLms4cy5pby92MQpraW5kOiBSb2xlCm1ldGFkYXRhOgogIG5hbWVzcGFjZToga3ViZS1zeXN0ZW0Ke3stIGlmIC5DbG91ZENyZWRzLkFXU319CiAgbmFtZTogYXdzLWNyZWRzLXNlY3JldC1yZWFkZXIKe3stIGVsc2UgaWYgLkNsb3VkQ3JlZHMuQXp1cmV9fQogIG5hbWU6IGF6dXJlLWNyZWRzLXNlY3JldC1yZWFkZXIKe3stIGVsc2UgaWYgLkNsb3VkQ3JlZHMuR0NQfX0KICBuYW1lOiBnY3AtY3JlZHMtc2VjcmV0LXJlYWRlcgp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5JQk1DbG91ZH19CiAgbmFtZTogaWJtY2xvdWQtY3JlZHMtc2VjcmV0LXJlYWRlcgp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5PcGVuU3RhY2t9fQogIG5hbWU6IG9wZW5zdGFjay1jcmVkcy1zZWNyZXQtcmVhZGVyCnt7LSBlbHNlIGlmIC5DbG91ZENyZWRzLlZTcGhlcmV9fQogIG5hbWU6IHZzcGhlcmUtY3JlZHMtc2VjcmV0LXJlYWRlcgp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5PdmlydH19CiAgbmFtZTogb3ZpcnQtY3JlZHMtc2VjcmV0LXJlYWRlcgp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5OdXRhbml4fX0KICBuYW1lOiBudXRhbml4LWNyZWRzLXNlY3JldC1yZWFkZXIKe3stIGVuZH19CnJ1bGVzOgotIGFwaUdyb3VwczogWyIiXQogIHJlc291cmNlczogWyJzZWNyZXRzIl0Ke3stIGlmIC5DbG91ZENyZWRzLkFXU319CiAgcmVzb3VyY2VOYW1lczogWyJhd3MtY3JlZHMiXQp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5BenVyZX19CiAgcmVzb3VyY2VOYW1lczogWyJhenVyZS1jcmVkZW50aWFscyJdCnt7LSBlbHNlIGlmIC5DbG91ZENyZWRzLkdDUH19CiAgcmVzb3VyY2VOYW1lczogWyJnY3AtY3JlZGVudGlhbHMiXQp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5JQk1DbG91ZH19CiAgcmVzb3VyY2VOYW1lczogWyJpYm1jbG91ZC1jcmVkZW50aWFscyJdCnt7LSBlbHNlIGlmIC5DbG91ZENyZWRzLk9wZW5TdGFja319CiAgcmVzb3VyY2VOYW1lczogWyJvcGVuc3RhY2stY3JlZGVudGlhbHMiXQp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5WU3BoZXJlfX0KICByZXNvdXJjZU5hbWVzOiBbInZzcGhlcmUtY3JlZHMiXQp7ey0gZWxzZSBpZiAuQ2xvdWRDcmVkcy5PdmlydH19CiAgcmVzb3VyY2VOYW1lczogWyJvdmlydC1jcmVkZW50aWFscyJdCnt7LSBlbHNlIGlmIC5DbG91ZENyZWRzLk51dGFuaXh9fQogIHJlc291cmNlTmFtZXM6IFsibnV0YW5peC1jcmVkZW50aWFscyJdCnt7LSBlbmR9fQogIHZlcmJzOiBbImdldCJdCg=="
+            }
+        ]
+    },
+    "*openshiftinstall.Config": {
+        "File": {
+            "Filename": "openshift/openshift-install-manifests.yaml",
+            "Data": "YXBpVmVyc2lvbjogdjEKZGF0YToKICBpbnZva2VyOiB1c2VyCiAgdmVyc2lvbjogdjQuMTcuMApraW5kOiBDb25maWdNYXAKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiBvcGVuc2hpZnQtaW5zdGFsbC1tYW5pZmVzdHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jb25maWcK"
+        }
+    },
+    "*password.KubeadminPassword": {
+        "Password": "hwA4r-d6xp9-P2ddu-rGAkQ",
+        "PasswordHash": "JDJhJDEwJDQ0QVVvOWhUNUxtSVBaOURSc29YSC5jamEuWElrLk9GOHdxNmRFSHBZaE4wT3JsQVc1VXBX",
+        "File": {
+            "Filename": "auth/kubeadmin-password",
+            "Data": "aHdBNHItZDZ4cDktUDJkZHUtckdBa1E="
+        }
+    },
+    "*rhcos.Image": {
+        "ControlPlane": "",
+        "Compute": ""
+    },
+    "*rhcos.Release": "",
+    "*tls.MCSCertKey": {
+        "CertRaw": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURnakNDQW1xZ0F3SUJBZ0lJYkYvNEVtcDk1cEV3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHliMjkwTFdOaE1CNFhEVEkwTVRBeE1qSXhNek14TmxvWApEVE0wTVRBeE1ESXhNek14Tmxvd0p6RWxNQ01HQTFVRUF4TWNjM2x6ZEdWdE9tMWhZMmhwYm1VdFkyOXVabWxuCkxYTmxjblpsY2pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTVdBenRKd01YTjQKa1pWNWZBajNKRkNxR1lXQ2dWaGRNRjdVUHdHa203MU9aQVovSmswSWRCekJ6eTFLelFEcnFBbDhwdG9BWXFnOQpwaGVlV3RPWU1JN0lGRkVjV1RLSDFnaVFVL3YydzQ4UFpndHBCT1NvNWk2SmY2RGl1d2taTXBFVjEvdmpQeHVQCktPV1hONnhTSGd2T056NzBCdTFiQWpHTkFVUE1iZUczM3JLdm1GNmNZdHN6U3p3R2c4UlVSMmJqSmtQMjIwbSsKNko0ZUU0dlJkYmp3blB3Tmxpaks4YXlTTHZJalRLMHdOaUpNVExlYWdINnpqR2NxcEloZDVBTmo0bkJlNGRhNApSb0NoN3VLOFFKMTl1UW52NDVpSVlrdmlMNndUelpOUkVSRVJ6cVNtRUVFcTYzeU1mdXJwckJLOTRXOHhYRC9GCnhjRXEyQyszd0ZzQ0F3RUFBYU9Cc2pDQnJ6QVRCZ05WSFNVRUREQUtCZ2dyQmdFRkJRY0RBVEFNQmdOVkhSTUIKQWY4RUFqQUFNQjBHQTFVZERnUVdCQlNRWWJic09HVld2TlpsTkFOTmE2c1BhV2xJdmpBZkJnTlZIU01FR0RBVwpnQlJHemFmWlpzNjJTVG04ZDQ1UGJ2M2pVU25kcHpCS0JnTlZIUkVFUXpCQmdpcGhjR2t0YVc1MExtOXdaVzV6CmFHbG1kQzFzYVcxaExtOXdaVzV6YUdsbWRDMXNiMk5oYkM1amIyMkNEVEU1TWk0eE5qZ3VNVEV4TGpXSEJNQ28KYndVd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFKVlhXcHFHelpmTzFINllJSUwyN05PSlkzakVxVFF5SG1NRQo4c2xwZ0dFQlBPSmFrS1A3bjk1WENPT25Pb2s4WHFoei9xYWl2ZUxoRWk4WUJqLzZoSitNdkViT0NSSVhRTFJLCkNKSUhvOTMvcW9vMHg1OVQxVmJZOUdzZVNpZVZDWkdUSml4SzBjeTlSYlZRNEQrUE1tdnl4UjVYK05TcllXKzAKVGY2OTlsOU9DQVUyamNlN3d4djdwOVJLRC91RXc1R1FPRjdNQzlTQjVZS0dMY1htYzIxNjFGYmM3MVE2MEtjNwpwMjF6a00vU3ROUVU2Wjh1VkltWTVscUptU3pTNUw1MCsxQnRxdmg1MHN0VEk2eE4rU0pNNG9DTUFPMGV0Ujg5ClVCYmxNYi9INGUxTktMa1FDZGtnS0xpY1dXMHNkMjZyVHJVUGhTL3BJb05TZ0lNQjZVRT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+        "KeyRaw": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBeFlETzBuQXhjM2lSbFhsOENQY2tVS29aaFlLQldGMHdYdFEvQWFTYnZVNWtCbjhtClRRaDBITUhQTFVyTkFPdW9DWHltMmdCaXFEMm1GNTVhMDVnd2pzZ1VVUnhaTW9mV0NKQlQrL2JEanc5bUMya0UKNUtqbUxvbC9vT0s3Q1JreWtSWFgrK00vRzQ4bzVaYzNyRkllQzg0M1B2UUc3VnNDTVkwQlE4eHQ0YmZlc3ErWQpYcHhpMnpOTFBBYUR4RlJIWnVNbVEvYmJTYjdvbmg0VGk5RjF1UENjL0EyV0tNcnhySkl1OGlOTXJUQTJJa3hNCnQ1cUFmck9NWnlxa2lGM2tBMlBpY0Y3aDFyaEdnS0h1NHJ4QW5YMjVDZS9qbUloaVMrSXZyQlBOazFFUkVSSE8KcEtZUVFTcnJmSXgrNnVtc0VyM2hiekZjUDhYRndTcllMN2ZBV3dJREFRQUJBb0lCQUg4QmRmNmRaeTk2T1NTRwpHdDBwRUpGTzBWcXBzY1BCS1huUnd6S3JSL3RVamI0ZnhlR0RyaWRQK29xRnI0OEgrK2NkNGE0TzBXS2ZRayt0CjVYcHNRODJObklNTVY4L0d5angzazRwVUJTM2FHU1Q5UThoSFZMNVliVnBvY3g1R3RkM1d6aTJNMU9oRUIyaWMKOVpBNnZsZVpKSzIyL3oxamFPVzBaenZTR2xjcll4cGhsVi9xT1hIQnpCZStDdS9DY0ZnS1dORjByUDI3b21SRQpMRklqL0UyZFROTTl2Tm9oQzJHV25zWmhSbVRpVjRKeTlVS3JPbFBMdVBHaTd2R2xxZjZtdElZWjdWZDFkNXdZCnY1K01VbFh3cGZsdmtCVFpJVkFhdndUUjNhdDJqeFpjSzAwR1ZRU0ZJSXE4REpwRmVjRkkyTEdXbnhNam5kek8Kei9sRFRnRUNnWUVBeDBEcjZQVWhNUXBWNXpRYXFEcjJnYWZaWGl3anFoeUF4SzYvSGxFRXh4czlOMUlFNStmSApxd1RsUWVFcHAyeVV5cUhua0lkV3RpQ2RWQmdrdzNQRXgwQ3d4eHVIL1RZKzV1aDFzZWFCRjhWMEc3NU01a0Z1CkhLS3FyM0wwcUdxZm12MHZ3NEFWOWg2THN5MnlocE1NOVlNL2p2RVRUWGpoNUZrNlZBY3AxcE1DZ1lFQS9jQkUKRTFDYVZmN0VoZVI3ZlMySmdmRFZBSDAxd0xac1p2OUZNdWhJYWtnRWZPT3pjYWdNTHg1dUk0TGgybm16dlU2UgpmajV6b0dNYW5RT2d6Q2dhL0VYT05DSm9MQTJ6QTFuZkdFdEZqQ2l3QjQrS0RRN3VadGdXSzNtL2ZwY3NWOTYvCm9NS3VtNGIxVE5EcHhJQ1NpRUc1cFNOeFdKVWN1eHcvalQ3S2hCa0NnWUFYYmNEUGdaTkhpdW1TNkFPQ2FIeDMKdmw3R3ZmWHJtTEpqYmhDMjVkdmo5WVg3TFQrNmJQeURWVzRIa3d3c3pZMnBUZVJHa0VOWDR2bmMyNEhuSVlPdgowaUYzSi91VGdIOWc4MUJ6ZktFTlJJQmtpcm5NRVVGN1NIMDlhQXp3aUtqL3RtbVpXVVE3emxlcTErSzRCQzV2CjUrRGZVK1ZySkoyYkZnclB1by9tMVFLQmdRRFBzZkdHaGJEdHRtd1EwNlVvSG4rd3Rma0NQM29oMUs4QjF1dEMKOGRGai9MSi9ycmlQek9hOElvSXYyczhXVGdzS1ppYThXRTIzOTZZdTRtdFk3M0szRGtQcmRFWWoyTXF2Y1g0agptbWpBZ2dVakN5QUo5REM2U1NCTVVZaW1Dd0ttb1pIaitiV0ZZMytnY2xjRkdkL1dXMFdpbjFJRkdYZTh4ekJWClloSE04UUtCZ1FDak1TRTJTVWFYTlZZMG9Oc0g4NEpTYjNoLy9VSW9MMk44NmV1U0RxQXFhdnVtMHoxY1lIS3EKdFNGYzVMa3B0UFFRYjF6cHU4bzZ4eWdHa0R2eW9aVHpaTCs5b01ZcGRldk12NW8rT3Z4UGVIR0FLNm4yQk4vNQo2ZTk5dnN3OHJkcXhnaXZCYWhvMVpBOGR5VmZTMVk5QWF1K3BZSnM3L05yMFpiRzhvUXJhZlE9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=",
+        "FileList": [
+            {
+                "Filename": "tls/machine-config-server.key",
+                "Data": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBeFlETzBuQXhjM2lSbFhsOENQY2tVS29aaFlLQldGMHdYdFEvQWFTYnZVNWtCbjhtClRRaDBITUhQTFVyTkFPdW9DWHltMmdCaXFEMm1GNTVhMDVnd2pzZ1VVUnhaTW9mV0NKQlQrL2JEanc5bUMya0UKNUtqbUxvbC9vT0s3Q1JreWtSWFgrK00vRzQ4bzVaYzNyRkllQzg0M1B2UUc3VnNDTVkwQlE4eHQ0YmZlc3ErWQpYcHhpMnpOTFBBYUR4RlJIWnVNbVEvYmJTYjdvbmg0VGk5RjF1UENjL0EyV0tNcnhySkl1OGlOTXJUQTJJa3hNCnQ1cUFmck9NWnlxa2lGM2tBMlBpY0Y3aDFyaEdnS0h1NHJ4QW5YMjVDZS9qbUloaVMrSXZyQlBOazFFUkVSSE8KcEtZUVFTcnJmSXgrNnVtc0VyM2hiekZjUDhYRndTcllMN2ZBV3dJREFRQUJBb0lCQUg4QmRmNmRaeTk2T1NTRwpHdDBwRUpGTzBWcXBzY1BCS1huUnd6S3JSL3RVamI0ZnhlR0RyaWRQK29xRnI0OEgrK2NkNGE0TzBXS2ZRayt0CjVYcHNRODJObklNTVY4L0d5angzazRwVUJTM2FHU1Q5UThoSFZMNVliVnBvY3g1R3RkM1d6aTJNMU9oRUIyaWMKOVpBNnZsZVpKSzIyL3oxamFPVzBaenZTR2xjcll4cGhsVi9xT1hIQnpCZStDdS9DY0ZnS1dORjByUDI3b21SRQpMRklqL0UyZFROTTl2Tm9oQzJHV25zWmhSbVRpVjRKeTlVS3JPbFBMdVBHaTd2R2xxZjZtdElZWjdWZDFkNXdZCnY1K01VbFh3cGZsdmtCVFpJVkFhdndUUjNhdDJqeFpjSzAwR1ZRU0ZJSXE4REpwRmVjRkkyTEdXbnhNam5kek8Kei9sRFRnRUNnWUVBeDBEcjZQVWhNUXBWNXpRYXFEcjJnYWZaWGl3anFoeUF4SzYvSGxFRXh4czlOMUlFNStmSApxd1RsUWVFcHAyeVV5cUhua0lkV3RpQ2RWQmdrdzNQRXgwQ3d4eHVIL1RZKzV1aDFzZWFCRjhWMEc3NU01a0Z1CkhLS3FyM0wwcUdxZm12MHZ3NEFWOWg2THN5MnlocE1NOVlNL2p2RVRUWGpoNUZrNlZBY3AxcE1DZ1lFQS9jQkUKRTFDYVZmN0VoZVI3ZlMySmdmRFZBSDAxd0xac1p2OUZNdWhJYWtnRWZPT3pjYWdNTHg1dUk0TGgybm16dlU2UgpmajV6b0dNYW5RT2d6Q2dhL0VYT05DSm9MQTJ6QTFuZkdFdEZqQ2l3QjQrS0RRN3VadGdXSzNtL2ZwY3NWOTYvCm9NS3VtNGIxVE5EcHhJQ1NpRUc1cFNOeFdKVWN1eHcvalQ3S2hCa0NnWUFYYmNEUGdaTkhpdW1TNkFPQ2FIeDMKdmw3R3ZmWHJtTEpqYmhDMjVkdmo5WVg3TFQrNmJQeURWVzRIa3d3c3pZMnBUZVJHa0VOWDR2bmMyNEhuSVlPdgowaUYzSi91VGdIOWc4MUJ6ZktFTlJJQmtpcm5NRVVGN1NIMDlhQXp3aUtqL3RtbVpXVVE3emxlcTErSzRCQzV2CjUrRGZVK1ZySkoyYkZnclB1by9tMVFLQmdRRFBzZkdHaGJEdHRtd1EwNlVvSG4rd3Rma0NQM29oMUs4QjF1dEMKOGRGai9MSi9ycmlQek9hOElvSXYyczhXVGdzS1ppYThXRTIzOTZZdTRtdFk3M0szRGtQcmRFWWoyTXF2Y1g0agptbWpBZ2dVakN5QUo5REM2U1NCTVVZaW1Dd0ttb1pIaitiV0ZZMytnY2xjRkdkL1dXMFdpbjFJRkdYZTh4ekJWClloSE04UUtCZ1FDak1TRTJTVWFYTlZZMG9Oc0g4NEpTYjNoLy9VSW9MMk44NmV1U0RxQXFhdnVtMHoxY1lIS3EKdFNGYzVMa3B0UFFRYjF6cHU4bzZ4eWdHa0R2eW9aVHpaTCs5b01ZcGRldk12NW8rT3Z4UGVIR0FLNm4yQk4vNQo2ZTk5dnN3OHJkcXhnaXZCYWhvMVpBOGR5VmZTMVk5QWF1K3BZSnM3L05yMFpiRzhvUXJhZlE9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo="
+            },
+            {
+                "Filename": "tls/machine-config-server.crt",
+                "Data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURnakNDQW1xZ0F3SUJBZ0lJYkYvNEVtcDk1cEV3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHliMjkwTFdOaE1CNFhEVEkwTVRBeE1qSXhNek14TmxvWApEVE0wTVRBeE1ESXhNek14Tmxvd0p6RWxNQ01HQTFVRUF4TWNjM2x6ZEdWdE9tMWhZMmhwYm1VdFkyOXVabWxuCkxYTmxjblpsY2pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTVdBenRKd01YTjQKa1pWNWZBajNKRkNxR1lXQ2dWaGRNRjdVUHdHa203MU9aQVovSmswSWRCekJ6eTFLelFEcnFBbDhwdG9BWXFnOQpwaGVlV3RPWU1JN0lGRkVjV1RLSDFnaVFVL3YydzQ4UFpndHBCT1NvNWk2SmY2RGl1d2taTXBFVjEvdmpQeHVQCktPV1hONnhTSGd2T056NzBCdTFiQWpHTkFVUE1iZUczM3JLdm1GNmNZdHN6U3p3R2c4UlVSMmJqSmtQMjIwbSsKNko0ZUU0dlJkYmp3blB3Tmxpaks4YXlTTHZJalRLMHdOaUpNVExlYWdINnpqR2NxcEloZDVBTmo0bkJlNGRhNApSb0NoN3VLOFFKMTl1UW52NDVpSVlrdmlMNndUelpOUkVSRVJ6cVNtRUVFcTYzeU1mdXJwckJLOTRXOHhYRC9GCnhjRXEyQyszd0ZzQ0F3RUFBYU9Cc2pDQnJ6QVRCZ05WSFNVRUREQUtCZ2dyQmdFRkJRY0RBVEFNQmdOVkhSTUIKQWY4RUFqQUFNQjBHQTFVZERnUVdCQlNRWWJic09HVld2TlpsTkFOTmE2c1BhV2xJdmpBZkJnTlZIU01FR0RBVwpnQlJHemFmWlpzNjJTVG04ZDQ1UGJ2M2pVU25kcHpCS0JnTlZIUkVFUXpCQmdpcGhjR2t0YVc1MExtOXdaVzV6CmFHbG1kQzFzYVcxaExtOXdaVzV6YUdsbWRDMXNiMk5oYkM1amIyMkNEVEU1TWk0eE5qZ3VNVEV4TGpXSEJNQ28KYndVd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFKVlhXcHFHelpmTzFINllJSUwyN05PSlkzakVxVFF5SG1NRQo4c2xwZ0dFQlBPSmFrS1A3bjk1WENPT25Pb2s4WHFoei9xYWl2ZUxoRWk4WUJqLzZoSitNdkViT0NSSVhRTFJLCkNKSUhvOTMvcW9vMHg1OVQxVmJZOUdzZVNpZVZDWkdUSml4SzBjeTlSYlZRNEQrUE1tdnl4UjVYK05TcllXKzAKVGY2OTlsOU9DQVUyamNlN3d4djdwOVJLRC91RXc1R1FPRjdNQzlTQjVZS0dMY1htYzIxNjFGYmM3MVE2MEtjNwpwMjF6a00vU3ROUVU2Wjh1VkltWTVscUptU3pTNUw1MCsxQnRxdmg1MHN0VEk2eE4rU0pNNG9DTUFPMGV0Ujg5ClVCYmxNYi9INGUxTktMa1FDZGtnS0xpY1dXMHNkMjZyVHJVUGhTL3BJb05TZ0lNQjZVRT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+            }
+        ]
+    },
+    "*tls.RootCA": {
+        "CertRaw": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFRENDQWZpZ0F3SUJBZ0lJT2xwZ1BjRVRiZWN3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHliMjkwTFdOaE1CNFhEVEkwTVRBeE1qSXhNek14TmxvWApEVE0wTVRBeE1ESXhNek14Tmxvd0pqRVNNQkFHQTFVRUN4TUpiM0JsYm5Ob2FXWjBNUkF3RGdZRFZRUURFd2R5CmIyOTBMV05oTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE4QUZXWUU0N2xzcXEKNXp0VWhMMmM0Rm1JMURjamJTTXJZSWljNkdaeldReTVURFVlbHE2WituT2doelgrWFhST21zVkVYbGZqdzFWTwp1UktTaXRma2lVWEZHNVlrajFPVlhYNXdpWXFvWmVyYXFjV0hZUnphQ0RvTFRXVEszNUlTcWVxRERCWlRrVVRUCnFNbXVkTGx2c1N4TFE4bkk1VTR3TWpDclVkS1pKRTZYbzByRDJkMDFiV1Q5M0lKQU5DaXArNEhFNlE0K0VyeVEKK0pJelI1dHpRTWU4Qit3U0dYYTlSazZ6MjZreFhxNlFHYTcxU2hpTjdqZUR1aXdUVHRXalN5aUVtNUtNUFBIRQplUlA2WTV0bS9NSGVIVEUyanhpbGp3eERjL3hMWjYvNzRqb0tPWGNRZ2NSN3FPOTczZm5Yek5XdmorYWozNjk3CnA4ckhPcmt4cHdJREFRQUJvMEl3UURBT0JnTlZIUThCQWY4RUJBTUNBcVF3RHdZRFZSMFRBUUgvQkFVd0F3RUIKL3pBZEJnTlZIUTRFRmdRVVJzMm4yV2JPdGtrNXZIZU9UMjc5NDFFcDNhY3dEUVlKS29aSWh2Y05BUUVMQlFBRApnZ0VCQU9TcnpyMUxma2RFc3JHQlh3Q0M5WVMwTnlrRW83Mmx4ck1FT2FnSHBsRUJid3NFL3NDTWZmQXgxRVFGCnRxQ1JscWVqQjlrMVdIY3ZmWlpaYzNJOUJuZG5mVXJrM3RGdzVDZDk0cWt4cU44MExWaEUranZXNnFJRm04Q0IKSnUxZzM4RHdsMVRNSXlCOVpENzFOTWZVbXplK0YvMEliSkd1VEVMVnNKclNiUEpMUEpoOUJzajNyRnFTNVpLMQo5OWZZa0hHOFc3dGgyV3lyS0F2MDl4TC9Obi9JajlscjZmSjVVdkZZQzhlS1RkU0g0OHRsbFJKaXNpT0p3VkdnCmJSNUdsL0M3dTZabk04N2NCZldIRzhzVE1jT1FKNHlxdGxyd3ZVWHZuTjc2bEpWLy93c0VUWExSd00yM2llVlIKNHIrSjJFdi9mWm40M3pFT01WdGwvNUJHRnZZPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+        "KeyRaw": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBOEFGV1lFNDdsc3FxNXp0VWhMMmM0Rm1JMURjamJTTXJZSWljNkdaeldReTVURFVlCmxxNlorbk9naHpYK1hYUk9tc1ZFWGxmancxVk91UktTaXRma2lVWEZHNVlrajFPVlhYNXdpWXFvWmVyYXFjV0gKWVJ6YUNEb0xUV1RLMzVJU3FlcUREQlpUa1VUVHFNbXVkTGx2c1N4TFE4bkk1VTR3TWpDclVkS1pKRTZYbzByRAoyZDAxYldUOTNJSkFOQ2lwKzRIRTZRNCtFcnlRK0pJelI1dHpRTWU4Qit3U0dYYTlSazZ6MjZreFhxNlFHYTcxClNoaU43amVEdWl3VFR0V2pTeWlFbTVLTVBQSEVlUlA2WTV0bS9NSGVIVEUyanhpbGp3eERjL3hMWjYvNzRqb0sKT1hjUWdjUjdxTzk3M2ZuWHpOV3ZqK2FqMzY5N3A4ckhPcmt4cHdJREFRQUJBb0lCQUNpQ3NVZTBMTTY1Q3J2WgpBZDBkL0RyS0loUmY4alRidU5pa2RvZXJzMUNXbXpoSHh3LzhETFYvaXRzSHZCV2VLaDVwcWE2YSt6RGZWMWhaCjBDNXJYb0hsS3U0TEc4U3RnUXEwNnQzc2I1dzBWaEJON1JueE9zUWt0LytxUWF3WEJkdDBZQVpNUm5MQXdWRSsKS1pvK0txSW5MZFVWWERtSVJ3NVJ0TGtzNlBoOWorQkd4YVhkaG9UaVB5K1FadGlRODMzNWFJZlZwMmVzemZ3SAp6aEUwdlhsSVlLRkRuVjVSTnJrdForblZ2a2wvaXBHM0lodlZpSU4wRzl2T3lJcjRCLzJnSGpmVHJ5VWtWbTViCndFZHBVUTVXS29sTHNpZlJIeXBDZncrYWVhVXBmb1hiYW1pWkx1Y2N4Qzk4V1lyczljK0JYV0lnVkNYMzVKcjkKSEp2VHJRRUNnWUVBK2g2bVhzV3N3d250R2JqRis3dmJIV0hsNy95MHN0UGFnd0c4eTltaXN3M2NUNDdYZ1hTQQoxb0psTVI5amxVMlZCZmVCSnRLWWk1V3BzdnJUeTFGV2JrMHZMWFE2aDNDOFN4RjdsMEdGTytZNDI0VWZaMEVPCnpuV2dIV1ZxZnZKOW5IamlKNlpxU2tJOW40QW96UTJHaVN5d3phdld4UktJdk9hM2Vkc2JJdWNDZ1lFQTlhWFEKTG9wM0tTZ28rVzlUNHVFd1ArNXRjV0gwWWlrVUFPU0NnWTZWYUlrUEJNSHROVjl0ZWdpa1NqMVNQaFNUT0YycApXQmhCTVdUOWVFRFZrTUZjSmJuakNPOGNQaXZrSGFjTUZYeXN4SHV2WEI3di9RdVhLNnp3Y2hta2JDWGlpZ0loClR6UTQ1U2pQQ0szZ3oxS2pKZm9ZRmxmVGpoN1h1VjFpalA0NlkwRUNnWUF2djNBbFFYbFVsbTJEN29rbElGeVoKQkZwZjhROFI0RzJqZXM1dTMvSTJXbHdIZUE1ZDhUNnpOSnRhd0ZKRGExY2FsNEE1U0JURStPSTNmN2kwNUtjcQpVV1BET3AvOXdTREE5K3B2R3B2enJtU0dTNmlPRHBaa0JZSjJlaWpWYVRkZmlwZ3AxNVFNN3c1U2g2WENWMldxCmhEU1FYdENXT0k2UCtUOW5iTk9HV3dLQmdEa1RCSks3czBJSnhiTm16V3ZLZkladUpGbVNzOUJXMFFJQUZkNTYKUFhhaldhejJUZUgzd1J6NGd3dUl3ZUlRcjhBSjZ2Mi83TzNJRkNocmovTnBLYnJPUE5UbmtYMVVmMVR3YWh0WAo4MkJYaUgvejVEaThCNnlyS3RhbjVJOElJbUdFYXk3VzZGMCtKUlJVS2dhaG9heUNOalNDeFhHZzh1aHJyU2tyCkxHL0JBb0dBTUh5SmlkK0pycUJ3Q3hJeVdld2NtaENJeG43Tzk0N1YwemVzTE9iVjM4MzE1bDgvOU00YktsUnoKaW05RDBkV0hkZVpaM3pxbHcyK2RhUzQzenhJMXN1NEdJWjcwZnJLM0VyOVJ3SW5aSkFPcCtHVzN0V3djUFQvYgpCNVpmK3AzMmdsYTQxYkNNRm1YOEtEVlN2VmJIZnR5S1BJcXlVT3k3UDVNL2V1SDNVaGs9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==",
+        "FileList": [
+            {
+                "Filename": "tls/root-ca.key",
+                "Data": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBOEFGV1lFNDdsc3FxNXp0VWhMMmM0Rm1JMURjamJTTXJZSWljNkdaeldReTVURFVlCmxxNlorbk9naHpYK1hYUk9tc1ZFWGxmancxVk91UktTaXRma2lVWEZHNVlrajFPVlhYNXdpWXFvWmVyYXFjV0gKWVJ6YUNEb0xUV1RLMzVJU3FlcUREQlpUa1VUVHFNbXVkTGx2c1N4TFE4bkk1VTR3TWpDclVkS1pKRTZYbzByRAoyZDAxYldUOTNJSkFOQ2lwKzRIRTZRNCtFcnlRK0pJelI1dHpRTWU4Qit3U0dYYTlSazZ6MjZreFhxNlFHYTcxClNoaU43amVEdWl3VFR0V2pTeWlFbTVLTVBQSEVlUlA2WTV0bS9NSGVIVEUyanhpbGp3eERjL3hMWjYvNzRqb0sKT1hjUWdjUjdxTzk3M2ZuWHpOV3ZqK2FqMzY5N3A4ckhPcmt4cHdJREFRQUJBb0lCQUNpQ3NVZTBMTTY1Q3J2WgpBZDBkL0RyS0loUmY4alRidU5pa2RvZXJzMUNXbXpoSHh3LzhETFYvaXRzSHZCV2VLaDVwcWE2YSt6RGZWMWhaCjBDNXJYb0hsS3U0TEc4U3RnUXEwNnQzc2I1dzBWaEJON1JueE9zUWt0LytxUWF3WEJkdDBZQVpNUm5MQXdWRSsKS1pvK0txSW5MZFVWWERtSVJ3NVJ0TGtzNlBoOWorQkd4YVhkaG9UaVB5K1FadGlRODMzNWFJZlZwMmVzemZ3SAp6aEUwdlhsSVlLRkRuVjVSTnJrdForblZ2a2wvaXBHM0lodlZpSU4wRzl2T3lJcjRCLzJnSGpmVHJ5VWtWbTViCndFZHBVUTVXS29sTHNpZlJIeXBDZncrYWVhVXBmb1hiYW1pWkx1Y2N4Qzk4V1lyczljK0JYV0lnVkNYMzVKcjkKSEp2VHJRRUNnWUVBK2g2bVhzV3N3d250R2JqRis3dmJIV0hsNy95MHN0UGFnd0c4eTltaXN3M2NUNDdYZ1hTQQoxb0psTVI5amxVMlZCZmVCSnRLWWk1V3BzdnJUeTFGV2JrMHZMWFE2aDNDOFN4RjdsMEdGTytZNDI0VWZaMEVPCnpuV2dIV1ZxZnZKOW5IamlKNlpxU2tJOW40QW96UTJHaVN5d3phdld4UktJdk9hM2Vkc2JJdWNDZ1lFQTlhWFEKTG9wM0tTZ28rVzlUNHVFd1ArNXRjV0gwWWlrVUFPU0NnWTZWYUlrUEJNSHROVjl0ZWdpa1NqMVNQaFNUT0YycApXQmhCTVdUOWVFRFZrTUZjSmJuakNPOGNQaXZrSGFjTUZYeXN4SHV2WEI3di9RdVhLNnp3Y2hta2JDWGlpZ0loClR6UTQ1U2pQQ0szZ3oxS2pKZm9ZRmxmVGpoN1h1VjFpalA0NlkwRUNnWUF2djNBbFFYbFVsbTJEN29rbElGeVoKQkZwZjhROFI0RzJqZXM1dTMvSTJXbHdIZUE1ZDhUNnpOSnRhd0ZKRGExY2FsNEE1U0JURStPSTNmN2kwNUtjcQpVV1BET3AvOXdTREE5K3B2R3B2enJtU0dTNmlPRHBaa0JZSjJlaWpWYVRkZmlwZ3AxNVFNN3c1U2g2WENWMldxCmhEU1FYdENXT0k2UCtUOW5iTk9HV3dLQmdEa1RCSks3czBJSnhiTm16V3ZLZkladUpGbVNzOUJXMFFJQUZkNTYKUFhhaldhejJUZUgzd1J6NGd3dUl3ZUlRcjhBSjZ2Mi83TzNJRkNocmovTnBLYnJPUE5UbmtYMVVmMVR3YWh0WAo4MkJYaUgvejVEaThCNnlyS3RhbjVJOElJbUdFYXk3VzZGMCtKUlJVS2dhaG9heUNOalNDeFhHZzh1aHJyU2tyCkxHL0JBb0dBTUh5SmlkK0pycUJ3Q3hJeVdld2NtaENJeG43Tzk0N1YwemVzTE9iVjM4MzE1bDgvOU00YktsUnoKaW05RDBkV0hkZVpaM3pxbHcyK2RhUzQzenhJMXN1NEdJWjcwZnJLM0VyOVJ3SW5aSkFPcCtHVzN0V3djUFQvYgpCNVpmK3AzMmdsYTQxYkNNRm1YOEtEVlN2VmJIZnR5S1BJcXlVT3k3UDVNL2V1SDNVaGs9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg=="
+            },
+            {
+                "Filename": "tls/root-ca.crt",
+                "Data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFRENDQWZpZ0F3SUJBZ0lJT2xwZ1BjRVRiZWN3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHliMjkwTFdOaE1CNFhEVEkwTVRBeE1qSXhNek14TmxvWApEVE0wTVRBeE1ESXhNek14Tmxvd0pqRVNNQkFHQTFVRUN4TUpiM0JsYm5Ob2FXWjBNUkF3RGdZRFZRUURFd2R5CmIyOTBMV05oTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE4QUZXWUU0N2xzcXEKNXp0VWhMMmM0Rm1JMURjamJTTXJZSWljNkdaeldReTVURFVlbHE2WituT2doelgrWFhST21zVkVYbGZqdzFWTwp1UktTaXRma2lVWEZHNVlrajFPVlhYNXdpWXFvWmVyYXFjV0hZUnphQ0RvTFRXVEszNUlTcWVxRERCWlRrVVRUCnFNbXVkTGx2c1N4TFE4bkk1VTR3TWpDclVkS1pKRTZYbzByRDJkMDFiV1Q5M0lKQU5DaXArNEhFNlE0K0VyeVEKK0pJelI1dHpRTWU4Qit3U0dYYTlSazZ6MjZreFhxNlFHYTcxU2hpTjdqZUR1aXdUVHRXalN5aUVtNUtNUFBIRQplUlA2WTV0bS9NSGVIVEUyanhpbGp3eERjL3hMWjYvNzRqb0tPWGNRZ2NSN3FPOTczZm5Yek5XdmorYWozNjk3CnA4ckhPcmt4cHdJREFRQUJvMEl3UURBT0JnTlZIUThCQWY4RUJBTUNBcVF3RHdZRFZSMFRBUUgvQkFVd0F3RUIKL3pBZEJnTlZIUTRFRmdRVVJzMm4yV2JPdGtrNXZIZU9UMjc5NDFFcDNhY3dEUVlKS29aSWh2Y05BUUVMQlFBRApnZ0VCQU9TcnpyMUxma2RFc3JHQlh3Q0M5WVMwTnlrRW83Mmx4ck1FT2FnSHBsRUJid3NFL3NDTWZmQXgxRVFGCnRxQ1JscWVqQjlrMVdIY3ZmWlpaYzNJOUJuZG5mVXJrM3RGdzVDZDk0cWt4cU44MExWaEUranZXNnFJRm04Q0IKSnUxZzM4RHdsMVRNSXlCOVpENzFOTWZVbXplK0YvMEliSkd1VEVMVnNKclNiUEpMUEpoOUJzajNyRnFTNVpLMQo5OWZZa0hHOFc3dGgyV3lyS0F2MDl4TC9Obi9JajlscjZmSjVVdkZZQzhlS1RkU0g0OHRsbFJKaXNpT0p3VkdnCmJSNUdsL0M3dTZabk04N2NCZldIRzhzVE1jT1FKNHlxdGxyd3ZVWHZuTjc2bEpWLy93c0VUWExSd00yM2llVlIKNHIrSjJFdi9mWm40M3pFT01WdGwvNUJHRnZZPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+            }
+        ]
+    }
+}

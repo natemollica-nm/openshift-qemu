@@ -1,0 +1,28 @@
+apiVersion: machine.openshift.io/v1beta1
+kind: Machine
+metadata:
+  creationTimestamp: null
+  labels:
+    machine.openshift.io/cluster-api-cluster: openshift-lima-cbxdp
+    machine.openshift.io/cluster-api-machine-role: master
+    machine.openshift.io/cluster-api-machine-type: master
+  name: openshift-lima-cbxdp-master-0
+  namespace: openshift-machine-api
+spec:
+  lifecycleHooks: {}
+  metadata: {}
+  providerSpec:
+    value:
+      apiVersion: baremetal.cluster.k8s.io/v1alpha1
+      customDeploy:
+        method: install_coreos
+      hostSelector: {}
+      image:
+        checksum: ""
+        url: ""
+      kind: BareMetalMachineProviderSpec
+      metadata:
+        creationTimestamp: null
+      userData:
+        name: master-user-data-managed
+status: {}
