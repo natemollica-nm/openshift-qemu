@@ -185,7 +185,7 @@ var rootCmd = &cobra.Command{
 
 		// Conditional logic based on flags
 		if defLibvirtNet != "" && virNetOct != "" {
-			logging.Fatal("invalid parameter (mutually-exclusive):", fmt.Errorf("specify either --libvirt-network (-n) or --libvirt-oct (-N), not both"))
+			logging.Fatal("invalid parameter (mutually-exclusive)", fmt.Errorf("specify either --libvirt-network (-n) (%s) or --libvirt-oct (-N) (%s), not both", defLibvirtNet, virNetOct))
 		}
 		if defLibvirtNet == "" && virNetOct == "" {
 			defLibvirtNet = "default"
