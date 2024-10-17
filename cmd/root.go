@@ -94,64 +94,6 @@ func init() {
 	rootCmd.PersistentFlags().BoolVar(&freshDownload, "fresh-download", false, "Force fresh download of OCP and RHCOS images")
 	rootCmd.PersistentFlags().BoolVar(&destroy, "destroy", false, "Destroy the cluster")
 	rootCmd.PersistentFlags().BoolVarP(&yesFlag, "yes", "y", false, "Automatically approve all prompts")
-
-	checkIfRoot()
-	startTS = time.Now()                                       // Equivalent to START_TS
-	invocation = fmt.Sprintf("%s %v", os.Args[0], os.Args[1:]) // Equivalent to SINV
-	exeDir, _ = os.Getwd()                                     // Equivalent to SDIR (current directory)
-	// Set LIBGUESTFS_BACKEND
-	err := os.Setenv(LibguestfsBackend, LibguestfsBackendDirect)
-	if err != nil {
-		logging.Fatal("Failed to set LIBGUESTFS_BACKEND environment variable:", err)
-	}
-	logging.Ok(fmt.Sprintf("LIBGUESTFS_BACKEND=%s", os.Getenv(LibguestfsBackend)))
-
-	// Required Parameter Validation
-	if nMasters <= 0 {
-		logging.Fatal("Invalid number of masters: ", fmt.Errorf("masters must be > 0"))
-	}
-	if nWorkers < 0 {
-		logging.Fatal("Invalid number of workers: ", fmt.Errorf("workers cannot be < 0"))
-	}
-	if masMem < 0 {
-		logging.Fatal("Invalid value for --master-mem: %d", fmt.Errorf("%d", masMem))
-	}
-	if masCPU < 0 {
-		logging.Fatal("Invalid value for --master-cpu: %d", fmt.Errorf("%d", masCPU))
-	}
-	if worMem < 0 {
-		logging.Fatal("Invalid value for --worker-mem: %d", fmt.Errorf("%d", worMem))
-	}
-	if worCPU < 0 {
-		logging.Fatal("Invalid value for --worker-cpu: %d", fmt.Errorf("%d", worCPU))
-	}
-	if btsMem < 0 {
-		logging.Fatal("Invalid value for --bootstrap-mem: %d", fmt.Errorf("%d", btsMem))
-	}
-	if btsCPU < 0 {
-		logging.Fatal("Invalid value for --bootstrap-cpu: %d", fmt.Errorf("%d", btsCPU))
-	}
-	if lbMem < 0 {
-		logging.Fatal("Invalid value for --lb-mem: %d", fmt.Errorf("%d", lbMem))
-	}
-	if lbCPU < 0 {
-		logging.Fatal("Invalid value for --lb-cpu: %d", fmt.Errorf("%d", lbCPU))
-	}
-	netOct, err := strconv.Atoi(virNetOct)
-	if err != nil {
-		logging.Fatal("Failed to convert --lib-virt-oct to string for validation", fmt.Errorf("value=%s | err=%v", virNetOct, err))
-	}
-	if netOct < 0 || netOct > 255 {
-		logging.Fatal("Invalid value for --lib-virt-oct", fmt.Errorf("value=%s", virNetOct))
-	}
-	if _, err = os.Stat(pullSecFile); err != nil {
-		logging.Fatal(fmt.Sprintf("Pull secret file not found: %s", pullSecFile), err)
-	}
-	if sshPubKeyFile != "" {
-		if _, err = os.Stat(sshPubKeyFile); err != nil {
-			logging.Fatal(fmt.Sprintf("SSH Public key file not found: %s", pullSecFile), err)
-		}
-	}
 }
 
 // checkIfRoot checks if the current user is root
@@ -175,6 +117,63 @@ var rootCmd = &cobra.Command{
 			// If no arguments, show help
 			cmd.Help()
 			return
+		}
+		checkIfRoot()
+		startTS = time.Now()                                       // Equivalent to START_TS
+		invocation = fmt.Sprintf("%s %v", os.Args[0], os.Args[1:]) // Equivalent to SINV
+		exeDir, _ = os.Getwd()                                     // Equivalent to SDIR (current directory)
+		// Set LIBGUESTFS_BACKEND
+		err := os.Setenv(LibguestfsBackend, LibguestfsBackendDirect)
+		if err != nil {
+			logging.Fatal("Failed to set LIBGUESTFS_BACKEND environment variable:", err)
+		}
+		logging.Ok(fmt.Sprintf("LIBGUESTFS_BACKEND=%s", os.Getenv(LibguestfsBackend)))
+
+		// Required Parameter Validation
+		if nMasters <= 0 {
+			logging.Fatal("Invalid number of masters: ", fmt.Errorf("masters must be > 0"))
+		}
+		if nWorkers < 0 {
+			logging.Fatal("Invalid number of workers: ", fmt.Errorf("workers cannot be < 0"))
+		}
+		if masMem < 0 {
+			logging.Fatal("Invalid value for --master-mem: %d", fmt.Errorf("%d", masMem))
+		}
+		if masCPU < 0 {
+			logging.Fatal("Invalid value for --master-cpu: %d", fmt.Errorf("%d", masCPU))
+		}
+		if worMem < 0 {
+			logging.Fatal("Invalid value for --worker-mem: %d", fmt.Errorf("%d", worMem))
+		}
+		if worCPU < 0 {
+			logging.Fatal("Invalid value for --worker-cpu: %d", fmt.Errorf("%d", worCPU))
+		}
+		if btsMem < 0 {
+			logging.Fatal("Invalid value for --bootstrap-mem: %d", fmt.Errorf("%d", btsMem))
+		}
+		if btsCPU < 0 {
+			logging.Fatal("Invalid value for --bootstrap-cpu: %d", fmt.Errorf("%d", btsCPU))
+		}
+		if lbMem < 0 {
+			logging.Fatal("Invalid value for --lb-mem: %d", fmt.Errorf("%d", lbMem))
+		}
+		if lbCPU < 0 {
+			logging.Fatal("Invalid value for --lb-cpu: %d", fmt.Errorf("%d", lbCPU))
+		}
+		netOct, err := strconv.Atoi(virNetOct)
+		if err != nil {
+			logging.Fatal("Failed to convert --lib-virt-oct to string for validation", fmt.Errorf("value=%s | err=%v", virNetOct, err))
+		}
+		if netOct < 0 || netOct > 255 {
+			logging.Fatal("Invalid value for --lib-virt-oct", fmt.Errorf("value=%s", virNetOct))
+		}
+		if _, err = os.Stat(pullSecFile); err != nil {
+			logging.Fatal(fmt.Sprintf("Pull secret file not found: %s", pullSecFile), err)
+		}
+		if sshPubKeyFile != "" {
+			if _, err = os.Stat(sshPubKeyFile); err != nil {
+				logging.Fatal(fmt.Sprintf("SSH Public key file not found: %s", pullSecFile), err)
+			}
 		}
 		logging.InfoMessage("Starting OpenShift 4 UPI KVM Setup", map[string]interface{}{
 			"Time":              startTS,
