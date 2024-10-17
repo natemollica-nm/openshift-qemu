@@ -94,10 +94,11 @@ func init() {
 	rootCmd.PersistentFlags().BoolVar(&freshDownload, "fresh-download", false, "Force fresh download of OCP and RHCOS images")
 	rootCmd.PersistentFlags().BoolVar(&destroy, "destroy", false, "Destroy the cluster")
 	rootCmd.PersistentFlags().BoolVarP(&yesFlag, "yes", "y", false, "Automatically approve all prompts")
+
+	checkIfRoot()
 	startTS = time.Now()                                       // Equivalent to START_TS
 	invocation = fmt.Sprintf("%s %v", os.Args[0], os.Args[1:]) // Equivalent to SINV
 	exeDir, _ = os.Getwd()                                     // Equivalent to SDIR (current directory)
-
 	// Set LIBGUESTFS_BACKEND
 	err := os.Setenv(LibguestfsBackend, LibguestfsBackendDirect)
 	if err != nil {
@@ -179,8 +180,7 @@ var rootCmd = &cobra.Command{
 			"Time":              startTS,
 			"Invocation":        invocation,
 			"Working Directory": exeDir,
-		})
-		checkIfRoot() // Checking if user is root
+		}) // Checking if user is root
 
 		// Processing VM directory
 		absVMDir, err := filepath.Abs(vmDir)
