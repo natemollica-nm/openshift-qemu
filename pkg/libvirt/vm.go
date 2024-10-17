@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"libvirt.org/libvirt-go"
+	"libvirt.org/go/libvirt"
 	"openshift-qemu/pkg/logging"
 )
 

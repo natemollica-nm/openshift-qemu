@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"libvirt.org/libvirt-go"
+	"libvirt.org/go/libvirt"
 	"openshift-qemu/pkg/logging"
 )
 
