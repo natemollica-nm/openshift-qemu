@@ -1,7 +1,6 @@
-brew "cdrtools"
 brew "qemu"
 
-brew "lima"
+brew "pkg-config"
 brew "socket_vmnet"
 
 brew "dnsmasq"

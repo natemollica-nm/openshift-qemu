@@ -170,6 +170,11 @@ var rootCmd = &cobra.Command{
 	Use:   "openshift-qemu",
 	Short: "CLI tool to set up OpenShift 4 on KVM via libvirt",
 	Run: func(cmd *cobra.Command, args []string) {
+		if len(args) == 0 {
+			// If no arguments, show help
+			cmd.Help()
+			return
+		}
 		logging.InfoMessage("Starting OpenShift 4 UPI KVM Setup", map[string]interface{}{
 			"Time":              startTS,
 			"Invocation":        invocation,
