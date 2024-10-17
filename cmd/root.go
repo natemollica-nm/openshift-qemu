@@ -80,7 +80,7 @@ func init() {
 	rootCmd.PersistentFlags().IntVar(&lbMem, "lb-mem", 1536, "Memory size for load balancer VM in MB")
 	rootCmd.PersistentFlags().IntVar(&wsPort, "ws-port", 1234, "Web server port for load balancer VM")
 	rootCmd.PersistentFlags().StringVarP(&defLibvirtNet, "libvirt-network", "n", "default", "Libvirt network")
-	rootCmd.PersistentFlags().StringVarP(&virNetOct, "libvirt-oct", "N", "100", "Libvirt network octet")
+	rootCmd.PersistentFlags().StringVarP(&virNetOct, "libvirt-oct", "N", "", "Libvirt network octet")
 	rootCmd.PersistentFlags().StringVarP(&clusterName, "cluster-name", "c", "ocp4", "Cluster name")
 	rootCmd.PersistentFlags().StringVarP(&baseDom, "cluster-domain", "d", "local", "Cluster domain")
 	rootCmd.PersistentFlags().StringVarP(&dnsDir, "dns-dir", "z", "/etc/NetworkManager/dnsmasq.d", "DNS configuration directory")
