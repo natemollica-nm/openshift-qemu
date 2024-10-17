@@ -113,11 +113,6 @@ var rootCmd = &cobra.Command{
 	Use:   "openshift-qemu",
 	Short: "CLI tool to set up OpenShift 4 on KVM via libvirt",
 	Run: func(cmd *cobra.Command, args []string) {
-		if len(args) == 0 {
-			// If no arguments, show help
-			cmd.Help()
-			return
-		}
 		checkIfRoot()
 		startTS = time.Now()                                       // Equivalent to START_TS
 		invocation = fmt.Sprintf("%s %v", os.Args[0], os.Args[1:]) // Equivalent to SINV
